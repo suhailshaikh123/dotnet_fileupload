@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\All MY Task\\ASP.NET practice\\FileUpload\\api\\api.csproj": {}
+    "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\api\\api.csproj": {}
   },
   "projects": {
-    "D:\\All MY Task\\ASP.NET practice\\FileUpload\\api\\api.csproj": {
+    "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\api\\api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\All MY Task\\ASP.NET practice\\FileUpload\\api\\api.csproj",
+        "projectUniqueName": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\api\\api.csproj",
         "projectName": "api",
-        "projectPath": "D:\\All MY Task\\ASP.NET practice\\FileUpload\\api\\api.csproj",
+        "projectPath": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\api\\api.csproj",
         "packagesPath": "C:\\Users\\suhail.shaikh\\.nuget\\packages\\",
-        "outputPath": "D:\\All MY Task\\ASP.NET practice\\FileUpload\\api\\obj\\",
+        "outputPath": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -46,6 +46,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[8.0.6, )"

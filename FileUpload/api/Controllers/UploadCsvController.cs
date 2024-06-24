@@ -77,103 +77,117 @@ namespace api.Controllers
 
 
         [HttpPost("fasterupload")]
-public async Task<IActionResult> uploadCsvFaster(IFormFile file)
-{
-    List<User> userToUpload = new List<User>();
-    bool isFirstLine = true;
-    if (file == null || file.Length == 0)
-        return BadRequest("No file uploaded.");
-
-    Stopwatch stopWatch = new Stopwatch();
-    stopWatch.Start();
-    string connectionString = "Host=localhost;Port=5432;Database=fileupload;Username=postgres;Password=suhail";
-    using (StreamReader reader = new StreamReader(file.OpenReadStream(), Encoding.UTF8))
-    {
-                      
-        using (var conn = new NpgsqlConnection(connectionString))
+        public async Task<IActionResult> uploadCsvFaster(IFormFile file)
         {
-            conn.Open();
+            List<User> userToUpload = new List<User>();
+            bool isFirstLine = true;
+            if (file == null || file.Length == 0)
+                return BadRequest("No file uploaded.");
 
-            using (var cmd = new NpgsqlCommand())
+            Stopwatch stopWatch = new Stopwatch();
+            Stopwatch stop = new Stopwatch();
+            stopWatch.Start();
+            string connectionString = "Host=localhost;Port=5432;Database=fileupload;Username=postgres;Password=suhail";
+            using (StreamReader reader = new StreamReader(file.OpenReadStream(), Encoding.UTF8))
             {
-                cmd.Connection = conn;
 
-                StringBuilder insertQuery = new StringBuilder("INSERT INTO \"Users\" (\"Email\", \"Name\", \"Country\", \"State\", \"City\", \"Telephone\", \"AddressLine1\", \"AddressLine2\", \"DateOfBirth\", \"SalaryFY2019\", \"SalaryFY2020\", \"SalaryFY2021\", \"SalaryFY2022\", \"SalaryFY2023\") VALUES ");
-                int i = 0;
-                int chunkSize = 4000;
-
-                while (!reader.EndOfStream)
+                using (var conn = new NpgsqlConnection(connectionString))
                 {
-                    if (isFirstLine)
-                    {
-                        isFirstLine = false;
-                        continue;
-                    }
-                    var line = await reader.ReadLineAsync();
-                    var fields = line.Split(",");
-                    if (DateTime.TryParseExact(fields[8], "yyyy-MM-dd", null, System.Globalization.DateTimeStyles.None, out DateTime dateOfBirth))
-                    {
-                        try
+
+                    conn.Open();
+
+
+                    using (var cmd = new NpgsqlCommand())
+                    {   
+                        cmd.Connection = conn;
+
+                        StringBuilder insertQuery = new StringBuilder("INSERT INTO \"Users\" (\"Email\", \"Name\", \"Country\", \"State\", \"City\", \"Telephone\", \"AddressLine1\", \"AddressLine2\", \"DateOfBirth\", \"SalaryFY2019\", \"SalaryFY2020\", \"SalaryFY2021\", \"SalaryFY2022\", \"SalaryFY2023\") VALUES ");
+                        int i = 0;
+                        int chunkSize = 4600;
+
+                        while (!reader.EndOfStream)
                         {
-                            User user = fields.ConvertToUser();
-                            insertQuery.Append($"(@Email{i}, @Name{i}, @Country{i}, @State{i}, @City{i}, @Telephone{i}, @AddressLine1{i}, @AddressLine2{i}, @DateOfBirth{i}, @SalaryFY2019{i}, @SalaryFY2020{i}, @SalaryFY2021{i}, @SalaryFY2022{i}, @SalaryFY2023{i})");
-                            insertQuery.Append(", ");
-                            cmd.Parameters.AddWithValue($"@Email{i}", user.Email);
-                            cmd.Parameters.AddWithValue($"@Name{i}", user.Name);
-                            cmd.Parameters.AddWithValue($"@Country{i}", user.Country);
-                            cmd.Parameters.AddWithValue($"@State{i}", user.State);
-                            cmd.Parameters.AddWithValue($"@City{i}", user.City);
-                            cmd.Parameters.AddWithValue($"@Telephone{i}", user.Telephone);
-                            cmd.Parameters.AddWithValue($"@AddressLine1{i}", user.AddressLine1);
-                            cmd.Parameters.AddWithValue($"@AddressLine2{i}", user.AddressLine2);
-                            cmd.Parameters.AddWithValue($"@DateOfBirth{i}", dateOfBirth);
-                            cmd.Parameters.AddWithValue($"@SalaryFY2019{i}", user.SalaryFY2019);
-                            cmd.Parameters.AddWithValue($"@SalaryFY2020{i}", user.SalaryFY2020);
-                            cmd.Parameters.AddWithValue($"@SalaryFY2021{i}", user.SalaryFY2021);
-                            cmd.Parameters.AddWithValue($"@SalaryFY2022{i}", user.SalaryFY2022);
-                            cmd.Parameters.AddWithValue($"@SalaryFY2023{i}", user.SalaryFY2023);
-                            userToUpload.Add(user);
+                            if (isFirstLine)
+                            {
+                                isFirstLine = false;
+                                continue;
+                            }
+                            var line = await reader.ReadLineAsync();
+                            var fields = line.Split(",");
+                            if (DateTime.TryParseExact(fields[8], "yyyy-MM-dd", null, System.Globalization.DateTimeStyles.None, out DateTime dateOfBirth))
+                            {
+                                try
+                                {
+                                    User user = fields.ConvertToUser();
+                                    insertQuery.Append($"(@Email{i}, @Name{i}, @Country{i}, @State{i}, @City{i}, @Telephone{i}, @AddressLine1{i}, @AddressLine2{i}, @DateOfBirth{i}, @SalaryFY2019{i}, @SalaryFY2020{i}, @SalaryFY2021{i}, @SalaryFY2022{i}, @SalaryFY2023{i})");
+                                    insertQuery.Append(", ");
+                                    cmd.Parameters.AddWithValue($"@Email{i}", user.Email);
+                                    cmd.Parameters.AddWithValue($"@Name{i}", user.Name);
+                                    cmd.Parameters.AddWithValue($"@Country{i}", user.Country);
+                                    cmd.Parameters.AddWithValue($"@State{i}", user.State);
+                                    cmd.Parameters.AddWithValue($"@City{i}", user.City);
+                                    cmd.Parameters.AddWithValue($"@Telephone{i}", user.Telephone);
+                                    cmd.Parameters.AddWithValue($"@AddressLine1{i}", user.AddressLine1);
+                                    cmd.Parameters.AddWithValue($"@AddressLine2{i}", user.AddressLine2);
+                                    cmd.Parameters.AddWithValue($"@DateOfBirth{i}", dateOfBirth);
+                                    cmd.Parameters.AddWithValue($"@SalaryFY2019{i}", user.SalaryFY2019);
+                                    cmd.Parameters.AddWithValue($"@SalaryFY2020{i}", user.SalaryFY2020);
+                                    cmd.Parameters.AddWithValue($"@SalaryFY2021{i}", user.SalaryFY2021);
+                                    cmd.Parameters.AddWithValue($"@SalaryFY2022{i}", user.SalaryFY2022);
+                                    cmd.Parameters.AddWithValue($"@SalaryFY2023{i}", user.SalaryFY2023);
+                                    userToUpload.Add(user);
+                                }
+                                catch
+                                {
+                                    // Console.WriteLine(fields[9].ToString());
+                                }
+                            }
+
+                            i++;
+
+                            // Execute the command and clear the parameters after every 1000 rows
+                            if (i % chunkSize == 0)
+                            {
+                                string query = insertQuery.ToString().Substring(0, insertQuery.Length - 2);
+                                query = query + " ON CONFLICT DO NOTHING;"; 
+                                cmd.CommandText = query;
+                                stop.Start();
+                                Console.WriteLine("Rows Affected: " +cmd.ExecuteNonQuery());
+                                stop.Stop();
+                                Console.WriteLine("Time taken: "+stop.Elapsed);
+                                stop.Reset();
+                                // Clear the command 0parameters and the insert query
+                                cmd.Parameters.Clear();
+                                insertQuery.Clear();
+
+                                insertQuery.Append("INSERT INTO \"Users\" (\"Email\", \"Name\", \"Country\", \"State\", \"City\", \"Telephone\", \"AddressLine1\", \"AddressLine2\", \"DateOfBirth\", \"SalaryFY2019\", \"SalaryFY2020\", \"SalaryFY2021\", \"SalaryFY2022\", \"SalaryFY2023\") VALUES ");
+
+
+                            }
                         }
-                        catch
+
+                        // Execute the remaining command
+                        if (i % chunkSize != 0)
                         {
-                            // Console.WriteLine(fields[9].ToString());
+                            string query = insertQuery.ToString().Substring(0, insertQuery.Length - 2);
+                            query = query + " ON CONFLICT DO NOTHING;";
+                            cmd.CommandText = query;
+                            stop.Start();
+                            await cmd.ExecuteNonQueryAsync();
+                            stop.Stop();
+                            stop.Reset();
+                            Console.WriteLine(stop.Elapsed);
                         }
+
                     }
-
-                    i++;
-
-                    // Execute the command and clear the parameters after every 1000 rows
-                    if (i % chunkSize == 0)
-                    {
-                        string query = insertQuery.ToString().Substring(0, insertQuery.Length - 2);
-                        query = query + ";";
-                        cmd.CommandText = query;
-                        cmd.ExecuteNonQuery();
-
-                        // Clear the command parameters and the insert query
-                        cmd.Parameters.Clear();
-                        insertQuery.Clear();
-                        insertQuery.Append("INSERT INTO \"Users\" (\"Email\", \"Name\", \"Country\", \"State\", \"City\", \"Telephone\", \"AddressLine1\", \"AddressLine2\", \"DateOfBirth\", \"SalaryFY2019\", \"SalaryFY2020\", \"SalaryFY2021\", \"SalaryFY2022\", \"SalaryFY2023\") VALUES ");
-                    }
+                    conn.Close();
                 }
-
-                // Execute the remaining command
-                if (i % chunkSize != 0)
-                {
-                    string query = insertQuery.ToString().Substring(0, insertQuery.Length - 2);
-                    query = query + ";";
-                    cmd.CommandText = query;
-                    cmd.ExecuteNonQuery();
-                }
-               
             }
-        }
-    }
-     stopWatch.Stop();
-    Console.WriteLine(stopWatch.Elapsed);
-    Console.WriteLine("Data inserted successfully!");
-    return Ok("Data inserted successfully!");
-}
+            stopWatch.Stop();
+            Console.WriteLine(stopWatch.Elapsed);
 
+            Console.WriteLine("Data inserted successfully!");
+            return Ok("Data inserted successfully!");
+        }
     }
 }

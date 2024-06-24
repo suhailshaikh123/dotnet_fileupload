@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using api.Models;
+using Npgsql;
 
 namespace api.UploadCsv
 {
@@ -29,5 +30,27 @@ namespace api.UploadCsv
                             };
                             return user;
         }
+        public static User ConvertToUser(this NpgsqlDataReader reader)
+        {
+                          User user = new User
+                            {
+                                Email = reader["UserId"] as string,
+                                Name = reader[1]  as string,
+                                Country = reader[2] as string,
+                                State = reader[3] as string,
+                                City = reader[4] as string,
+                                Telephone = reader[5] as string,
+                                AddressLine1 = reader[6] as string,
+                                AddressLine2 = reader[7] as string,
+                                SalaryFY2019 = Convert.ToDecimal(reader["SalaryFY2019"]),
+                                SalaryFY2020 = Convert.ToDecimal(reader["SalaryFY2020"]),
+                                SalaryFY2021 = Convert.ToDecimal(reader["SalaryFY2021"]),
+                                SalaryFY2022 = Convert.ToDecimal(reader["SalaryFY2022"]),
+                                SalaryFY2023 = Convert.ToDecimal(reader["SalaryFY2023"])
+
+                            };
+                            return user;
+        }
+        
     }
 }
