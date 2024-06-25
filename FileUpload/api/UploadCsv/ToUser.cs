@@ -11,6 +11,7 @@ namespace api.UploadCsv
     {
         public static User ConvertToUser(this string []fields)
         {
+            try{
                         User user = new User
                             {
                                 Email = fields[0],
@@ -26,9 +27,14 @@ namespace api.UploadCsv
                                 SalaryFY2021 = Convert.ToDecimal(fields[11]),
                                 SalaryFY2022 = Convert.ToDecimal(fields[12]),
                                 SalaryFY2023 = Convert.ToDecimal(fields[13])
-
-                            };
+        
+                            };  
                             return user;
+            }
+            catch{
+                Console.WriteLine(fields[9]);
+            }
+                            return null;
         }
         public static User ConvertToUser(this NpgsqlDataReader reader)
         {

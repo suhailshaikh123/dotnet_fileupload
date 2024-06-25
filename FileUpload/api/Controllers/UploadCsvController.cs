@@ -88,6 +88,7 @@ namespace api.Controllers
             Stopwatch stop = new Stopwatch();
             stopWatch.Start();
             string connectionString = "Host=localhost;Port=5432;Database=fileupload;Username=postgres;Password=suhail";
+            int total_rows_affected = 0;
             using (StreamReader reader = new StreamReader(file.OpenReadStream(), Encoding.UTF8))
             {
 
@@ -114,11 +115,13 @@ namespace api.Controllers
                             }
                             var line = await reader.ReadLineAsync();
                             var fields = line.Split(",");
+                            
                             if (DateTime.TryParseExact(fields[8], "yyyy-MM-dd", null, System.Globalization.DateTimeStyles.None, out DateTime dateOfBirth))
                             {
                                 try
                                 {
                                     User user = fields.ConvertToUser();
+                                    if(ValidateCSV.Validate(user)){        
                                     insertQuery.Append($"(@Email{i}, @Name{i}, @Country{i}, @State{i}, @City{i}, @Telephone{i}, @AddressLine1{i}, @AddressLine2{i}, @DateOfBirth{i}, @SalaryFY2019{i}, @SalaryFY2020{i}, @SalaryFY2021{i}, @SalaryFY2022{i}, @SalaryFY2023{i})");
                                     insertQuery.Append(", ");
                                     cmd.Parameters.AddWithValue($"@Email{i}", user.Email);
@@ -129,17 +132,18 @@ namespace api.Controllers
                                     cmd.Parameters.AddWithValue($"@Telephone{i}", user.Telephone);
                                     cmd.Parameters.AddWithValue($"@AddressLine1{i}", user.AddressLine1);
                                     cmd.Parameters.AddWithValue($"@AddressLine2{i}", user.AddressLine2);
-                                    cmd.Parameters.AddWithValue($"@DateOfBirth{i}", dateOfBirth);
+                                    cmd.Parameters.AddWithValue($"@DateOfBirth{i}",dateOfBirth);
                                     cmd.Parameters.AddWithValue($"@SalaryFY2019{i}", user.SalaryFY2019);
                                     cmd.Parameters.AddWithValue($"@SalaryFY2020{i}", user.SalaryFY2020);
                                     cmd.Parameters.AddWithValue($"@SalaryFY2021{i}", user.SalaryFY2021);
                                     cmd.Parameters.AddWithValue($"@SalaryFY2022{i}", user.SalaryFY2022);
                                     cmd.Parameters.AddWithValue($"@SalaryFY2023{i}", user.SalaryFY2023);
                                     userToUpload.Add(user);
+                                    }
                                 }
                                 catch
                                 {
-                                    // Console.WriteLine(fields[9].ToString());
+                                    Console.WriteLine("Error Occured while adding Paramaters to Insert Query");
                                 }
                             }
 
@@ -175,8 +179,9 @@ namespace api.Controllers
                             stop.Start();
                             await cmd.ExecuteNonQueryAsync();
                             stop.Stop();
-                            stop.Reset();
                             Console.WriteLine(stop.Elapsed);
+                            stop.Reset();
+                            
                         }
 
                     }
