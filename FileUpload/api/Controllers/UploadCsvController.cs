@@ -88,7 +88,7 @@ namespace api.Controllers
             Stopwatch stop = new Stopwatch();
             stopWatch.Start();
             string connectionString = "Host=localhost;Port=5432;Database=fileupload;Username=postgres;Password=suhail";
-            int total_rows_affected = 0;
+        
             using (StreamReader reader = new StreamReader(file.OpenReadStream(), Encoding.UTF8))
             {
 
