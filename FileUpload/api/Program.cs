@@ -21,13 +21,7 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
 });
 
-if(args.Length!=0 &&  args[0] == "worker")
-{
-    Processing obj=new Processing();
-    Console.WriteLine("Inside worker if ");
-    obj.Start();
-}
-else{
+
 
 var app = builder.Build();
 
@@ -41,4 +35,4 @@ if (app.Environment.IsDevelopment())
 // app.UseHttpsRedirection();
 app.MapControllers();
 app.Run();
-}
+
