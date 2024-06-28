@@ -11,6 +11,8 @@ using System.Diagnostics;
 using Worker.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http.HttpResults;
+using System.IO;
+using System.Text.Json;
 
 namespace Worker.Consumer
 {
@@ -33,7 +35,7 @@ namespace Worker.Consumer
 
             channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
 
-            Console.WriteLine(" [*] Waiting for messages.");
+            Console.WriteLine(" [*] Waiting for file to Come");
 
 
             var consumer = new EventingBasicConsumer(channel);
@@ -59,111 +61,94 @@ namespace Worker.Consumer
             List<User> userToUpload = new List<User>();
             bool isFirstLine = true;
 
-            Stopwatch stopWatch = new Stopwatch();
-            Stopwatch stop = new Stopwatch();
-            stopWatch.Start();
-            string connectionString = "Host=localhost;Port=5432;Database=fileupload;Username=postgres;Password=suhail";
-            using (var conn = new NpgsqlConnection(connectionString))
+
+
+            int i = 0;
+            int chunkSize = 4600;
+
+            while (!reader.EndOfStream)
             {
-
-                conn.Open();
-
-
-                using (var cmd = new NpgsqlCommand())
+                if (isFirstLine)
                 {
-                    cmd.Connection = conn;
+                    isFirstLine = false;
+                    continue;
+                }
+                var line = await reader.ReadLineAsync();
+                var fields = line.Split(",");
 
-                    StringBuilder insertQuery = new StringBuilder("INSERT INTO \"Users\" (\"Email\", \"Name\", \"Country\", \"State\", \"City\", \"Telephone\", \"AddressLine1\", \"AddressLine2\", \"DateOfBirth\", \"SalaryFY2019\", \"SalaryFY2020\", \"SalaryFY2021\", \"SalaryFY2022\", \"SalaryFY2023\") VALUES ");
-                    int i = 0;
-                    int chunkSize = 4600;
-
-                    while (!reader.EndOfStream)
+                if (DateTime.TryParseExact(fields[8], "yyyy-MM-dd", null, System.Globalization.DateTimeStyles.None, out DateTime dateOfBirth))
+                {
+                    try
                     {
-                        if (isFirstLine)
+                        User user = fields.ConvertToUser();
+                        user.DateOfBirth = dateOfBirth;
+                        if (ValidateCSV.Validate(user))
                         {
-                            isFirstLine = false;
-                            continue;
-                        }
-                        var line = await reader.ReadLineAsync();
-                        var fields = line.Split(",");
-
-                        if (DateTime.TryParseExact(fields[8], "yyyy-MM-dd", null, System.Globalization.DateTimeStyles.None, out DateTime dateOfBirth))
-                        {
-                            try
-                            {
-                                User user = fields.ConvertToUser();
-                                if (ValidateCSV.Validate(user))
-                                {
-                                    insertQuery.Append($"(@Email{i}, @Name{i}, @Country{i}, @State{i}, @City{i}, @Telephone{i}, @AddressLine1{i}, @AddressLine2{i}, @DateOfBirth{i}, @SalaryFY2019{i}, @SalaryFY2020{i}, @SalaryFY2021{i}, @SalaryFY2022{i}, @SalaryFY2023{i})");
-                                    insertQuery.Append(", ");
-                                    cmd.Parameters.AddWithValue($"@Email{i}", user.Email);
-                                    cmd.Parameters.AddWithValue($"@Name{i}", user.Name);
-                                    cmd.Parameters.AddWithValue($"@Country{i}", user.Country);
-                                    cmd.Parameters.AddWithValue($"@State{i}", user.State);
-                                    cmd.Parameters.AddWithValue($"@City{i}", user.City);
-                                    cmd.Parameters.AddWithValue($"@Telephone{i}", user.Telephone);
-                                    cmd.Parameters.AddWithValue($"@AddressLine1{i}", user.AddressLine1);
-                                    cmd.Parameters.AddWithValue($"@AddressLine2{i}", user.AddressLine2);
-                                    cmd.Parameters.AddWithValue($"@DateOfBirth{i}", dateOfBirth);
-                                    cmd.Parameters.AddWithValue($"@SalaryFY2019{i}", user.SalaryFY2019);
-                                    cmd.Parameters.AddWithValue($"@SalaryFY2020{i}", user.SalaryFY2020);
-                                    cmd.Parameters.AddWithValue($"@SalaryFY2021{i}", user.SalaryFY2021);
-                                    cmd.Parameters.AddWithValue($"@SalaryFY2022{i}", user.SalaryFY2022);
-                                    cmd.Parameters.AddWithValue($"@SalaryFY2023{i}", user.SalaryFY2023);
-                                    userToUpload.Add(user);
-                                }
-                            }
-                            catch
-                            {
-                                Console.WriteLine("Error Occured while adding Paramaters to Insert Query");
-                            }
-                        }
-
-                        i++;
-
-                        // Execute the command and clear the parameters after every 1000 rows
-                        if (i % chunkSize == 0)
-                        {
-                            string query = insertQuery.ToString().Substring(0, insertQuery.Length - 2);
-                            query = query + " ON CONFLICT DO NOTHING;";
-                            cmd.CommandText = query;
-                            stop.Start();
-                            Console.WriteLine("Rows Affected: " + cmd.ExecuteNonQuery());
-                            stop.Stop();
-                            Console.WriteLine("Time taken: " + stop.Elapsed);
-                            stop.Reset();
-                            // Clear the command 0parameters and the insert query
-                            cmd.Parameters.Clear();
-                            insertQuery.Clear();
-
-                            insertQuery.Append("INSERT INTO \"Users\" (\"Email\", \"Name\", \"Country\", \"State\", \"City\", \"Telephone\", \"AddressLine1\", \"AddressLine2\", \"DateOfBirth\", \"SalaryFY2019\", \"SalaryFY2020\", \"SalaryFY2021\", \"SalaryFY2022\", \"SalaryFY2023\") VALUES ");
-
-
+                            userToUpload.Add(user);
                         }
                     }
-
-                    // Execute the remaining command
-                    if (i % chunkSize != 0)
+                    catch
                     {
-                        string query = insertQuery.ToString().Substring(0, insertQuery.Length - 2);
-                        query = query + " ON CONFLICT DO NOTHING;";
-                        cmd.CommandText = query;
-                        stop.Start();
-                        await cmd.ExecuteNonQueryAsync();
-                        stop.Stop();
-                        Console.WriteLine(stop.Elapsed);
-                        stop.Reset();
-
+                        Console.WriteLine("Error occured in processing worker");
                     }
+                }
+
+                i++;
+
+                // Execute the command and clear the parameters after every 1000 rows
+                if (i % chunkSize == 0)
+                {
+                    List<User> temp = new List<User>(userToUpload);
+                    AddToQueue(temp);
+                    // Clear the command 0parameters and the insert query
+                    userToUpload.Clear();
 
                 }
-                conn.Close();
             }
-            stopWatch.Stop();
-            Console.WriteLine(stopWatch.Elapsed);
 
-            Console.WriteLine("Data inserted successfully!");
+            // Execute the remaining command
+            if (i % chunkSize != 0)
+            {
+                List<User> temp = new List<User>(userToUpload);
+                AddToQueue(temp);
+
+            }
+
+
+
             return "hello";
         }
+
+        public static void AddToQueue(List<User> userToUpload)
+        {
+            var factory = new ConnectionFactory { HostName = "localhost" };
+            using var connection = factory.CreateConnection();
+            using var channel = connection.CreateModel();
+
+            channel.QueueDeclare(queue: "database_queue",
+                     durable: false,
+                     exclusive: false,
+                     autoDelete: false,
+                     arguments: null);
+
+            byte[] byteArray;
+            var options = new JsonSerializerOptions { WriteIndented = false }; // Adjust options as needed
+
+            using (MemoryStream ms = new MemoryStream())
+            {
+                JsonSerializer.Serialize(ms, userToUpload, options);
+                byteArray = ms.ToArray();
+            }
+
+
+
+
+            // Console.WriteLine(fileBytes);
+            channel.BasicPublish(exchange: string.Empty,
+                                 routingKey: "database_queue",
+                                 body: byteArray);
+        }
+
+
     }
 }
