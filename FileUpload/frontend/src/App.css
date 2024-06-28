@@ -1,0 +1,74 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-container{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form button{
+  width: 40%;
+  margin-top: 5px;
+  padding: 10px;
+}
+table,th,td{
+  margin-top: 30px;
+  
+}
+th,td{
+  border: 1px solid black;
+  text-align: center;
+  padding: 10px;
+}
+ul button{
+  margin: 5px;
+  margin-top: 10px;
+}
+select{
+  border: none;
+  border-bottom: 1px solid black;
+  
+}
+
+select label{
+  margin-right: 5px;
+}
+.spinner-grow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.insert-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+ 
+  margin-top:30px;
+
+}
+.insert-form input{
+  width: 80%;
+}
+.insert-form label{
+  margin-right: 5px;
+  color: grey;
+}
+.insert-form div{
+ padding: 10px;
+ width: 40%;
+}
+.insert-form div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.progress{
+  width: 80%;
+}

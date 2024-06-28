@@ -31,7 +31,7 @@ namespace api.Controllers
         public async Task<IActionResult> uploadCsvFaster(IFormFile file)
         {
 
-
+            Console.WriteLine($"Received file: {file?.FileName}");
             try
             {
                 var factory = new ConnectionFactory { HostName = "localhost" };
@@ -49,6 +49,7 @@ namespace api.Controllers
                 using var memoryStream = new MemoryStream();
                 file.CopyTo(memoryStream);
                 var fileBytes = memoryStream.ToArray();
+                Console.WriteLine(fileBytes);
                 channel.BasicPublish(exchange: string.Empty,
                                      routingKey: "process_queue",
                                      body: fileBytes);
