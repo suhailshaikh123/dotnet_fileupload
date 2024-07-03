@@ -14,7 +14,7 @@ function App() {
   const [currentPage, setCurrentPage] = useState(1);
   const [load,setLoad]=useState(false);
   const [sortDetails,setSortDetails] = useState("none");
-  const [search,setSearch] = useState("");
+  const [search,setSearch] = useState("none");
   const [bar,setBar]=useState(0);
   return (
     <BrowserRouter>

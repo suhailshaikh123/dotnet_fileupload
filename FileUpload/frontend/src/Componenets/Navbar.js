@@ -31,7 +31,9 @@ function Navbar(props) {
       props.setSearch(searchValue);
       console.log(searchValue);
 
-      axios.post("http://localhost:3002/fetch",{currentPage:1,sort:props.sortDetails,search:searchValue}).then((response)=>
+      let url="http://localhost:5139/api/User/GetAll/"+1+"/"+props.sortDetails+"/"+searchValue;
+
+      axios.get(url).then((response)=>
         {
           
           if(response.data.msg === false)
@@ -40,8 +42,8 @@ function Navbar(props) {
             }
             else{
               console.log("called")
-          console.log(response.data.data);
-          props.setData(response.data.data);
+          console.log(response.data);
+          props.setData(response.data);
             }
         }).catch((error)=>
         {

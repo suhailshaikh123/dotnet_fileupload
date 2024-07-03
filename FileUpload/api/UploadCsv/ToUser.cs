@@ -34,7 +34,7 @@ namespace api.UploadCsv
             catch{
                 Console.WriteLine(fields[9]);
             }
-                            return null;
+                            return new User();
         }
         public static User ConvertToUser(this NpgsqlDataReader reader)
         {

@@ -24,20 +24,42 @@ namespace api.Controllers
             connectionString = "Host=localhost;Port=5432;Database=fileupload;Username=postgres;Password=suhail";
         }
 
-        [HttpGet("GetAll")]
-        public async Task<IActionResult> GetAll()
+        [HttpGet("GetAll/{currentPage}/{sort}/{search}")]
+        public async Task<IActionResult> GetAll([FromRoute] int currentPage, [FromRoute] string sort, [FromRoute] string search)
         {
 
             NpgsqlConnection conn = new NpgsqlConnection(connectionString);
 
-
+            Console.WriteLine(" Search: " + search);
+            Console.WriteLine("sORT: " + sort);
             conn.Open();
             var cmd = new NpgsqlCommand();
             cmd.Connection = conn;
-            string query = $"SELECT * FROM \"Users\" LIMIT 10;";
+            int offset = (currentPage - 1);
+            Console.WriteLine("offset: " + offset + "currentPage: " + currentPage);
+            string query = "SELECT * FROM \"Users\" ";
             // string query="SELECT * FROM \"getAllData\"();";
+            if (!String.Equals(search, "none"))
+            {
+                Console.WriteLine("hello world!");
+                query = query + "Where \"Email\" like '" + search + "%' ";
+            }
+
+            if (sort == "name")
+            {
+                query = query + "ORDER BY \"Name\" ";
+
+            }
+            else if (sort == "email")
+            {
+                query = query + "ORDER BY \"Email\" ";
+            }
+
+            Console.WriteLine(String.Equals(search, "none"));
+            query = query + "offset " + offset + " limit 10";
+            Console.WriteLine(query);
             List<User> users = (List<User>)await conn.QueryAsync<User>(query);
-            Console.WriteLine("reached End");
+
             conn.Close();
             return Ok(users);
         }
@@ -90,41 +112,45 @@ namespace api.Controllers
             cmd.Connection = conn;
 
             var userModel = user.ToUserFromUserDto();
-            if(ValidateCSV.Validate(userModel))
+            if (ValidateCSV.Validate(userModel))
             {
-                try{
-            StringBuilder insertQuery = new StringBuilder($"INSERT INTO \"Users\" (\"Email\", \"Name\", \"Country\", \"State\", \"City\", \"Telephone\", \"AddressLine1\", \"AddressLine2\", \"DateOfBirth\", \"SalaryFY2019\", \"SalaryFY2020\", \"SalaryFY2021\", \"SalaryFY2022\", \"SalaryFY2023\") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT (\"Email\") DO UPDATE SET \"Email\"=\"excluded\".\"Email\", \"Name\"=\"excluded\".\"Name\", \"Country\"=\"excluded\".\"Country\", \"State\"=\"excluded\".\"State\", \"City\"=\"excluded\".\"City\", \"Telephone\"=\"excluded\".\"Telephone\", \"AddressLine1\"=\"excluded\".\"AddressLine1\", \"AddressLine2\"=\"excluded\".\"AddressLine2\", \"DateOfBirth\"=\"excluded\".\"DateOfBirth\", \"SalaryFY2019\"=\"excluded\".\"SalaryFY2019\", \"SalaryFY2020\"=\"excluded\".\"SalaryFY2020\", \"SalaryFY2021\"=\"excluded\".\"SalaryFY2021\", \"SalaryFY2022\"=\"excluded\".\"SalaryFY2022\", \"SalaryFY2023\"=\"excluded\".\"SalaryFY2023\";");
-            cmd.CommandText = insertQuery.ToString();
+                try
+                {
+                    StringBuilder insertQuery = new StringBuilder($"INSERT INTO \"Users\" (\"Email\", \"Name\", \"Country\", \"State\", \"City\", \"Telephone\", \"AddressLine1\", \"AddressLine2\", \"DateOfBirth\", \"SalaryFY2019\", \"SalaryFY2020\", \"SalaryFY2021\", \"SalaryFY2022\", \"SalaryFY2023\") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT (\"Email\") DO UPDATE SET \"Email\"=\"excluded\".\"Email\", \"Name\"=\"excluded\".\"Name\", \"Country\"=\"excluded\".\"Country\", \"State\"=\"excluded\".\"State\", \"City\"=\"excluded\".\"City\", \"Telephone\"=\"excluded\".\"Telephone\", \"AddressLine1\"=\"excluded\".\"AddressLine1\", \"AddressLine2\"=\"excluded\".\"AddressLine2\", \"DateOfBirth\"=\"excluded\".\"DateOfBirth\", \"SalaryFY2019\"=\"excluded\".\"SalaryFY2019\", \"SalaryFY2020\"=\"excluded\".\"SalaryFY2020\", \"SalaryFY2021\"=\"excluded\".\"SalaryFY2021\", \"SalaryFY2022\"=\"excluded\".\"SalaryFY2022\", \"SalaryFY2023\"=\"excluded\".\"SalaryFY2023\";");
+                    cmd.CommandText = insertQuery.ToString();
 
-            Console.WriteLine(user.SalaryFY2019);
-            cmd.Parameters.AddWithValue($"@Email", user.Email);
-            cmd.Parameters.AddWithValue($"@Name", user.Name);
-            cmd.Parameters.AddWithValue($"@Country", user.Country);
-            cmd.Parameters.AddWithValue($"@State", user.State);
-            cmd.Parameters.AddWithValue($"@City", user.City);
-            cmd.Parameters.AddWithValue($"@Telephone", user.Telephone);
-            cmd.Parameters.AddWithValue($"@AddressLine1", user.AddressLine1);
-            cmd.Parameters.AddWithValue($"@AddressLine2", user.AddressLine2);
-            cmd.Parameters.AddWithValue($"@DateOfBirth", user.DateOfBirth);
-            cmd.Parameters.AddWithValue($"@SalaryFY2019", user.SalaryFY2019);
-            cmd.Parameters.AddWithValue($"@SalaryFY2020", user.SalaryFY2020);
-            cmd.Parameters.AddWithValue($"@SalaryFY2021", user.SalaryFY2021);
-            cmd.Parameters.AddWithValue($"@SalaryFY2022", user.SalaryFY2022);
-            cmd.Parameters.AddWithValue($"@SalaryFY2023", user.SalaryFY2023);
+                    Console.WriteLine(user.SalaryFY2019);
+                    cmd.Parameters.AddWithValue($"@Email", user.Email);
+                    cmd.Parameters.AddWithValue($"@Name", user.Name);
+                    cmd.Parameters.AddWithValue($"@Country", user.Country);
+                    cmd.Parameters.AddWithValue($"@State", user.State);
+                    cmd.Parameters.AddWithValue($"@City", user.City);
+                    cmd.Parameters.AddWithValue($"@Telephone", user.Telephone);
+                    cmd.Parameters.AddWithValue($"@AddressLine1", user.AddressLine1);
+                    cmd.Parameters.AddWithValue($"@AddressLine2", user.AddressLine2);
+                    cmd.Parameters.AddWithValue($"@DateOfBirth", user.DateOfBirth);
+                    cmd.Parameters.AddWithValue($"@SalaryFY2019", user.SalaryFY2019);
+                    cmd.Parameters.AddWithValue($"@SalaryFY2020", user.SalaryFY2020);
+                    cmd.Parameters.AddWithValue($"@SalaryFY2021", user.SalaryFY2021);
+                    cmd.Parameters.AddWithValue($"@SalaryFY2022", user.SalaryFY2022);
+                    cmd.Parameters.AddWithValue($"@SalaryFY2023", user.SalaryFY2023);
 
-            Console.WriteLine(cmd.CommandText);
-            Console.WriteLine("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
-            return CreatedAtAction(nameof(GetById), new { id = userModel.UserID }, userModel.ToUserDto());
+                    Console.WriteLine(cmd.CommandText);
+                    Console.WriteLine("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
+                    return CreatedAtAction(nameof(GetById), new { id = userModel.UserID }, userModel.ToUserDto());
                 }
-                catch{
+                catch
+                {
                     Console.WriteLine(user.SalaryFY2019);
                     return BadRequest();
                 }
-                finally{
-                    
+                finally
+                {
+
                 }
             }
-            else{
+            else
+            {
                 return BadRequest("Data is Not valid");
             }
         }
@@ -136,27 +162,27 @@ namespace api.Controllers
             NpgsqlCommand cmd = new NpgsqlCommand();
             conn.Open();
             cmd.Connection = conn;
-            string query=$"Delete from \"Users\" where \"UserID\"={id}";
+            string query = $"Delete from \"Users\" where \"UserID\"={id}";
             Console.WriteLine(query);
             cmd.CommandText = query;
             Console.WriteLine("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
             return Ok("Successfully Deleted");
         }
 
-               [HttpGet("DeleteByMail/{Email}")]
+        [HttpGet("DeleteByMail/{Email}")]
         public async Task<IActionResult> Delete([FromRoute] string Email)
         {
             NpgsqlConnection conn = new NpgsqlConnection(connectionString);
             NpgsqlCommand cmd = new NpgsqlCommand();
             conn.Open();
             cmd.Connection = conn;
-            string query=$"Delete from \"Users\" where \"Email\"='{Email}'";
+            string query = $"Delete from \"Users\" where \"Email\"='{Email}'";
             Console.WriteLine(query);
             cmd.CommandText = query;
             int rows_affected = await cmd.ExecuteNonQueryAsync();
-            if(rows_affected==0)
-            return NotFound();
-         
+            if (rows_affected == 0)
+                return NotFound();
+
             return Ok("Successfully Deleted");
         }
     }

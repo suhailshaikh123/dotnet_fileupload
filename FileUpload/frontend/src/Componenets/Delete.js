@@ -7,9 +7,10 @@ function Delete() {
     {
         event.preventDefault();
         const email = document.getElementById("email").value;
-        axios.post("http://localhost:3002/delete",{email:email}).then((response)=>
+        let url="http://localhost:5139/api/User/DeleteByMail/"+email;
+        axios.get(url).then((response)=>
         {
-            if(response.data.msg === "success")
+            if(response.status === 200)
                 {
                     alert("Data Deleted Successfully");
                     Navigate(-1);

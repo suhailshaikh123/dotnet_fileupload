@@ -13,29 +13,29 @@ namespace api.Models
 
         [Required]
         [MaxLength(255)] // Adjust the length as needed
-        public string Email { get; set; }
+        public string ?Email { get; set; }
 
         [Required]
         [MaxLength(100)] // Adjust the length as needed
-        public string Name { get; set; }
+        public string ?Name { get; set; }
 
         [MaxLength(100)] // Adjust the length as needed
-        public string Country { get; set; }
+        public string ?Country { get; set; }
 
         [MaxLength(100)] // Adjust the length as needed
-        public string State { get; set; }
+        public string ?State { get; set; }
 
         [MaxLength(100)] // Adjust the length as needed
-        public string City { get; set; }
+        public string ?City { get; set; }
 
         // Adjust the length as needed
-        public string Telephone { get; set; }
+        public string ?Telephone { get; set; }
 
         [MaxLength(255)] // Adjust the length as needed
-        public string AddressLine1 { get; set; }
+        public string ?AddressLine1 { get; set; }
 
         [MaxLength(255)] // Adjust the length as needed
-        public string AddressLine2 { get; set; }
+        public string ?AddressLine2 { get; set; }
 
         public DateTime DateOfBirth { get; set; }
 

@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using Npgsql;
-using System.Text;
 using RabbitMQ.Client;
 namespace api.Controllers
 {
@@ -28,10 +27,10 @@ namespace api.Controllers
 
 
         [HttpPost("fasterupload")]
-        public async Task<IActionResult> uploadCsvFaster(IFormFile file)
+        public  IActionResult uploadCsvFaster(IFormFile file)
         {
 
-            Console.WriteLine($"Received file: {file?.FileName}");
+            Console.WriteLine($"Received file: {file.FileName}");
             try
             {
                 var factory = new ConnectionFactory { HostName = "localhost" };
@@ -47,7 +46,7 @@ namespace api.Controllers
                 
 
                 using var memoryStream = new MemoryStream();
-                file.CopyTo(memoryStream);
+                file?.CopyTo(memoryStream);
                 var fileBytes = memoryStream.ToArray();
                 Console.WriteLine(fileBytes);
                 channel.BasicPublish(exchange: string.Empty,

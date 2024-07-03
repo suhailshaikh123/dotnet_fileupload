@@ -15,14 +15,14 @@ namespace api.UploadCsv
             
                 try
                 {
-                    string Email=user.Email;
-                    string Name=user.Name;
-                    string Country=user.Country;
-                    string State=user.State;
-                    string City=user.City;
-                    string Telephone=user.Telephone;
-                    string AddressLine1=user.AddressLine1;
-                    string AddressLine2=user.AddressLine2;
+                    string ?Email=user.Email;
+                    string ?Name=user.Name;
+                    string ?Country=user.Country;
+                    string ?State=user.State;
+                    string ?City=user.City;
+                    string ?Telephone=user.Telephone;
+                    string ?AddressLine1=user.AddressLine1;
+                    string ?AddressLine2=user.AddressLine2;
                     
                     decimal SalaryFY2019=Convert.ToDecimal(user.SalaryFY2019);
                     decimal SalaryFY2020=Convert.ToDecimal(user.SalaryFY2020);
@@ -51,7 +51,7 @@ namespace api.UploadCsv
             }
             
         
-        public static bool IsSalaryValid(decimal value,string fieldName)
+        public static bool IsSalaryValid(decimal ?value,string ?fieldName)
         {
             if(value <0)
             {
@@ -65,7 +65,7 @@ namespace api.UploadCsv
             }
             return true;
         }
-        public static bool IsStringValid(string value,string fieldName)
+        public static bool IsStringValid(string ?value,string ?fieldName)
         {
             if(string.IsNullOrEmpty(value))
             {

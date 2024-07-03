@@ -2,11 +2,12 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 function Form(props) {
   const navigate = useNavigate();
-  function handleClick() {
+  function handleClick(event) {
+    event.preventDefault();
     const formData = new FormData(); // Create a FormData object
     const fileInput = document.getElementById("myfile"); // Get the file input element
-    formData.append("myfile", fileInput.files[0]);
-    console.log("myfile",fileInput["myfile"]);
+    formData.append("file", fileInput.files[0]);
+    console.log("file",formData.get("myfile"));
     props.setLoad(true);
     axios
       .post("http://localhost:5139/UploadCsv/fasterupload", formData, {
@@ -23,7 +24,7 @@ function Form(props) {
       })
       .then((response) => {
         console.log("called from form");
-        props.setData(response.data);
+        // props.setData(response.data);
         console.log(response.data);
         props.setLoad(false);
       })
@@ -33,9 +34,9 @@ function Form(props) {
     navigate("/secondpage");
   }
   return (
-    <form enctype="multipart/form-data">
+    <form enctype="multipart/form-data" onSubmit={handleClick}>
       <input type="file" id="myfile" name="myfile" accept=".csv" />
-      <button type="button" onClick={handleClick}>
+      <button type="submit">
         submit
       </button>
     </form>

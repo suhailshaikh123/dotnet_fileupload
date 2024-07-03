@@ -132,7 +132,7 @@ namespace Worker.Consumer
                      arguments: null);
 
             byte[] byteArray;
-            var options = new JsonSerializerOptions { WriteIndented = false }; // Adjust options as needed
+            var options = new JsonSerializerOptions { WriteIndented = false };
 
             using (MemoryStream ms = new MemoryStream())
             {
