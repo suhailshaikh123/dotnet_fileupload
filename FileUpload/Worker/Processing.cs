@@ -13,15 +13,19 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http.HttpResults;
 using System.IO;
 using System.Text.Json;
+using Worker.Services;
 
 namespace Worker.Consumer
 {
     public class Processing
     {
         ConnectionFactory factory;
-        public Processing()
+        private readonly FileService _fileService;
+        public Processing(FileService fileService)
         {
+            _fileService = fileService;
             factory = new ConnectionFactory { HostName = "localhost" };
+            Start();
         }
         public void Start()
         {
@@ -42,11 +46,31 @@ namespace Worker.Consumer
             consumer.Received += async (model, ea) =>
                     {
                         Console.WriteLine("File Processing");
-                        var fileBytes = ea.Body.ToArray();
+                        byte[] body = ea.Body.ToArray();
+                        var message = JsonSerializer.Deserialize<FileMessage>(body);
+                        var fileId = message.FileId;
+                        var fileBytes = message.FileContent;
 
+                        try
+                        {
+                            //updating Status of a File.
+                            Models.File result = await _fileService.GetAsync(fileId);
+                            result.FileStatus = "Processing file about to Start";
+                            await _fileService.UpdateAsync(fileId, result);
+
+
+                            Console.WriteLine("Result from File State: " + result);
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Error occured While Updating State of file" + e);
+                        }
+
+
+                        Console.WriteLine($"Processing file {fileId}");
                         using MemoryStream memoryStream = new MemoryStream(fileBytes);
                         using StreamReader reader = new StreamReader(memoryStream, Encoding.UTF8);
-                        await ParseFile(reader);
+                        await ParseFile(reader, fileId);
                         // channel.BasicAck(deliveryTag:ea.DeliveryTag,multiple:false);
 
                     };
@@ -56,70 +80,108 @@ namespace Worker.Consumer
             Console.WriteLine(" Press [enter] to exit.");
             Console.ReadLine();
         }
-        public async Task<string> ParseFile(StreamReader reader)
+        public async Task<string> ParseFile(StreamReader reader, string fileId)
         {
-            List<User> userToUpload = new List<User>();
-            bool isFirstLine = true;
-
-
-
-            int i = 0;
-            int chunkSize = 4600;
-
-            while (!reader.EndOfStream)
+            try
             {
-                if (isFirstLine)
-                {
-                    isFirstLine = false;
-                    continue;
-                }
-                var line = await reader.ReadLineAsync();
-                var fields = line.Split(",");
+                List<User> userToUpload = new List<User>();
+                bool isFirstLine = true;
 
-                if (DateTime.TryParseExact(fields[8], "yyyy-MM-dd", null, System.Globalization.DateTimeStyles.None, out DateTime dateOfBirth))
+                Models.File result = await _fileService.GetAsync(fileId);
+                result.FileStatus = "File Processing Started";
+                await _fileService.UpdateAsync(fileId, result);
+
+
+
+                int i = 0;
+                int chunkSize = 4600;
+                int totalBatches = 0;
+                while (!reader.EndOfStream)
                 {
-                    try
+                    if (isFirstLine)
                     {
-                        User user = fields.ConvertToUser();
-                        user.DateOfBirth = dateOfBirth;
-                        if (ValidateCSV.Validate(user))
+                        isFirstLine = false;
+                        continue;
+                    }
+                    var line = await reader.ReadLineAsync();
+                    var fields = line.Split(",");
+
+                    if (DateTime.TryParseExact(fields[8], "yyyy-MM-dd", null, System.Globalization.DateTimeStyles.None, out DateTime dateOfBirth))
+                    {
+                        try
                         {
-                            userToUpload.Add(user);
+                            User user = fields.ConvertToUser();
+                            user.DateOfBirth = dateOfBirth;
+                            if (ValidateCSV.Validate(user))
+                            {
+                                userToUpload.Add(user);
+                            }
+                        }
+                        catch
+                        {
+                            Console.WriteLine("Error occured in processing worker");
                         }
                     }
-                    catch
+
+                    i++;
+
+                    // Execute the command and clear the parameters after every 1000 rows
+                    if (i % chunkSize == 0)
                     {
-                        Console.WriteLine("Error occured in processing worker");
+                        List<User> temp = new List<User>(userToUpload);
+
+
+                        AddToQueue(temp, fileId);
+                        Batch batch = new Batch
+                        {
+                            BatchId = Guid.NewGuid().ToString(),
+                            TotalCount = temp.Count,
+                            BatchStatus = "Batch is successfully Sent for Uploading"
+
+                        };
+                        await _fileService.AddBatchAsync(fileId, batch);
+                        // Clear the command 0parameters and the insert query
+                        userToUpload.Clear();
+                        totalBatches++;
+
                     }
                 }
 
-                i++;
-
-                // Execute the command and clear the parameters after every 1000 rows
-                if (i % chunkSize == 0)
+                // Execute the remaining command
+                if (i % chunkSize != 0)
                 {
                     List<User> temp = new List<User>(userToUpload);
-                    AddToQueue(temp);
+                    AddToQueue(temp, fileId);
+                    Batch batch = new Batch
+                    {
+                        BatchId = Guid.NewGuid().ToString(),
+                        TotalCount = temp.Count,
+                        BatchStatus = "Batch is successfully Sent for Uploading"
+
+                    };
+                    await _fileService.AddBatchAsync(fileId, batch);
                     // Clear the command 0parameters and the insert query
                     userToUpload.Clear();
-
+                    totalBatches++;
                 }
-            }
 
-            // Execute the remaining command
-            if (i % chunkSize != 0)
+
+                result = await _fileService.GetAsync(fileId);
+                result.FileStatus = "File Processing Finished Successfully";
+                result.TotalBatches = totalBatches;
+                await _fileService.UpdateAsync(fileId, result);
+                return "hello";
+            }
+            catch
             {
-                List<User> temp = new List<User>(userToUpload);
-                AddToQueue(temp);
-
+                Models.File result = await _fileService.GetAsync(fileId);
+                result.FileStatus = "File Processing Failed Try again";
+                await _fileService.UpdateAsync(fileId, result);
+                return "Failed";
             }
-
-
-
-            return "hello";
         }
 
-        public static void AddToQueue(List<User> userToUpload)
+        public static void AddToQueue(List<User> userToUpload, string fileId)
         {
             var factory = new ConnectionFactory { HostName = "localhost" };
             using var connection = factory.CreateConnection();

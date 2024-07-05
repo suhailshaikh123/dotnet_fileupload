@@ -1,15 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using api.Data;
 using api.Models;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using System.Diagnostics;
-using Npgsql;
 using RabbitMQ.Client;
+using System.Text.Json;
+using MongoDB.Bson.IO;
+using Newtonsoft.Json;
+using api.Services;
 namespace api.Controllers
 {
     [Route("[controller]")]
@@ -18,21 +15,45 @@ namespace api.Controllers
     {
 
         private readonly ApplicationDBContext _context;
-        public UploadCsvController(ApplicationDBContext context)
+        private readonly FileService _fileService;
+        private object product;
+
+        public UploadCsvController(ApplicationDBContext context,FileService fileService)
         {
             _context = context;
-        }
+            _fileService = fileService;
+        }   
 
 
 
 
         [HttpPost("fasterupload")]
-        public  IActionResult uploadCsvFaster(IFormFile file)
+        public async Task<IActionResult> uploadCsvFaster(IFormFile file)
         {
 
             Console.WriteLine($"Received file: {file.FileName}");
-            try
-            {
+                Models.File fileToInsert=new Models.File{
+                    Id="",
+                    FileId=Guid.NewGuid().ToString(),
+                    FileName=file.FileName,
+                    FileSize=file.Length,
+                    TotalBatches=0,
+                    FileStatus="Pending",
+                    FileError="",
+                    Batches=new List<Batch>()
+                };
+               try{
+              
+                await _fileService.CreateAsync(fileToInsert);
+               }
+               catch(Exception e){
+                return Ok("Failed to store state of file "+e.ToString());
+               }
+               
+                string json = Newtonsoft.Json.JsonConvert.SerializeObject(fileToInsert, Formatting.Indented);
+                Console.WriteLine(json);
+            
+                
                 var factory = new ConnectionFactory { HostName = "localhost" };
                 using var connection = factory.CreateConnection();
                 using var channel = connection.CreateModel();
@@ -43,24 +64,28 @@ namespace api.Controllers
                          autoDelete: false,
                          arguments: null);
 
-                
+
 
                 using var memoryStream = new MemoryStream();
                 file?.CopyTo(memoryStream);
                 var fileBytes = memoryStream.ToArray();
 
+                var data = new FileMessage
+                {
+                    FileId = fileToInsert.FileId,
+                    FileContent = fileBytes
+                };
                 Console.WriteLine(fileBytes);
-                
+                var message = System.Text.Json.JsonSerializer.Serialize(data);
+                var mes = Encoding.UTF8.GetBytes(message);
                 channel.BasicPublish(exchange: string.Empty,
                                      routingKey: "process_queue",
-                                     body: fileBytes);
+                                     body: mes);
 
                 return Ok("Data inserted successfully");
-            }
-            catch
-            {
-                return BadRequest("Error Occured");
-            }
+               }
+            
+            
+           
         }
     }
-}

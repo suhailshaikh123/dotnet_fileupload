@@ -8,6 +8,6 @@ namespace api.Models
     public class FileMessage
     {
         public string? FileId { get; set; }
-        public IFormFile FileContent { get; set; }
+        public byte[]? FileContent { get; set; }
     }
 }
