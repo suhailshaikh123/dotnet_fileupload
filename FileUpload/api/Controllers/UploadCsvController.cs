@@ -48,7 +48,9 @@ namespace api.Controllers
                 using var memoryStream = new MemoryStream();
                 file?.CopyTo(memoryStream);
                 var fileBytes = memoryStream.ToArray();
+
                 Console.WriteLine(fileBytes);
+                
                 channel.BasicPublish(exchange: string.Empty,
                                      routingKey: "process_queue",
                                      body: fileBytes);

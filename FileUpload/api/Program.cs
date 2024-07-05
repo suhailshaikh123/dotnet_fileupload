@@ -1,5 +1,7 @@
 using api.Data;
 using Microsoft.EntityFrameworkCore;
+using api.Models;
+using api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,9 +19,10 @@ builder.Services.AddControllers().AddNewtonsoftJson(options =>
 {
     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
 });
+builder.Services.Configure<FileStateDatabaseSettings>(
+    builder.Configuration.GetSection("FileStateDatabase"));
 
-
-
+builder.Services.AddSingleton<FileService>();
 var app = builder.Build();
 app.UseCors(builder => builder
        .AllowAnyHeader()

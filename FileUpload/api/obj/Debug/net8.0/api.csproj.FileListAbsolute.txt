@@ -275,3 +275,16 @@ D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.
 D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\RabbitMQ.Client.dll
 D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\obj\Debug\net8.0\api.AssemblyInfoInputs.cache
 D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\obj\Debug\net8.0\api.AssemblyInfo.cs
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\AWSSDK.Core.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\DnsClient.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\MongoDB.Bson.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\MongoDB.Driver.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\MongoDB.Driver.Core.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\SharpCompress.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\Snappier.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\ZstdSharp.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
