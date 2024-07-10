@@ -6,20 +6,21 @@ function Navbar(props) {
         const selectedValue = event.target.value;
         props.setSortDetails(selectedValue)
         
-        axios.post("http://localhost:3002/fetch",{currentPage:1,sort:selectedValue,search:props.search}).then((response)=>
-            {
-              if(response.data.msg === false)
-                {
-                  alert("please submit the form first")
-                }
-                else{
-              console.log(response.data.data);
-              props.setData(response.data.data);
-                }
-            }).catch((error)=>
-            {
-              console.log(error);
-            })
+        let url="http://localhost:5139/api/User/GetAll/"+1+"/"+selectedValue+"/"+props.search;
+
+        axios.get(url).then((response)=>
+          {
+            
+          
+                console.log("called url: "+url);
+            console.log(response.data);
+            props.setData(response.data);
+              
+          }).catch((error)=>
+          {
+            console.log(error);
+          })
+  
           props.setCurrentPage(1);
     }
 
@@ -27,9 +28,13 @@ function Navbar(props) {
     {
 
       event.preventDefault();
-      const searchValue=document.querySelector('input[aria-label="Search"]').value;
+      let  searchValue=document.querySelector('input[aria-label="Search"]').value;
+      if(searchValue === "")
+      {
+        searchValue="none";
+      }
       props.setSearch(searchValue);
-      console.log(searchValue);
+      console.log("search value is "+searchValue);
 
       let url="http://localhost:5139/api/User/GetAll/"+1+"/"+props.sortDetails+"/"+searchValue;
 
