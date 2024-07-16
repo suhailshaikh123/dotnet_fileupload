@@ -14,7 +14,12 @@ class Table {
     this.canvas = canvas;
     this.columns_width = new Array(this.columns.length);
     this.indexing = new Indexing(this.context, this.rows);
-    this.selectedCell = false;
+    this.selectedCell = [];
+    this.isSelecting = false;
+    this.endX = 0;
+    this.endY = 0;
+    this.startX = 0;
+    this.startY = 0;
   }
 
   draw() {
@@ -142,17 +147,30 @@ class Table {
       }
       if (this.isResizing) break;
     }
+    if(this.isResizing == false)
+    {
+      this.clearSelect();
+      this.isSelecting =true;
+      this.selectedCell = [];
+      this.startX = x;
+      this.startY = y;
+      this.endX = x;
+      this.endY = y;
+      // this.updateSelect();
+    }
   
-    this.selectCell(x, y);
+    this.selectCell(x,y);
   }
 
   handleMouseMove(event) {
-    
+
+    const { clientX } = event;
+    const rect = this.canvas.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
     if (this.isResizing) {
       console.log("mouse moving ");
-      const { clientX } = event;
-      const rect = this.canvas.getBoundingClientRect();
-      const x = event.clientX - rect.left;
+
       const newWidth = this.initialWidth + (x - this.startX);
       console.log("newWidth: " + newWidth);
       if (newWidth > 30) {
@@ -164,20 +182,57 @@ class Table {
         this.redraw();
       }
     }
+    else if(this.isSelecting == true)
+    {
+      this.clearSelect();
+      this.endX = x;
+      this.endY = y;
+      this.updateSelect();
+    }
+    // this.selectCell();
   }
+  updateSelect() {
+    const minX = Math.min(this.startX, this.endX);
+    const maxX = Math.max(this.startX, this.endX);
+    const minY = Math.min(this.startY, this.endY);
+    const maxY = Math.max(this.startY, this.endY);
 
+    for (let i = 1; i < this.rows; i++) {
+        for (let j = 1; j < this.columns; j++) {
+            let cell = this.data[i][j];
+            const cellRight = cell.topX + cell.width;
+            const cellBottom = cell.topY + cell.height;
+
+            if (cell.topX < maxX && cellRight > minX && cell.topY < maxY && cellBottom > minY) {
+                cell.select();
+                this.selectedCell.push(cell);
+            }
+        }
+    }
+}
+
+
+  clearSelect()
+  {
+    for(let i= 0;i < this.selectedCell.length;i++)
+    {
+      this.selectedCell[i].deselect();
+    }
+    this.selectedCell = [];
+  }
   handleMouseUp(event) {
     console.log("Mouse UP ");
     this.canvas.style.cursor = "default";
     this.isResizing = false;
     this.resizeColumnIndex = -1;
+    this.isSelecting =false;
   }
   selectCell(x, y) {
     // Deselect previously selected cell
-    if (this.selectedCell) {
-      this.selectedCell.deselect();
-      this.selectedCell = false;
-    }
+    // if (this.selectedCell) {
+    //   this.selectedCell.deselect();
+    //   this.selectedCell = false;
+    // }
 
     // Find and select the new cell
     for (let i = 1; i < this.rows; i++) {
@@ -185,7 +240,7 @@ class Table {
         let cell = this.data[i][j];
         if (cell.containsPoint(x, y)) {
           cell.select();
-          this.selectedCell = cell;
+          this.selectedCell.push(cell);
           return;
         }
       }
