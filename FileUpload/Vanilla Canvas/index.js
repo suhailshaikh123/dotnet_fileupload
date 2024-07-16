@@ -28,6 +28,6 @@ indexing.draw();
 canvas.addEventListener("mousedown", (event) => table.handleMouseDown(event));
 canvas.addEventListener("mousemove", (event) => table.handleMouseMove(event));
 canvas.addEventListener("mouseup", (event) => table.handleMouseUp(event));
-// canvas.addEventListener("click",(event) => table.handleSingleClick(event));
+canvas.addEventListener("dblclick",(event) => table.handleDoubleClick(event));
 
 

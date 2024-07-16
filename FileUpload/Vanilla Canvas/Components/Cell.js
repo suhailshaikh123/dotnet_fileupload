@@ -13,25 +13,31 @@ class Cell {
   draw() {
     
     if (this.selected) {
+
+      this.context.clearRect(this.topX,this.topY,this.width,this.height);
       this.context.fillStyle = "rgba(0, 120, 215, 0.3)"; // Light blue highlight
       this.context.fillRect(this.topX, this.topY, this.width, this.height);
-      this.context.fillStyle = "#E1E1E1"; // Reset to default fill color
+      
+      this.context.fillStyle = "black";
+      this.context.strokeStyle = "#E1E1E1";
     }
     else{
         this.context.clearRect(this.topX,this.topY,this.width,this.height);
         this.context.strokeRect(this.topX, this.topY, this.width, this.height);
-        this.DrawText();
     }
+    this.DrawText();
   }
   containsPoint(x, y) {
     return x >= this.topX && x <= this.topX + this.width && y >= this.topY && y <= this.topY + this.height;
 }
   AddText(text) {
     this.text = text;
-    this.context.fillText(text, this.topX + 20, this.topY + 20);
+    this.context.font = "12px Arial";
+    this.context.fillText(text, this.topX + 12, this.topY + 20);
   }
   DrawText() {
-    this.context.fillText(this.text, this.topX + 20, this.topY + 20);
+    this.context.font = "12px Arial";
+    this.context.fillText(this.text, this.topX + 12, this.topY + 20);
   }
 
   isPointNearBorder(x, y) {
