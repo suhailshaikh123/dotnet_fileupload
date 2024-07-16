@@ -7,19 +7,29 @@ using System.Text.Json;
 using MongoDB.Bson.IO;
 using Newtonsoft.Json;
 using api.Services;
+using log4net;
+using log4net.Config;
+
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]
 namespace api.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    
     public class UploadCsvController : ControllerBase
     {
 
         private readonly ApplicationDBContext _context;
         private readonly FileService _fileService;
-        private object product;
+       
+         
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+       
+        
 
         public UploadCsvController(ApplicationDBContext context,FileService fileService)
         {
+            XmlConfigurator.Configure();
             _context = context;
             _fileService = fileService;
         }   
@@ -31,7 +41,7 @@ namespace api.Controllers
         public async Task<IActionResult> uploadCsvFaster(IFormFile file)
         {
 
-            Console.WriteLine($"Received file: {file.FileName}");
+            log.Info($"Received file: {file.FileName}");
                 Models.File fileToInsert=new Models.File{
                     Id="",
                     FileId=Guid.NewGuid().ToString(),
@@ -47,11 +57,12 @@ namespace api.Controllers
                 await _fileService.CreateAsync(fileToInsert);
                }
                catch(Exception e){
+                log.Error("Failed to store state of file "+e.ToString());
                 return Ok("Failed to store state of file "+e.ToString());
                }
                
                 string json = Newtonsoft.Json.JsonConvert.SerializeObject(fileToInsert, Formatting.Indented);
-                Console.WriteLine(json);
+                log.Info(json);
             
                 
                 var factory = new ConnectionFactory { HostName = "localhost" };
@@ -75,7 +86,7 @@ namespace api.Controllers
                     FileId = fileToInsert.FileId,
                     FileContent = fileBytes
                 };
-                Console.WriteLine(fileBytes);
+                // log.Info(fileBytes);
                 var message = System.Text.Json.JsonSerializer.Serialize(data);
                 var mes = Encoding.UTF8.GetBytes(message);
                 channel.BasicPublish(exchange: string.Empty,

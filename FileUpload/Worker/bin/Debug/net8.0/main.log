@@ -1,0 +1,19 @@
+2024-07-12 12:26:07,960 [1] INFO Worker.Consumer.Processing.Start[47] -  [*] Waiting for file to Come
+2024-07-12 12:26:08,021 [1] INFO Worker.Consumer.Processing.Start[86] -  Press [enter] to exit.
+2024-07-12 12:37:20,434 [1] INFO Worker.Consumer.Processing.Start[47] -  [*] Waiting for file to Come
+2024-07-12 12:37:20,467 [1] INFO Worker.Consumer.Processing.Start[86] -  Press [enter] to exit.
+2024-07-12 12:52:20,621 [3] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-07-12 12:52:21,748 [17] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-07-12 12:52:21,757 [17] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 6ed0612f-00f3-4ace-bf65-8388f2556dfa
+2024-07-12 12:54:06,820 [4] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-07-12 12:54:06,883 [4] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-07-12 12:54:06,885 [4] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file f8f17022-23a6-43aa-95eb-610765350358
+2024-07-12 12:56:20,389 [20] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-07-12 12:56:20,451 [20] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-07-12 12:56:20,453 [20] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 8aaac8fc-ac3f-4439-951e-65811e486338
+2024-07-12 12:58:30,944 [19] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-07-12 12:58:31,010 [7] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-07-12 12:58:31,013 [7] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file d5cbc15d-bd3a-401e-beaa-d8daeb8426db
+2024-07-12 13:02:57,778 [17] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-07-12 13:02:57,847 [9] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-07-12 13:02:57,848 [9] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 0a2fab5c-719a-4413-8148-d3d00e4ece89

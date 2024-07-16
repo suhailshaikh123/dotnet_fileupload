@@ -288,3 +288,5 @@ D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.
 D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
 D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
 D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\log4net.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll

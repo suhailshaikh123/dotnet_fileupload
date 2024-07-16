@@ -12,6 +12,10 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
+using ToDatabase.Models;
+using ToDatabase.Services;
+using log4net;
+using log4net.Config;
 
 namespace ToDatabase
 {
@@ -20,9 +24,17 @@ namespace ToDatabase
     public class Processing
     {
         ConnectionFactory factory;
-        public Processing()
+        private readonly FileService _fileService;
+        [assembly: log4net.Config.XmlConfigurator(Watch =true)]
+        
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        
+        public Processing(FileService fileService)
         {
+            XmlConfigurator.Configure();
+            _fileService = fileService;
             factory = new ConnectionFactory { HostName = "localhost" };
+            Start();
         }
         // factory = new ConnectionFactory { HostName = "localhost" };
         public void Start()
@@ -38,7 +50,8 @@ namespace ToDatabase
 
             channel.BasicQos(prefetchSize: 0, prefetchCount: 1, global: false);
 
-            Console.WriteLine(" [*] Waiting for Batches To come");
+          
+            log.Info(" [*] Waiting for Batches To come");
 
 
             var consumer = new EventingBasicConsumer(channel);
@@ -46,25 +59,32 @@ namespace ToDatabase
             var options = new JsonSerializerOptions { WriteIndented = false };
             consumer.Received += async (model, ea) =>
                     {
-                        Console.WriteLine("Batch Processing");
-
-                        var byteArray = ea.Body.ToArray();
+                        log.Info("Batch Processing");
+                    
+                        byte []body=ea.Body.ToArray();
+                        var message= JsonSerializer.Deserialize<BatchMessage>(body);
+                        string FileId=message.fileId;
+                        string BatchId=message.batchId;
+                        var byteArray=message.Users;
+                        
+                      
+                       
                         MemoryStream ms = new MemoryStream(byteArray);
 
 
                         Users = JsonSerializer.Deserialize<List<User>>(ms, options);
-
-                        InsertToDatabase(Users);
+                        
+                        InsertToDatabase(Users,FileId,BatchId);
                     };
             channel.BasicConsume(queue: "database_queue",
                       autoAck: true,
                       consumer: consumer);
-            Console.WriteLine(" Press [enter] to exit.");
+            log.Info(" Press [enter] to exit.");
             Console.ReadLine();
         }
 
 
-        public async Task<string> InsertToDatabase(List<User> Users)
+        public async Task<string> InsertToDatabase(List<User> Users,string fileId,string batchId)
         {
             Stopwatch stopWatch = new Stopwatch();
             Stopwatch stop = new Stopwatch();
@@ -112,29 +132,41 @@ namespace ToDatabase
                         }
                         catch
                         {
-                            Console.WriteLine("Error Occured while adding Paramaters to Insert Query");
+                            log.Error("Error Occured while adding Paramaters to Insert Query");
                         }
 
 
                         i++;
 
-                        // Execute the command and clear the parameters after every 1000 rows
+                       
                     }
+                    Batch batch = await _fileService.GetBatchAsync(fileId,batchId);
+                    
                     try{
+                    
+                   
                     string query = insertQuery.ToString().Substring(0, insertQuery.Length - 2);
                     query = query + " ON CONFLICT DO NOTHING;";
                     cmd.CommandText = query;
                     stop.Start();
-                    Console.WriteLine("Rows Affected: " + cmd.ExecuteNonQuery());
+                    int rows_affected = cmd.ExecuteNonQuery();
+                    log.Info("Rows Affected: " + rows_affected);
                     stop.Stop();
-                    Console.WriteLine("Time taken: " + stop.Elapsed);
-                    
+                    log.Info("Time taken: " + stop.Elapsed);  
+                
+                    batch.BatchStatus = "Batch Successfully Inserted";
                     stop.Reset();
+                    _fileService.UpdateBatchAsync(fileId, batchId, batch);
                     }
-                    catch{
-                        Console.WriteLine("Error Occured while inserting to database");
+                    catch(Exception e){
+                        log.Error("Error Occured while inserting to database", e);
+                        batch.BatchStatus = "Error Occured while inserting to database";
+                        batch.ErrorDetails = e.ToString();
+                        _fileService.UpdateBatchAsync(fileId, batchId, batch);
                     }
-                    Console.WriteLine("Batch inserted successfully");
+                    
+                    log.Info("Batch Inserted Successfully");
+                   
                     Console.WriteLine("");
 
                 }

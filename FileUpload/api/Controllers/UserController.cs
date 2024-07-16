@@ -8,6 +8,12 @@ using Npgsql;
 using Dapper;
 using System.Text;
 using api.UploadCsv;
+using Newtonsoft.Json;
+using log4net;
+using log4net.Config;
+
+
+
 namespace api.Controllers
 
 {
@@ -18,6 +24,7 @@ namespace api.Controllers
     {
         private readonly ApplicationDBContext _context;
         string connectionString;
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         public UserController(ApplicationDBContext context)
         {
             _context = context;
@@ -30,18 +37,18 @@ namespace api.Controllers
 
             NpgsqlConnection conn = new NpgsqlConnection(connectionString);
 
-            Console.WriteLine(" Search: " + search);
-            Console.WriteLine("sORT: " + sort);
+            log.Info(" Search: " + search);
+            log.Info("sORT: " + sort);
             conn.Open();
             var cmd = new NpgsqlCommand();
             cmd.Connection = conn;
             int offset = (currentPage - 1);
-            Console.WriteLine("offset: " + offset + "currentPage: " + currentPage);
+            log.Info("offset: " + offset + "currentPage: " + currentPage);
             string query = "SELECT * FROM \"Users\" ";
             // string query="SELECT * FROM \"getAllData\"();";
             if (!String.Equals(search, "none"))
             {
-                Console.WriteLine("hello world!");
+                log.Info("hello world!");
                 query = query + "Where \"Email\" like '" + search + "%' ";
             }
 
@@ -55,9 +62,9 @@ namespace api.Controllers
                 query = query + "ORDER BY \"Email\" ";
             }
 
-            Console.WriteLine(String.Equals(search, "none"));
-            query = query + "offset " + offset + " limit 10";
-            Console.WriteLine(query);
+            log.Info(String.Equals(search, "none"));
+            query = query + "offset " + offset + " limit 1000";
+            log.Info(query);
             List<User> users = (List<User>)await conn.QueryAsync<User>(query);
 
             conn.Close();
@@ -92,7 +99,7 @@ namespace api.Controllers
             cmd.Connection = conn;
 
             string query = $"SELECT * FROM \"Users\" WHERE \"Email\" = '{Email}';";
-            Console.WriteLine(query);
+            log.Info(query);
             List<User> users = (List<User>)await conn.QueryAsync<User>(query);
             if (users.Capacity == 0)
             {
@@ -103,9 +110,14 @@ namespace api.Controllers
         }
 
 
+       
         [HttpPost("Create")]
-        public async Task<IActionResult> Create(CreateUserDto user)
+        public async Task<IActionResult> Create()
         {
+            CreateUserDto user = new CreateUserDto();
+            // var temp = await Request.Body.ReadAsAsyncString();
+            string json = Newtonsoft.Json.JsonConvert.SerializeObject(user, Formatting.Indented);
+            log.Info(json);
             NpgsqlConnection conn = new NpgsqlConnection(connectionString);
             NpgsqlCommand cmd = new NpgsqlCommand();
             conn.Open();
@@ -119,7 +131,7 @@ namespace api.Controllers
                     StringBuilder insertQuery = new StringBuilder($"INSERT INTO \"Users\" (\"Email\", \"Name\", \"Country\", \"State\", \"City\", \"Telephone\", \"AddressLine1\", \"AddressLine2\", \"DateOfBirth\", \"SalaryFY2019\", \"SalaryFY2020\", \"SalaryFY2021\", \"SalaryFY2022\", \"SalaryFY2023\") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT (\"Email\") DO UPDATE SET \"Email\"=\"excluded\".\"Email\", \"Name\"=\"excluded\".\"Name\", \"Country\"=\"excluded\".\"Country\", \"State\"=\"excluded\".\"State\", \"City\"=\"excluded\".\"City\", \"Telephone\"=\"excluded\".\"Telephone\", \"AddressLine1\"=\"excluded\".\"AddressLine1\", \"AddressLine2\"=\"excluded\".\"AddressLine2\", \"DateOfBirth\"=\"excluded\".\"DateOfBirth\", \"SalaryFY2019\"=\"excluded\".\"SalaryFY2019\", \"SalaryFY2020\"=\"excluded\".\"SalaryFY2020\", \"SalaryFY2021\"=\"excluded\".\"SalaryFY2021\", \"SalaryFY2022\"=\"excluded\".\"SalaryFY2022\", \"SalaryFY2023\"=\"excluded\".\"SalaryFY2023\";");
                     cmd.CommandText = insertQuery.ToString();
 
-                    Console.WriteLine(user.SalaryFY2019);
+                    log.Info(user.SalaryFY2019);
                     cmd.Parameters.AddWithValue($"@Email", user.Email);
                     cmd.Parameters.AddWithValue($"@Name", user.Name);
                     cmd.Parameters.AddWithValue($"@Country", user.Country);
@@ -135,18 +147,14 @@ namespace api.Controllers
                     cmd.Parameters.AddWithValue($"@SalaryFY2022", user.SalaryFY2022);
                     cmd.Parameters.AddWithValue($"@SalaryFY2023", user.SalaryFY2023);
 
-                    Console.WriteLine(cmd.CommandText);
-                    Console.WriteLine("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
+                    log.Info(cmd.CommandText);
+                    log.Info("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
                     return CreatedAtAction(nameof(GetById), new { id = userModel.UserID }, userModel.ToUserDto());
                 }
                 catch
                 {
-                    Console.WriteLine(user.SalaryFY2019);
+                    log.Error(user.SalaryFY2019);
                     return BadRequest();
-                }
-                finally
-                {
-
                 }
             }
             else
@@ -163,9 +171,9 @@ namespace api.Controllers
             conn.Open();
             cmd.Connection = conn;
             string query = $"Delete from \"Users\" where \"UserID\"={id}";
-            Console.WriteLine(query);
+            log.Info(query);
             cmd.CommandText = query;
-            Console.WriteLine("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
+            log.Info("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
             return Ok("Successfully Deleted");
         }
 
@@ -177,7 +185,7 @@ namespace api.Controllers
             conn.Open();
             cmd.Connection = conn;
             string query = $"Delete from \"Users\" where \"Email\"='{Email}'";
-            Console.WriteLine(query);
+            log.Info(query);
             cmd.CommandText = query;
             int rows_affected = await cmd.ExecuteNonQueryAsync();
             if (rows_affected == 0)

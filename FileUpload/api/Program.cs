@@ -2,8 +2,12 @@ using api.Data;
 using Microsoft.EntityFrameworkCore;
 using api.Models;
 using api.Services;
+using log4net;
+using Microsoft.Extensions.Logging;
+using log4net;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -23,13 +27,15 @@ builder.Services.Configure<FileStateDatabaseSettings>(
     builder.Configuration.GetSection("FileStateDatabase"));
 
 builder.Services.AddSingleton<FileService>();
+builder.Logging.AddLog4Net();
+// builder.Services.AddSingleton<>();
 var app = builder.Build();
 app.UseCors(builder => builder
        .AllowAnyHeader()
        .AllowAnyMethod()
        .AllowAnyOrigin()
     );
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -37,5 +43,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.MapControllers();
-app.Run();
 
+
+app.Run();

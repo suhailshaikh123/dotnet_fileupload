@@ -69,7 +69,7 @@ namespace api.UploadCsv
         {
             if(string.IsNullOrEmpty(value))
             {
-                Console.WriteLine(fieldName+" is empty" );
+                Console.WriteLine(fieldName+" is empty " +value);
                 return false;
             }
             if(value.Length>=100)

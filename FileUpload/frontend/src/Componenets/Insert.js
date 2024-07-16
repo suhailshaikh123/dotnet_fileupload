@@ -23,21 +23,43 @@ function Insert() {
   
 
         const formData = new FormData();
-        formData.append("Name", Name);
-        formData.append("Email", Email);
-        formData.append("AddressLine1", AddressLine1);
-        formData.append("Country", Country);
-        formData.append("State", State);
-        formData.append("City", City);
-        formData.append("Telephone", Telephone);
-        formData.append("AddressLine2", AddressLine2);
+        
+        var obj={
+          Email:Email,
+          Name:Name,
+          Country:Country,
+          State:State,
+          City:City,
+          Telephone:Telephone,
+          AddressLine1:AddressLine1,
+          AddressLine2:AddressLine2,
+          DateOfBirth:DateOfBirth,
+          SalaryFY2019:SalaryFY2019,
+          SalaryFY2020:SalaryFY2020,
+          SalaryFY2021:SalaryFY2021,
+          SalaryFY2022:SalaryFY2022,
+          SalaryFY2023:SalaryFY2023
+        };
+        console.log(obj.Email);
+        formData.append("user",obj);
+        // formData.append("Name", Name);
+        // formData.append("Email", Email);
+        
+        // formData.append("Country", Country);
+        // formData.append("State", State);
+        // formData.append("City", City);
 
-        formData.append("DateOfBirth", DateOfBirth);
-        formData.append("SalaryFY2019", SalaryFY2019);
-        formData.append("SalaryFY2020", SalaryFY2020);
-        formData.append("SalaryFY2021", SalaryFY2021);
-        formData.append("SalaryFY2022", SalaryFY2022);
-        formData.append("SalaryFY2023", SalaryFY2023);
+        // formData.append("Telephone", Telephone);
+        // formData.append("AddressLine1", AddressLine1);
+        // formData.append("AddressLine2", AddressLine2);
+
+        // formData.append("DateOfBirth", DateOfBirth);
+
+        // formData.append("SalaryFY2019", SalaryFY2019);
+        // formData.append("SalaryFY2020", SalaryFY2020);
+        // formData.append("SalaryFY2021", SalaryFY2021);
+        // formData.append("SalaryFY2022", SalaryFY2022);
+        // formData.append("SalaryFY2023", SalaryFY2023);
 
         for (let [key, value] of formData.entries()) {
             console.log(key, value);
@@ -45,15 +67,11 @@ function Insert() {
         axios.post("http://localhost:5139/api/User/Create",formData)
         .then((response)=>
         {
-            if(response.data.msg === "success")
-                {
-                    alert("Data Inserted Successfully");
-                    Navigate(-1);
-                }
-                else{
-                    alert("Data Insert Failed");
-                }
-        })
+            console.log(response.data)
+        }).catch((err)=>{
+          console.log(err);
+        }
+        )
     }
     
   return (
@@ -77,7 +95,7 @@ function Insert() {
         </div>
         <div>
         <label for="Telephone">Telephone: </label>
-        <input type="tel" id="Telephone" name="Telephone" />
+        <input type="text" id="Telephone" name="Telephone" />
         </div>
         <div>
         <label for="City">City: </label>

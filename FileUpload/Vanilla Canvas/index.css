@@ -1,0 +1,12 @@
+nav{
+    background-color: #EDF2FA;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+nav input {
+    margin-top: 20px;
+}
