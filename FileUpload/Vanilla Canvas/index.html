@@ -6,15 +6,20 @@
     <title>Excel</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/c256e500f7.js" defer crossorigin="anonymous"></script>
+    <script type="module" src="index.js" defer></script>
 </head>
 <body>
+    <div class="container">
     <nav>
-        <i class="fa-solid fa-upload">
-            <input type="file" aria-label="file-upload">
-        </i>
+        <form id="uploadForm" action="" enctype="multipart/form-data">
+            <input type="file" aria-label="file-upload" id="file">
+            <button type="submit">submit</button>
+        </form>
     </nav>
     <canvas id="myCanvas"></canvas>
+    <!-- <footer>
+        sum: 100
+    </footer> -->
 </body>
-
-<script type="module" src="index.js" defer ></script>
+</div>
 </html>

@@ -13,15 +13,24 @@ class Table {
     this.initialWidth = 0;
     this.canvas = canvas;
     this.columns_width = new Array(this.columns.length);
-    this.indexing = new Indexing(this.context, this.rows);
+    this.indexing = new Indexing(this.context, this.rows, this.data);
     this.selectedCell = [];
     this.isSelecting = false;
     this.endX = 0;
     this.endY = 0;
     this.startX = 0;
     this.startY = 0;
+    this.metaData = {
+      sum: 0,
+      average: 0,
+      min: Infinity,
+      max: -Infinity,
+      count: 0,
+      count_numbers: 0,
+    };
   }
 
+  // Draw Functions
   draw() {
     let width = 130;
     let height = 30;
@@ -31,7 +40,7 @@ class Table {
       let text = "";
       this.data[i] = new Array(this.columns);
       for (let j = 1; j < this.columns; j++) {
-        text = "suhai shaikh";
+        text = "";
         let cell = new Cell(this.context, topX, topY, height, width, i, j);
         this.columns_width[j] = width;
         cell.draw();
@@ -42,57 +51,44 @@ class Table {
       topX = width;
       topY += height;
     }
+  }
+  drawCsv(csvData) {
+    let width = 130;
+    let height = 30;
+    let topX = width;
+    let topY = height;
+    let keys = Object.keys(csvData[0]);
+    for (let i = 1; i <= csvData.length; i++) {
+      let text = "";
 
-    this.getData();
+      for (let j = 1; j <= keys.length; j++) {
+        if (i == 1) {
+          text = keys[j - 1];
+        } else {
+          text = csvData[i - 1][keys[j - 1]];
+        }
+        this.data[i][j].text = text;
+      }
+    }
+    this.redraw();
   }
 
-  getColumnsWidth() {
-    return this.columns_width;
-  }
-
-  getData() {
-    return this.data;
-  }
   redraw() {
-    for (let i = 1; i < this.data.length; i++) {
+    for (let i = 0; i < this.data.length; i++) {
       for (let j = 1; j < this.data[i].length; j++) {
         if (j != 1) {
           this.data[i][j].topX =
             this.data[i][j - 1].topX + this.data[i][j - 1].width;
         }
+
         this.data[i][j].draw();
-        // this.data[i][j].DrawText();
       }
     }
 
-    let header = new Headers(this.context, this.columns, this.columns_width);
-
-    header.draw(0);
     this.indexing.draw();
   }
-  handleDoubleClick(event) {
-    console.log('Double clicked');
-    const { clientX, clientY } = event;
-    const rect = this.canvas.getBoundingClientRect();
-    const x = event.clientX - rect.left;
-    const y = event.clientY - rect.top;
 
-    for (let i = 1; i < this.rows; i++) {
-      for (let j = 1; j < this.columns; j++) {
-        let cell = this.data[i][j];
-        if (cell.containsPoint(x, y)) {
-          this.createInputField(event,cell);
-          break;
-        }
-      }
-    }
-  }
- 
- 
-  createInputField(event,cell) {
-    console.log("create input field");
-
-    console.log(this.canvas.offsetLeft + " " + this.canvas.offsetTop)
+  createInputField(event, cell) {
     const input = document.createElement("input");
     input.type = "text";
     input.value = cell.text;
@@ -100,20 +96,17 @@ class Table {
     input.style.left = `${cell.topX + this.canvas.offsetLeft}px`;
     input.style.top = `${cell.topY + this.canvas.offsetTop}px`;
     input.style.width = `${cell.width - 2}px`;
-    input.style.height = `${cell.height - 2}px`; 
-    input.style.fontSize = "12px"; 
+    input.style.height = `${cell.height - 2}px`;
+    input.style.fontSize = "12px";
     input.style.border = "1px solid #rgb(221,221,221)";
-  
+
     input.style.boxSizing = "border-box";
 
-
-
     input.addEventListener("focus", () => {
-      console.log("I am in foucs")
       // input.style.backgroundColor = "#0B57D0";
       input.style.borderColor = "red";
     });
-    
+
     input.addEventListener("blur", () => {
       cell.text = input.value;
       document.body.removeChild(input);
@@ -127,124 +120,269 @@ class Table {
     input.select();
   }
 
-  handleMouseDown(event) {
-    console.log("mouse move down: ");
+  // EventListener functions
+  handleDoubleClick(event) {
     const { clientX, clientY } = event;
     const rect = this.canvas.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
+
     for (let i = 1; i < this.rows; i++) {
       for (let j = 1; j < this.columns; j++) {
         let cell = this.data[i][j];
-        if (cell.isPointNearBorder(x, y)) {
-          this.canvas.style.cursor = "col-resize";
-          this.isResizing = true;
-          this.resizeColumnIndex = j;
-          this.startX = x;
-          this.initialWidth = cell.width;
+        if (cell.containsPoint(x, y)) {
+          this.createInputField(event, cell);
           break;
+        }
+      }
+    }
+  }
+  handleMouseDown(event) {
+    const { clientX, clientY } = event;
+    const rect = this.canvas.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    const delta = [-1, 0, 1];
+    let { rowIndex, colIndex } = this.searchCell(x, y);
+    for (let i = 0; i < delta.length; i++) {
+      for (let j = 0; j < delta.length; j++) {
+        let row = rowIndex + delta[j];
+        let col = colIndex + delta[i];
+        if (row >= 0 && row < this.rows && col >= 0 && col < this.columns) {
+          let cell = this.data[row][col];
+          if (cell.isPointNearBorder(x, y)) {
+            this.canvas.style.cursor = "col-resize";
+            this.isResizing = true;
+            this.resizeColumnIndex = col;
+            this.startX = x;
+            this.initialWidth = cell.width;
+
+            break;
+          }
         }
       }
       if (this.isResizing) break;
     }
-    if(this.isResizing == false)
-    {
+
+    if (this.isResizing == false) {
       this.clearSelect();
-      this.isSelecting =true;
+      this.isSelecting = true;
       this.selectedCell = [];
       this.startX = x;
       this.startY = y;
       this.endX = x;
       this.endY = y;
-      // this.updateSelect();
+      
     }
-  
-    this.selectCell(x,y);
+
+    this.selectCell(x, y);
   }
 
   handleMouseMove(event) {
-
     const { clientX } = event;
     const rect = this.canvas.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
     if (this.isResizing) {
-      console.log("mouse moving ");
-
       const newWidth = this.initialWidth + (x - this.startX);
-      console.log("newWidth: " + newWidth);
+
       if (newWidth > 30) {
-        for (let i = 1; i < this.rows; i++) {
+        for (let i = 0; i < this.rows; i++) {
           this.data[i][this.resizeColumnIndex].resize(newWidth);
         }
         this.columns_width[this.resizeColumnIndex] = newWidth;
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.redraw();
       }
-    }
-    else if(this.isSelecting == true)
-    {
+    } else if (this.isSelecting == true) {
+      this.clearMetaData();
       this.clearSelect();
       this.endX = x;
       this.endY = y;
+      
       this.updateSelect();
     }
     // this.selectCell();
   }
+  handleMouseUp(event) {
+    this.canvas.style.cursor = "default";
+    this.isResizing = false;
+    this.resizeColumnIndex = -1;
+    this.isSelecting = false;
+    console.log(this.metaData)
+  }
+  handleKeyPress(event) {
+    const keyPressed = event.key;
+
+    if (this.isSelecting == false && this.selectedCell.length <= 3) {
+      let current_cell = this.selectedCell[0];
+      let next_cell = null;
+      let row_cell;
+      let col_cell;
+      if (keyPressed == "ArrowRight") {
+        if (current_cell.Y + 1 < this.columns) {
+          next_cell = this.data[current_cell.X][current_cell.Y + 1];
+          row_cell = this.data[current_cell.X][0];
+          col_cell = this.data[0][current_cell.Y + 1];
+        }
+      }
+      if (keyPressed == "ArrowLeft") {
+        if (current_cell.Y - 1 >= 0) {
+          next_cell = this.data[current_cell.X][current_cell.Y - 1];
+          row_cell = this.data[current_cell.X][0];
+          col_cell = this.data[0][current_cell.Y - 1];
+        }
+      }
+      if (keyPressed == "ArrowUp") {
+        if (current_cell.X - 1 >= 0) {
+          next_cell = this.data[current_cell.X - 1][current_cell.Y];
+          row_cell = this.data[current_cell.X - 1][0];
+          col_cell = this.data[0][current_cell.Y];
+        }
+      }
+      if (keyPressed == "ArrowDown") {
+        if (current_cell.X + 1 <= this.columns) {
+          next_cell = this.data[current_cell.X + 1][current_cell.Y];
+          row_cell = this.data[current_cell.X + 1][0];
+          col_cell = this.data[0][current_cell.Y];
+        }
+      }
+      if (next_cell != null) {
+        this.clearSelect();
+        this.selectedCell.push(next_cell);
+        this.selectedCell.push(row_cell);
+        this.selectedCell.push(col_cell);
+        next_cell.select();
+        row_cell.select();
+        col_cell.select();
+      }
+    }
+  }
+
+  updateMetaData(cell) {
+    let text = cell.text;
+    text = Number(text);
+    this.metaData.count += 1;
+    if (text) {
+      this.metaData.count++;
+      this.metaData.max = Math.max(this.metaData.max, text);
+      this.metaData.min = Math.min(this.metaData.min, text);
+      this.metaData.sum += text;
+      this.metaData.count_numbers += 1;
+      this.metaData.average = this.metaData.sum / this.metaData.count;
+    }
+  }
+  clearMetaData() {
+    this.metaData = {
+      sum: 0,
+      average: 0,
+      min: Infinity,
+      max: -Infinity,
+      count: 0,
+      count_numbers: 0,
+    };
+  }
+  // Selection Functions
   updateSelect() {
     const minX = Math.min(this.startX, this.endX);
     const maxX = Math.max(this.startX, this.endX);
     const minY = Math.min(this.startY, this.endY);
     const maxY = Math.max(this.startY, this.endY);
-
+   
     for (let i = 1; i < this.rows; i++) {
-        for (let j = 1; j < this.columns; j++) {
-            let cell = this.data[i][j];
-            const cellRight = cell.topX + cell.width;
-            const cellBottom = cell.topY + cell.height;
+      for (let j = 1; j < this.columns; j++) {
+        let cell = this.data[i][j];
+        const cellRight = cell.topX + cell.width;
+        const cellBottom = cell.topY + cell.height;
 
-            if (cell.topX < maxX && cellRight > minX && cell.topY < maxY && cellBottom > minY) {
-                cell.select();
-                this.selectedCell.push(cell);
-            }
+        if (
+          cell.topX < maxX &&
+          cellRight > minX &&
+          cell.topY < maxY &&
+          cellBottom > minY
+        ) {
+          let row_cell = this.data[0][cell.Y];
+          let col_cell = this.data[cell.X][0];
+
+          cell.select();
+          row_cell.select();
+          col_cell.select();
+
+          this.updateMetaData(cell);
+
+
+          this.selectedCell.push(cell);
+          this.selectedCell.push(row_cell);
+          this.selectedCell.push(col_cell);
         }
+      }
     }
-}
+    console.log(this.metaData)
+  }
 
-
-  clearSelect()
-  {
-    for(let i= 0;i < this.selectedCell.length;i++)
-    {
+  clearSelect() {
+    for (let i = 0; i < this.selectedCell.length; i++) {
       this.selectedCell[i].deselect();
     }
     this.selectedCell = [];
   }
-  handleMouseUp(event) {
-    console.log("Mouse UP ");
-    this.canvas.style.cursor = "default";
-    this.isResizing = false;
-    this.resizeColumnIndex = -1;
-    this.isSelecting =false;
-  }
-  selectCell(x, y) {
-    // Deselect previously selected cell
-    // if (this.selectedCell) {
-    //   this.selectedCell.deselect();
-    //   this.selectedCell = false;
-    // }
 
-    // Find and select the new cell
-    for (let i = 1; i < this.rows; i++) {
-      for (let j = 1; j < this.columns; j++) {
-        let cell = this.data[i][j];
-        if (cell.containsPoint(x, y)) {
-          cell.select();
-          this.selectedCell.push(cell);
-          return;
-        }
+  selectCell(x, y) {
+    let { rowIndex, colIndex } = this.searchCell(x, y);
+    if (
+      rowIndex >= 1 &&
+      rowIndex < this.rows &&
+      colIndex >= 1 &&
+      colIndex < this.columns
+    ) {
+      let cell = this.data[rowIndex][colIndex];
+      let row_cell = this.data[rowIndex][0];
+      let col_cell = this.data[0][colIndex];
+
+      cell.select();
+      row_cell.select();
+      col_cell.select();
+
+      this.selectedCell.push(cell);
+      this.selectedCell.push(row_cell);
+      this.selectedCell.push(col_cell);
+    }
+  }
+
+  // Helper function
+  searchCell(x, y) {
+    let colIndex = -1;
+    let rowIndex = -1;
+
+    // Find the column index based on x coordinate
+    for (let j = 1; j < this.columns; j++) {
+      let colStartX = this.data[1][j].topX;
+      let colEndX = colStartX + this.columns_width[j];
+      if (x >= colStartX && x < colEndX) {
+        colIndex = j;
+        break;
       }
     }
+
+    // Find the row index based on y coordinate
+    for (let i = 1; i < this.rows; i++) {
+      let rowStartY = this.data[i][1].topY;
+      let rowEndY = rowStartY + this.data[i][1].height;
+      if (y >= rowStartY && y < rowEndY) {
+        rowIndex = i;
+        break;
+      }
+    }
+
+    return { rowIndex, colIndex };
+  }
+
+  getData() {
+    return this.data;
+  }
+
+  getColumnsWidth() {
+    return this.columns_width;
   }
 }
 

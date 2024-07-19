@@ -17,7 +17,6 @@ class Cell {
       this.context.clearRect(this.topX,this.topY,this.width,this.height);
       this.context.fillStyle = "rgba(0, 120, 215, 0.3)"; // Light blue highlight
       this.context.fillRect(this.topX, this.topY, this.width, this.height);
-      
       this.context.fillStyle = "black";
       this.context.strokeStyle = "#E1E1E1";
     }
@@ -33,11 +32,20 @@ class Cell {
   AddText(text) {
     this.text = text;
     this.context.font = "12px Arial";
-    this.context.fillText(text, this.topX + 12, this.topY + 20);
+    this.context.fillText(this.getWrapedText(text,this.width), this.topX + 12, this.topY + 20);
   }
+  getWrapedText(text, width) {
+    let fontSize = 12;
+    let textWidth = text.length * fontSize
+    let wrappedText = text
+    if (textWidth >= width) {
+        wrappedText = text.substring(0,( width / fontSize)+2)
+    }
+    return wrappedText
+}
   DrawText() {
     this.context.font = "12px Arial";
-    this.context.fillText(this.text, this.topX + 12, this.topY + 20);
+    this.context.fillText(this.getWrapedText(this.text,this.width), this.topX + 12, this.topY + 20);
   }
 
   isPointNearBorder(x, y) {
