@@ -731,3 +731,115 @@
 2024-07-19 11:46:45,896 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
 2024-07-19 11:46:45,911 [16] INFO api.Controllers.UserController.MoveNext[65] - True
 2024-07-19 11:46:45,937 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 15:32:16,242 [5] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-19 15:32:16,449 [5] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a39a8e74db7e9ff0d96a1",
+  "FileId": "63a68630-209d-49e2-97c9-b328e3e098fe",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 15:32:31,538 [27] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-19 15:32:31,544 [27] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-19 15:32:31,615 [27] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-19 15:32:31,615 [27] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-19 15:32:31,617 [27] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 15:36:36,121 [5] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-19 15:36:36,125 [5] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a3aace74db7e9ff0d96a2",
+  "FileId": "b4390915-65ef-413b-8645-6283c9461e0e",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 15:36:40,340 [5] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-19 15:36:40,341 [5] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-19 15:36:40,342 [5] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-19 15:36:40,342 [5] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-19 15:36:40,343 [5] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 15:40:16,751 [8] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-19 15:40:16,755 [8] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a3b88e74db7e9ff0d96a3",
+  "FileId": "b23da946-53b8-4baf-940d-69e61c6e0e6a",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 15:40:21,381 [12] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-19 15:40:21,383 [12] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-19 15:40:21,477 [12] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-19 15:40:21,478 [12] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-19 15:40:21,479 [12] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 15:46:20,651 [8] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-19 15:46:20,656 [8] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a3cf4e74db7e9ff0d96a4",
+  "FileId": "3fc3c590-1a1b-4009-ad73-6dccb679903d",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 15:46:32,991 [8] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-19 15:46:32,993 [8] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-19 15:46:33,063 [8] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-19 15:46:33,064 [8] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-19 15:46:33,065 [8] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 15:46:58,963 [5] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-19 15:46:58,966 [5] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a3d1ae74db7e9ff0d96a5",
+  "FileId": "9c23466b-02fe-4e4a-9749-0083aca2b42c",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 15:47:08,226 [5] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-19 15:47:08,228 [5] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-19 15:47:08,230 [5] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-19 15:47:08,231 [5] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-19 15:47:08,232 [5] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 15:49:53,957 [15] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-19 15:49:53,960 [15] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a3dc9e74db7e9ff0d96a6",
+  "FileId": "49b6cda1-a163-4999-b045-6544e7383180",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 15:49:57,801 [22] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-19 15:49:57,802 [22] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-19 15:49:57,805 [22] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-19 15:49:57,810 [22] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-19 15:49:57,816 [22] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 15:59:00,299 [3] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-19 15:59:00,302 [3] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a3fece74db7e9ff0d96a7",
+  "FileId": "37db5f8f-d620-4d51-b5b1-bc7daf440a64",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 15:59:07,840 [22] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-19 15:59:07,840 [22] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-19 15:59:07,899 [22] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-19 15:59:07,899 [22] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-19 15:59:07,899 [22] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600

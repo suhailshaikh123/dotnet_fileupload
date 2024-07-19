@@ -172,7 +172,6 @@ class Table {
       this.startY = y;
       this.endX = x;
       this.endY = y;
-      
     }
 
     this.selectCell(x, y);
@@ -199,7 +198,7 @@ class Table {
       this.clearSelect();
       this.endX = x;
       this.endY = y;
-      
+
       this.updateSelect();
     }
     // this.selectCell();
@@ -209,7 +208,7 @@ class Table {
     this.isResizing = false;
     this.resizeColumnIndex = -1;
     this.isSelecting = false;
-    console.log(this.metaData)
+    console.log(this.metaData);
   }
   handleKeyPress(event) {
     const keyPressed = event.key;
@@ -261,16 +260,17 @@ class Table {
 
   updateMetaData(cell) {
     let text = cell.text;
+    if(text !=="")
+      this.metaData.count += 1;
     text = Number(text);
-    this.metaData.count += 1;
+   
     if (text) {
-      this.metaData.count++;
       this.metaData.max = Math.max(this.metaData.max, text);
       this.metaData.min = Math.min(this.metaData.min, text);
       this.metaData.sum += text;
       this.metaData.count_numbers += 1;
-      this.metaData.average = this.metaData.sum / this.metaData.count;
-    }
+      this.metaData.average = (this.metaData.sum / this.metaData.count).toFixed(2);
+    } 
   }
   clearMetaData() {
     this.metaData = {
@@ -288,7 +288,7 @@ class Table {
     const maxX = Math.max(this.startX, this.endX);
     const minY = Math.min(this.startY, this.endY);
     const maxY = Math.max(this.startY, this.endY);
-   
+
     for (let i = 1; i < this.rows; i++) {
       for (let j = 1; j < this.columns; j++) {
         let cell = this.data[i][j];
@@ -310,16 +310,24 @@ class Table {
 
           this.updateMetaData(cell);
 
-
           this.selectedCell.push(cell);
           this.selectedCell.push(row_cell);
           this.selectedCell.push(col_cell);
         }
       }
     }
-    console.log(this.metaData)
+    this.addMetaDataToFrontend();
   }
-
+  addMetaDataToFrontend()
+  {
+    let select = document.getElementById("list");
+    select.innerHTML = "";
+    for (const [key, value] of Object.entries(this.metaData)) {
+      let option = document.createElement("option");
+      option.text = `${key}:  ${value}`;
+      select.appendChild(option);
+    }
+  }
   clearSelect() {
     for (let i = 0; i < this.selectedCell.length; i++) {
       this.selectedCell[i].deselect();
@@ -327,7 +335,10 @@ class Table {
     this.selectedCell = [];
   }
 
+  
   selectCell(x, y) {
+    this.clearMetaData();
+    
     let { rowIndex, colIndex } = this.searchCell(x, y);
     if (
       rowIndex >= 1 &&
@@ -338,7 +349,8 @@ class Table {
       let cell = this.data[rowIndex][colIndex];
       let row_cell = this.data[rowIndex][0];
       let col_cell = this.data[0][colIndex];
-
+      this.updateMetaData(cell);
+      this.addMetaDataToFrontend();
       cell.select();
       row_cell.select();
       col_cell.select();

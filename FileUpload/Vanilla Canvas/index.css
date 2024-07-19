@@ -10,3 +10,25 @@ nav{
 nav input {
     margin-top: 20px;
 }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    background-color: #F9FBFD;
+    color: black;
+    text-align: center;
+  }
+  .footer select{
+    background-color: #C4EED0;
+    border: 0px;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 15px;
+  }
+ 
