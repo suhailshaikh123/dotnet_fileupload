@@ -20,9 +20,8 @@ let table = new Table(context, columns, rows,canvas);
 table.draw();
 let columns_width = table.getColumnsWidth();
 let headers = new Headers(context, columns,columns_width,table.getData());
-let indexing = new Indexing(context, rows,table.getData());
+
 headers.draw(0,columns_width);
-indexing.draw();
 
 
 canvas.addEventListener("mousedown", (event) => table.handleMouseDown(event));
@@ -55,6 +54,7 @@ async function uploadCsv(event) {
     let fileInput = document.getElementById("file");
     let file = fileInput.files[0]; 
     if (!file) {
+        alert("Please select a file");
         console.error("No file selected");
         return;
     }
@@ -67,11 +67,10 @@ async function uploadCsv(event) {
             method: "POST",
             body: formData,
         });
-        const data = await response.text();
-        alert(data);
+        const data = await response.json();
+        console.log(data);
 
-        fetchData();
-        // console.log(response)
+        await fetchStatus(data.fileId)
     } catch (error) {
         console.error('Error:', error);
         alert(data);
@@ -79,5 +78,45 @@ async function uploadCsv(event) {
 }
 
 
+async function fetchStatus(fileId)
+{
+    let totalBatches = null;
+    let successfullyUploadedBatches = null;
+    let progressBar = document.getElementById("myBar");
+    progressBar.style.display = "block";
+    let myInterval = setInterval(async() =>{
+        let url = "http://localhost:5139/FileController/GetProgresss?id="+fileId;
+        console.log(url);
+        try{
+        const response = await fetch(url,{
+            method:"GET"
+        });
+        const data = await response.json();
+        console.log(data);
+        totalBatches = data.totalBatches;
+        successfullyUploadedBatches = data.successfullyUploadedBatches;
+        let percentage = (successfullyUploadedBatches / totalBatches) * 100;
+        progressBar.style.width = percentage + "%";
+        if(totalBatches && successfullyUploadedBatches)
+            {
+                console.log("hello world")
+                if(totalBatches == successfullyUploadedBatches)
+                {
+                    clearInterval(myInterval);
+                    progressBar.style.display = "none";
+                    progressBar.style.width = "0%";
+                    fetchData();
+                }
+            }
+        }
+        catch(error)
+        {
+            console.log(error);
+        }
+    }, 2000);
 
+   
+   
+   
+}
 

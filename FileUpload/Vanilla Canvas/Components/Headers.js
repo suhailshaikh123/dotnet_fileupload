@@ -17,7 +17,7 @@ class Header {
 
     this.columns_width[0] = 130;
     console.log(this.columns_width)
-    this.data[0] = new Array(this.columns);
+    // this.data[0] = new Array(this.columns);
     for(let i= 0;i<this.columns;i++)
     {
         text = column_counter;
@@ -32,7 +32,10 @@ class Header {
         text = "";
         column_counter = "a";
         }
-        cell.draw();
+      cell.draw();
+    
+      cell.AddText(text);
+      cell.isColumn = true;
       cell.AddText(text);
       this.data[0][i] = cell;
       topX += this.columns_width[i];

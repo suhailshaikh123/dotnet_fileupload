@@ -1,7 +1,10 @@
 using api.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
-
+using api.Services;
+using Newtonsoft.Json;
 
 namespace api.Services
 {
@@ -33,6 +36,25 @@ namespace api.Services
         {
 
             await _filesCollection.InsertOneAsync(newFile);
+        }
+        public async Task<dynamic> GetProgress(string id)
+        {
+            var result = await GetAsync(id);
+            if (result == null)
+            {
+                return new {status = "failed"};
+            }
+
+            int totalBatches = result.TotalBatches;
+            int successfullyUploadedBatches = result.Batches.Count(batch => batch.BatchStatus == "Batch Successfully Inserted");
+
+            return new{
+                status = "success",
+                totalBatches = totalBatches,
+                successfullyUploadedBatches = successfullyUploadedBatches
+            };
+
+
         }
 
         // public async Task CreateAsync(Models.File newModels.File) =>

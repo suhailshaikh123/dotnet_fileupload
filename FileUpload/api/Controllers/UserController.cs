@@ -82,6 +82,7 @@ namespace api.Controllers
 
             string query = $"SELECT * FROM \"Users\" WHERE \"UserID\" = {id};";
             List<User> users = (List<User>)await conn.QueryAsync<User>(query);
+            Console.WriteLine(users[0]);
             if (users.Capacity == 0)
             {
                 return NotFound();

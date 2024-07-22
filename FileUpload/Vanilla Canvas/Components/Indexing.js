@@ -24,6 +24,7 @@ class Indexing {
         row_counter =1;
       }
       cell.draw();
+      cell.isRow = true;
       cell.AddText(text);
       this.data[i][0] = cell;
       topY +=height;

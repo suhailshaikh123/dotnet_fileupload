@@ -51,6 +51,8 @@ class Table {
       topX = width;
       topY += height;
     }
+    this.data[0] = new Array(this.columns);
+    this.indexing.draw();
   }
   drawCsv(csvData) {
     let width = 130;
@@ -74,6 +76,7 @@ class Table {
   }
 
   redraw() {
+    console.log("Redraw Has Been Called")
     for (let i = 0; i < this.data.length; i++) {
       for (let j = 1; j < this.data[i].length; j++) {
         if (j != 1) {
@@ -86,6 +89,8 @@ class Table {
     }
 
     this.indexing.draw();
+    // console.log(this.data[0][1]);
+    // console.log(this.data[1][0]);
   }
 
   createInputField(event, cell) {
@@ -138,7 +143,6 @@ class Table {
     }
   }
   handleMouseDown(event) {
-    const { clientX, clientY } = event;
     const rect = this.canvas.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
@@ -167,14 +171,15 @@ class Table {
     if (this.isResizing == false) {
       this.clearSelect();
       this.isSelecting = true;
-      this.selectedCell = [];
+
       this.startX = x;
       this.startY = y;
       this.endX = x;
       this.endY = y;
+      this.selectCell(x, y);
     }
 
-    this.selectCell(x, y);
+    
   }
 
   handleMouseMove(event) {
@@ -193,7 +198,7 @@ class Table {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
         this.redraw();
       }
-    } else if (this.isSelecting == true) {
+    } else if (this.isSelecting) {
       this.clearMetaData();
       this.clearSelect();
       this.endX = x;
@@ -201,7 +206,7 @@ class Table {
 
       this.updateSelect();
     }
-    // this.selectCell();
+ 
   }
   handleMouseUp(event) {
     this.canvas.style.cursor = "default";
@@ -260,17 +265,18 @@ class Table {
 
   updateMetaData(cell) {
     let text = cell.text;
-    if(text !=="")
-      this.metaData.count += 1;
+    if (text !== "") this.metaData.count += 1;
     text = Number(text);
-   
+
     if (text) {
       this.metaData.max = Math.max(this.metaData.max, text);
       this.metaData.min = Math.min(this.metaData.min, text);
       this.metaData.sum += text;
       this.metaData.count_numbers += 1;
-      this.metaData.average = (this.metaData.sum / this.metaData.count).toFixed(2);
-    } 
+      this.metaData.average = (this.metaData.sum / this.metaData.count).toFixed(
+        2
+      );
+    }
   }
   clearMetaData() {
     this.metaData = {
@@ -289,8 +295,8 @@ class Table {
     const minY = Math.min(this.startY, this.endY);
     const maxY = Math.max(this.startY, this.endY);
 
-    for (let i = 1; i < this.rows; i++) {
-      for (let j = 1; j < this.columns; j++) {
+    for (let i = 0; i < this.rows; i++) {
+      for (let j = 0; j < this.columns; j++) {
         let cell = this.data[i][j];
         const cellRight = cell.topX + cell.width;
         const cellBottom = cell.topY + cell.height;
@@ -301,6 +307,15 @@ class Table {
           cell.topY < maxY &&
           cellBottom > minY
         ) {
+          if(cell.isColumn)
+          {
+            this.updateColumnSelect(cell.Y);
+          }
+          else if(cell.isRow)
+          {
+            this.updateRowSelect(cell.X);
+          }
+          else{
           let row_cell = this.data[0][cell.Y];
           let col_cell = this.data[cell.X][0];
 
@@ -314,12 +329,12 @@ class Table {
           this.selectedCell.push(row_cell);
           this.selectedCell.push(col_cell);
         }
+        }
       }
     }
     this.addMetaDataToFrontend();
   }
-  addMetaDataToFrontend()
-  {
+  addMetaDataToFrontend() {
     let select = document.getElementById("list");
     select.innerHTML = "";
     for (const [key, value] of Object.entries(this.metaData)) {
@@ -335,12 +350,33 @@ class Table {
     this.selectedCell = [];
   }
 
-  
+  updateColumnSelect(column) {
+    for (let i = 1; i < this.rows; i++) {
+      this.data[i][column].select();
+      this.updateMetaData(this.data[i][column]);
+      this.addMetaDataToFrontend();
+      this.selectedCell.push(this.data[i][column]);
+    }
+  }
+  updateRowSelect(rowIndex) {
+    for (let i = 0; i < this.columns; i++) {
+      this.data[rowIndex][i].select();
+      this.updateMetaData(this.data[rowIndex][i]);
+      this.addMetaDataToFrontend();
+      this.selectedCell.push(this.data[rowIndex][i]);
+    }
+  }
   selectCell(x, y) {
     this.clearMetaData();
-    
+
     let { rowIndex, colIndex } = this.searchCell(x, y);
-    if (
+    if (rowIndex == -1 && colIndex == -1) return;
+    if (rowIndex == -1) {
+      this.updateColumnSelect(colIndex);
+    } else if (colIndex == -1) {
+      this.updateRowSelect(rowIndex);
+    }
+    else if (
       rowIndex >= 1 &&
       rowIndex < this.rows &&
       colIndex >= 1 &&

@@ -4408,3 +4408,1327 @@
 2024-07-19 15:59:05,174 [30] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
 2024-07-19 15:59:05,175 [30] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.2388176
 2024-07-19 15:59:05,177 [30] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:11,302 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:11,490 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:11,732 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:12,034 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:12,281 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:12,283 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7641599
+2024-07-19 17:26:12,286 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:12,353 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:12,354 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6157434
+2024-07-19 17:26:12,357 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:12,592 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:12,593 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5493757
+2024-07-19 17:26:12,596 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:14,131 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:14,388 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:14,723 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:14,850 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:14,853 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7183531
+2024-07-19 17:26:14,855 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:15,111 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:15,113 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7202580
+2024-07-19 17:26:15,122 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:15,131 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:15,409 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:15,411 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6771004
+2024-07-19 17:26:15,414 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:15,425 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:15,804 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:15,805 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6657530
+2024-07-19 17:26:15,807 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:16,092 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:16,097 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5779648
+2024-07-19 17:26:16,099 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:16,235 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:16,236 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4676863
+2024-07-19 17:26:16,237 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:16,239 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:16,444 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:16,648 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:16,886 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:16,995 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:16,997 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5455758
+2024-07-19 17:26:17,000 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:17,172 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:17,295 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:17,297 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6437087
+2024-07-19 17:26:17,299 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:17,404 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:17,484 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:17,486 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5965802
+2024-07-19 17:26:17,488 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:17,656 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:17,732 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:17,734 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5583989
+2024-07-19 17:26:17,739 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:17,906 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:17,973 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:17,974 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5568552
+2024-07-19 17:26:17,976 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:18,082 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:18,149 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:18,151 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4911768
+2024-07-19 17:26:18,153 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:18,281 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:18,385 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:18,394 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4841082
+2024-07-19 17:26:18,398 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:18,567 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:18,725 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:18,727 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6415058
+2024-07-19 17:26:18,730 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:19,050 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:19,051 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7671559
+2024-07-19 17:26:19,054 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:19,141 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:19,142 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5708283
+2024-07-19 17:26:19,144 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:19,229 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:19,231 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5238305
+2024-07-19 17:26:19,233 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:19,234 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:19,299 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:26:19,707 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:19,709 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3434912
+2024-07-19 17:26:19,712 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:26:19,729 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:26:19,731 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4276369
+2024-07-19 17:26:19,735 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:50:55,480 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:50:56,162 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:50:56,459 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:50:56,559 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7909288
+2024-07-19 17:50:56,463 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:50:56,563 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:50:56,819 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:50:57,221 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:50:57,223 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6987807
+2024-07-19 17:50:57,222 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:50:57,225 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:50:57,353 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:50:57,356 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5329251
+2024-07-19 17:50:57,367 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:50:57,374 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:50:57,814 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:50:58,044 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:50:58,046 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8175706
+2024-07-19 17:50:58,048 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:50:58,316 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:50:58,318 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9278255
+2024-07-19 17:50:58,339 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:50:58,452 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:50:58,480 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:50:58,640 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7723047
+2024-07-19 17:50:58,768 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:50:58,825 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:50:59,253 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:50:59,397 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:50:59,432 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9579595
+2024-07-19 17:50:59,435 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:50:59,470 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:50:59,471 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6400031
+2024-07-19 17:50:59,473 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:50:59,578 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:50:59,902 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:50:59,903 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6263560
+2024-07-19 17:50:59,905 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:00,166 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:00,167 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5724074
+2024-07-19 17:51:00,168 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:00,208 [22] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:00,208 [22] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3791430
+2024-07-19 17:51:00,210 [22] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:00,211 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:00,384 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:00,600 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:00,826 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:00,907 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:00,908 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5197255
+2024-07-19 17:51:00,946 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:01,395 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:01,396 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7912683
+2024-07-19 17:51:01,399 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:01,399 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:01,443 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:01,445 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6094626
+2024-07-19 17:51:01,465 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:01,642 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:01,840 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:02,033 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:02,088 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6683656
+2024-07-19 17:51:02,090 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:02,157 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:02,269 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:02,270 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6153478
+2024-07-19 17:51:02,272 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:02,418 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:02,419 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:02,419 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5750023
+2024-07-19 17:51:02,426 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:02,590 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:02,787 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:02,810 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6436158
+2024-07-19 17:51:02,812 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:02,936 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:03,229 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:03,252 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8288160
+2024-07-19 17:51:03,254 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:03,471 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:03,472 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8759995
+2024-07-19 17:51:03,475 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:03,543 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:03,544 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5900799
+2024-07-19 17:51:03,587 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:03,628 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:03,629 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3787562
+2024-07-19 17:51:03,631 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:08,735 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:08,814 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:08,988 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:09,251 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:09,392 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:09,394 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5843406
+2024-07-19 17:51:09,396 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:09,565 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:09,566 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5739175
+2024-07-19 17:51:09,571 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:09,615 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:09,721 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:10,069 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:10,070 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7708949
+2024-07-19 17:51:10,072 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:10,274 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:10,418 [22] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:10,419 [22] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8007437
+2024-07-19 17:51:10,421 [22] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:10,621 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:10,622 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8942003
+2024-07-19 17:51:10,624 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:10,807 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:10,808 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5295218
+2024-07-19 17:51:10,810 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:10,988 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:10,988 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4452130
+2024-07-19 17:51:10,990 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:10,991 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:11,158 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:11,373 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:11,660 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:11,691 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:11,709 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5445191
+2024-07-19 17:51:11,712 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:11,860 [22] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:11,861 [22] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4849584
+2024-07-19 17:51:11,862 [22] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:11,892 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:12,068 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:12,164 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:12,169 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4927501
+2024-07-19 17:51:12,171 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:12,348 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:12,425 [22] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:12,469 [22] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5707605
+2024-07-19 17:51:12,502 [22] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:12,551 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:12,642 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:12,643 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5724061
+2024-07-19 17:51:12,647 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:12,819 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:13,073 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:13,075 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7094921
+2024-07-19 17:51:13,078 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:13,238 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:13,239 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6807017
+2024-07-19 17:51:13,241 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:13,342 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:13,343 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5203909
+2024-07-19 17:51:13,344 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:13,503 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:13,503 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3380958
+2024-07-19 17:51:13,505 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:13,506 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:13,636 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:13,775 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:13,956 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:14,068 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:14,069 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4304869
+2024-07-19 17:51:14,072 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:14,221 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:14,298 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:14,299 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5207458
+2024-07-19 17:51:14,301 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:14,454 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:14,455 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4959147
+2024-07-19 17:51:14,457 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:14,459 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:51:14,680 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:14,681 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4574940
+2024-07-19 17:51:14,683 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:14,884 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:14,884 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4219493
+2024-07-19 17:51:14,885 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:51:14,886 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:51:14,886 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.2754467
+2024-07-19 17:51:14,909 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:18,194 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:18,279 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:18,478 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:18,698 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:18,818 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:18,997 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7114092
+2024-07-19 17:55:18,999 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:19,042 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:19,082 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5966913
+2024-07-19 17:55:19,095 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:19,303 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:19,305 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5873621
+2024-07-19 17:55:19,307 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:19,525 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:19,526 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4350940
+2024-07-19 17:55:19,528 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:19,529 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:19,682 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:19,859 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:20,136 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:20,296 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:20,297 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6119627
+2024-07-19 17:55:20,300 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:20,397 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:20,400 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5285648
+2024-07-19 17:55:20,409 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:20,469 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:20,633 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:20,634 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4809803
+2024-07-19 17:55:20,636 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:20,708 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:21,045 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:21,046 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5732268
+2024-07-19 17:55:21,061 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:21,292 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:21,294 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5823663
+2024-07-19 17:55:21,295 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:21,425 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:21,426 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4461872
+2024-07-19 17:55:21,434 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:21,436 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:21,566 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:21,758 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:21,991 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:22,089 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:22,090 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5193003
+2024-07-19 17:55:22,093 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:22,356 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:22,614 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:22,615 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8506264
+2024-07-19 17:55:22,618 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:22,756 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:22,835 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:22,918 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9196116
+2024-07-19 17:55:22,924 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:23,069 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:23,104 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:23,108 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7471593
+2024-07-19 17:55:23,135 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:23,362 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:23,459 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:23,497 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7286469
+2024-07-19 17:55:23,499 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:23,616 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:23,617 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5449860
+2024-07-19 17:55:23,619 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:24,452 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:24,453 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.0887480
+2024-07-19 17:55:24,481 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:24,990 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:24,991 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.3598764
+2024-07-19 17:55:24,993 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:24,997 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:25,190 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:25,559 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:26,106 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:26,115 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9166217
+2024-07-19 17:55:26,117 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:26,388 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:26,389 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8265868
+2024-07-19 17:55:26,391 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:26,647 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:26,649 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6063023
+2024-07-19 17:55:26,650 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:55:26,651 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:55:27,305 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:55:27,306 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.2664831
+2024-07-19 17:55:27,308 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:16,154 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:16,291 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:16,465 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:16,631 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:16,808 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:16,812 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5166438
+2024-07-19 17:56:16,814 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:16,880 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:17,062 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:17,231 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:17,246 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6094924
+2024-07-19 17:56:17,245 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7742633
+2024-07-19 17:56:17,248 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:17,271 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:17,274 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:17,449 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:17,612 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:17,840 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:17,842 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7803901
+2024-07-19 17:56:17,844 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:18,009 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:18,011 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7330905
+2024-07-19 17:56:18,013 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:18,121 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:18,261 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:18,262 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7790140
+2024-07-19 17:56:18,264 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:18,488 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:18,489 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6354609
+2024-07-19 17:56:18,491 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:18,758 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:18,759 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6201045
+2024-07-19 17:56:18,761 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:18,809 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:18,810 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4408509
+2024-07-19 17:56:18,811 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:18,813 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:18,875 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:18,964 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:19,075 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:19,354 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:19,383 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:19,386 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5022517
+2024-07-19 17:56:19,388 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:19,503 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:19,520 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:19,589 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6186733
+2024-07-19 17:56:19,591 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:19,657 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:19,659 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5384445
+2024-07-19 17:56:19,661 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:19,724 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:19,813 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:19,897 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:19,899 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5419875
+2024-07-19 17:56:19,901 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:19,953 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:20,100 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:20,102 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5866639
+2024-07-19 17:56:20,104 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:20,285 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:20,287 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5566240
+2024-07-19 17:56:20,288 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:20,330 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:20,373 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:20,374 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5531584
+2024-07-19 17:56:20,376 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:20,550 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:20,552 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5924790
+2024-07-19 17:56:20,582 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:20,588 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:20,690 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:20,795 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 17:56:20,876 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:20,877 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5388744
+2024-07-19 17:56:20,894 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:21,124 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:21,125 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5339071
+2024-07-19 17:56:21,127 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:21,325 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:21,326 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5801720
+2024-07-19 17:56:21,328 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:21,384 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:21,385 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5412198
+2024-07-19 17:56:21,387 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 17:56:21,391 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 17:56:21,392 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4255837
+2024-07-19 17:56:21,394 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:04,111 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:04,334 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:04,872 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:05,358 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:05,457 [22] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:05,459 [22] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.0800956
+2024-07-19 18:06:05,470 [22] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:05,620 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:05,622 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7295046
+2024-07-19 18:06:05,624 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:05,917 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:05,919 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5432694
+2024-07-19 18:06:05,921 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:06,093 [23] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:06,094 [23] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4281748
+2024-07-19 18:06:06,095 [23] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:06,096 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:06,288 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:06,552 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:06,804 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:06,878 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:06,896 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6035436
+2024-07-19 18:06:06,899 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:07,127 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:07,149 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:07,285 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7189616
+2024-07-19 18:06:07,344 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:07,534 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:07,651 [22] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:07,652 [22] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8134534
+2024-07-19 18:06:07,654 [22] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:07,897 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:07,898 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7656634
+2024-07-19 18:06:07,901 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:08,219 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:08,220 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6798575
+2024-07-19 18:06:08,222 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:08,341 [23] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:08,342 [23] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5995225
+2024-07-19 18:06:08,344 [23] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:08,346 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:08,524 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:08,770 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:09,033 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:09,101 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:09,102 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5731422
+2024-07-19 18:06:09,104 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:09,307 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:09,397 [22] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:09,398 [22] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6246348
+2024-07-19 18:06:09,400 [22] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:09,584 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:09,611 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:09,612 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5550801
+2024-07-19 18:06:09,614 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:09,825 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:09,846 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:09,847 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5368597
+2024-07-19 18:06:09,849 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:10,058 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:10,131 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:10,133 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5446974
+2024-07-19 18:06:10,149 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:10,263 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:10,324 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:10,326 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4960398
+2024-07-19 18:06:10,328 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:10,557 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:10,558 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4947438
+2024-07-19 18:06:10,560 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:10,697 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:10,698 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4312967
+2024-07-19 18:06:10,699 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:10,795 [23] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:10,796 [23] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.2684471
+2024-07-19 18:06:10,797 [23] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:10,798 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:10,954 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:11,123 [23] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:11,363 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:11,365 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4073711
+2024-07-19 18:06:11,366 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:11,519 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:11,520 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3942193
+2024-07-19 18:06:11,521 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:11,537 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:11,537 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.2594504
+2024-07-19 18:06:11,539 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:52,513 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:52,573 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:52,788 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:53,004 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:53,075 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:53,076 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4973950
+2024-07-19 18:06:53,078 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:53,208 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:53,352 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:53,353 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5516434
+2024-07-19 18:06:53,356 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:53,464 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:53,606 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:53,610 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5706587
+2024-07-19 18:06:53,612 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:53,734 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:53,755 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:53,756 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5381775
+2024-07-19 18:06:53,758 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:53,977 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:54,039 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:54,101 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6352383
+2024-07-19 18:06:54,103 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:54,280 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:54,282 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5392786
+2024-07-19 18:06:54,284 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:54,335 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:54,486 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:54,487 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4954049
+2024-07-19 18:06:54,489 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:54,551 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:54,821 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:55,083 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:55,125 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:55,133 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6480991
+2024-07-19 18:06:55,135 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:55,149 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5949139
+2024-07-19 18:06:55,150 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:55,153 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:55,331 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:55,333 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5093118
+2024-07-19 18:06:55,336 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:55,385 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:55,628 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:55,668 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5142342
+2024-07-19 18:06:55,670 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:55,796 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:55,797 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4079668
+2024-07-19 18:06:55,798 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:55,860 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:55,860 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3100268
+2024-07-19 18:06:55,862 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:55,863 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:55,925 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:56,095 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:56,236 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:56,325 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:56,326 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3978464
+2024-07-19 18:06:56,329 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:56,456 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:56,581 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:56,583 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4775410
+2024-07-19 18:06:56,584 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:56,686 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:56,693 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:56,703 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4558947
+2024-07-19 18:06:56,705 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:56,856 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:56,929 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:56,931 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4717300
+2024-07-19 18:06:56,934 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:57,074 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:57,158 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:57,160 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4703732
+2024-07-19 18:06:57,162 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:57,285 [20] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:06:57,340 [5] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:57,341 [5] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4818154
+2024-07-19 18:06:57,344 [5] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:57,653 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:57,654 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5705059
+2024-07-19 18:06:57,656 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:57,757 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:57,758 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4626390
+2024-07-19 18:06:57,760 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:06:57,785 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:06:57,786 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.2752643
+2024-07-19 18:06:57,788 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:39,045 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:39,259 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:39,471 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:39,824 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:39,876 [23] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:39,891 [23] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6251531
+2024-07-19 18:12:39,964 [23] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:40,136 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:40,216 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:40,217 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7314981
+2024-07-19 18:12:40,220 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:40,338 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:40,458 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:40,460 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6315327
+2024-07-19 18:12:40,462 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:40,623 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:40,822 [23] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:40,824 [23] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6699177
+2024-07-19 18:12:40,826 [23] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:41,264 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:41,267 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9252719
+2024-07-19 18:12:41,269 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:41,449 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:41,450 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8240049
+2024-07-19 18:12:41,452 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:41,946 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:41,948 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7055840
+2024-07-19 18:12:41,949 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:41,950 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:42,563 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:42,564 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4768665
+2024-07-19 18:12:42,566 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:42,567 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:42,713 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:42,869 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:43,317 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:43,438 [23] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:43,439 [23] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7229185
+2024-07-19 18:12:43,441 [23] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:43,638 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:43,763 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:43,787 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9124318
+2024-07-19 18:12:43,978 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:44,063 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:44,179 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:44,180 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8588837
+2024-07-19 18:12:44,182 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:44,481 [23] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:44,484 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:44,496 [23] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8526895
+2024-07-19 18:12:44,502 [23] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:44,761 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:44,765 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:44,769 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6908378
+2024-07-19 18:12:44,771 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:45,091 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:45,244 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:45,246 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7582118
+2024-07-19 18:12:45,248 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:45,455 [23] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:45,456 [23] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6924569
+2024-07-19 18:12:45,458 [23] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:45,469 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:46,020 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:46,125 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:46,141 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.0444258
+2024-07-19 18:12:46,208 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:46,319 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:46,342 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:46,387 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9124672
+2024-07-19 18:12:46,389 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:46,585 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:46,675 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:46,683 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6592518
+2024-07-19 18:12:46,733 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:46,916 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:46,918 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5938817
+2024-07-19 18:12:46,919 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:47,293 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:47,294 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7055458
+2024-07-19 18:12:47,295 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:47,351 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:47,352 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5035413
+2024-07-19 18:12:47,354 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:12:47,355 [19] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:12:47,692 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:12:47,693 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.2199625
+2024-07-19 18:12:47,696 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:04,262 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:04,892 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:04,893 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5625891
+2024-07-19 18:13:04,896 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:04,897 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:05,069 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:05,360 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:05,651 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:05,769 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:05,771 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6964629
+2024-07-19 18:13:05,772 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:05,970 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:05,970 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:05,973 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6037149
+2024-07-19 18:13:05,975 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:06,280 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:06,281 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6161616
+2024-07-19 18:13:06,283 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:06,479 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:06,506 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5330256
+2024-07-19 18:13:06,508 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:06,625 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:06,626 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4722770
+2024-07-19 18:13:06,629 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:06,630 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:06,773 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:06,993 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:07,215 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:07,404 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:07,472 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6951106
+2024-07-19 18:13:07,474 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:07,522 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:07,768 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:07,769 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7720494
+2024-07-19 18:13:07,771 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:07,847 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:07,920 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:07,921 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6549565
+2024-07-19 18:13:07,923 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:08,089 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:08,136 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:08,137 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6111476
+2024-07-19 18:13:08,139 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:08,327 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:08,384 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:08,386 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5360559
+2024-07-19 18:13:08,387 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:08,514 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:08,567 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:08,568 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4750825
+2024-07-19 18:13:08,570 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:08,698 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:08,844 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:08,846 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5149035
+2024-07-19 18:13:08,850 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:08,947 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:09,071 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:09,073 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5555454
+2024-07-19 18:13:09,074 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:09,280 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:09,442 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:09,570 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8679473
+2024-07-19 18:13:09,572 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:09,745 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:09,747 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7953094
+2024-07-19 18:13:09,749 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:09,899 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:09,899 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5860541
+2024-07-19 18:13:09,901 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:10,040 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:10,041 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3007952
+2024-07-19 18:13:10,050 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:10,051 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:10,184 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:10,318 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:10,535 [17] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-19 18:13:10,689 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:10,690 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5037419
+2024-07-19 18:13:10,698 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:10,820 [13] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:10,831 [13] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5110023
+2024-07-19 18:13:10,835 [13] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:10,949 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:10,951 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4107032
+2024-07-19 18:13:10,953 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-19 18:13:10,991 [17] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-19 18:13:10,992 [17] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.2415143
+2024-07-19 18:13:10,994 [17] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:41:33,765 [1] INFO ToDatabase.Processing.Start[54] -  [*] Waiting for Batches To come
+2024-07-22 11:41:34,296 [1] INFO ToDatabase.Processing.Start[82] -  Press [enter] to exit.
+2024-07-22 11:43:40,319 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:41,448 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:41,976 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:43,233 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:43,237 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.5566228
+2024-07-22 11:43:43,303 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:43,305 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.2496910
+2024-07-22 11:43:43,326 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:43,352 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:43,588 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:43,590 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6331106
+2024-07-22 11:43:43,593 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:43,595 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:43,848 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:44,166 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:44,638 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:44,747 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:44,749 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8962673
+2024-07-22 11:43:44,752 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:45,309 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:45,382 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:45,389 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.2144951
+2024-07-22 11:43:45,392 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:45,804 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:45,806 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.1411860
+2024-07-22 11:43:45,809 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:46,331 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:46,332 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5352418
+2024-07-22 11:43:46,335 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:46,336 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:46,485 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:46,487 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.1750885
+2024-07-22 11:43:46,504 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:46,592 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:46,994 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:47,207 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:47,654 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:47,654 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:47,656 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6580837
+2024-07-22 11:43:47,658 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.0624893
+2024-07-22 11:43:47,661 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:47,669 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:47,786 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:48,117 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:48,313 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:48,315 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.1042731
+2024-07-22 11:43:48,318 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:48,493 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:48,766 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:48,776 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:48,777 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8979250
+2024-07-22 11:43:48,984 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:49,348 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:49,349 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:49,350 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:49,359 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.1724372
+2024-07-22 11:43:49,402 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:49,361 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8590007
+2024-07-22 11:43:49,556 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:49,563 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:49,842 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:49,907 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.1265757
+2024-07-22 11:43:49,970 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:50,346 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:50,348 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9957259
+2024-07-22 11:43:50,351 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:50,471 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:50,472 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9063043
+2024-07-22 11:43:50,475 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:50,637 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:50,639 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6535201
+2024-07-22 11:43:50,641 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:50,642 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:50,924 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:51,117 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:51,719 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:51,721 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:51,721 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7932143
+2024-07-22 11:43:51,723 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6027909
+2024-07-22 11:43:51,725 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:51,727 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:51,749 [14] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:43:52,237 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:52,239 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4848927
+2024-07-22 11:43:52,242 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:43:52,246 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:43:52,247 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.2969438
+2024-07-22 11:43:52,249 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:48,884 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:49,050 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:49,543 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:49,545 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4886383
+2024-07-22 11:45:49,548 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:49,749 [3] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:49,750 [3] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4714569
+2024-07-22 11:45:49,752 [3] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:49,753 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:49,932 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:50,369 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:50,646 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:50,651 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7142146
+2024-07-22 11:45:50,657 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:50,657 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:50,887 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:50,925 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:51,017 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6436088
+2024-07-22 11:45:51,053 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:51,258 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:51,258 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:51,303 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6414600
+2024-07-22 11:45:51,315 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:51,449 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:51,451 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5565891
+2024-07-22 11:45:51,454 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:51,576 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:51,821 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:51,823 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5572069
+2024-07-22 11:45:51,825 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:51,831 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:52,073 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:52,105 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:52,145 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5671810
+2024-07-22 11:45:52,147 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:52,195 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:52,430 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:52,432 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5971063
+2024-07-22 11:45:52,434 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:52,526 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:52,711 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:52,713 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6336235
+2024-07-22 11:45:52,715 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:52,779 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:52,826 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:52,828 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6287337
+2024-07-22 11:45:52,953 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:53,018 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:53,228 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:53,247 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7175679
+2024-07-22 11:45:53,249 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:53,354 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:53,553 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:53,558 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7304948
+2024-07-22 11:45:53,563 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:53,819 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:53,831 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8082568
+2024-07-22 11:45:53,834 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:53,881 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:54,242 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:54,244 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8833832
+2024-07-22 11:45:54,244 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:54,246 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:54,366 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:54,576 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:54,578 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6837741
+2024-07-22 11:45:54,588 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:54,660 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:54,898 [21] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:54,899 [21] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6484803
+2024-07-22 11:45:54,901 [21] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:55,018 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:55,019 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6460569
+2024-07-22 11:45:55,020 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:55,022 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:55,187 [3] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 11:45:55,251 [8] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:55,252 [8] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5889254
+2024-07-22 11:45:55,254 [8] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:55,593 [14] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:55,594 [14] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5711954
+2024-07-22 11:45:55,596 [14] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:55,745 [3] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:55,746 [3] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3329662
+2024-07-22 11:45:55,749 [3] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 11:45:55,786 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 11:45:55,787 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5938117
+2024-07-22 11:45:55,790 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:12:45,979 [1] INFO ToDatabase.Processing.Start[54] -  [*] Waiting for Batches To come
+2024-07-22 12:12:46,041 [1] INFO ToDatabase.Processing.Start[82] -  Press [enter] to exit.
+2024-07-22 12:20:18,524 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:19,498 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:19,941 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:20,451 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:20,946 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:20,956 [9] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:20,964 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.0171394
+2024-07-22 12:20:20,966 [9] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.2717025
+2024-07-22 12:20:21,042 [9] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:21,075 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:21,325 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:21,331 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8519200
+2024-07-22 12:20:21,372 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:21,747 [22] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:21,760 [22] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7338090
+2024-07-22 12:20:21,762 [22] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:21,763 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:21,931 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:22,226 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:22,617 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:22,726 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:22,811 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8705190
+2024-07-22 12:20:22,885 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:23,157 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:23,256 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.0257926
+2024-07-22 12:20:23,261 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:23,331 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:23,595 [9] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:23,597 [9] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9691309
+2024-07-22 12:20:23,600 [9] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:23,828 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:24,174 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:24,176 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8332734
+2024-07-22 12:20:24,179 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:24,242 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:24,541 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:24,699 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:24,702 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8620819
+2024-07-22 12:20:24,705 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:24,905 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:24,977 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:25,083 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8258999
+2024-07-22 12:20:25,094 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:25,273 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:25,390 [4] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:25,395 [4] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8387054
+2024-07-22 12:20:25,398 [4] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:25,501 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:25,675 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:25,732 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8181874
+2024-07-22 12:20:25,735 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:25,798 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:25,893 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:25,896 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6154784
+2024-07-22 12:20:25,898 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:26,089 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:26,104 [4] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:26,111 [4] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5977295
+2024-07-22 12:20:26,159 [4] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:26,394 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:26,438 [9] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:26,448 [9] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6456258
+2024-07-22 12:20:26,451 [9] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:26,630 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:26,696 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:26,743 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6514513
+2024-07-22 12:20:26,746 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:26,928 [4] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:26,929 [4] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5325915
+2024-07-22 12:20:26,932 [4] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:27,152 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:27,153 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5009474
+2024-07-22 12:20:27,155 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:27,263 [22] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:27,264 [22] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3812133
+2024-07-22 12:20:27,266 [22] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:27,268 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:27,417 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:27,601 [22] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 12:20:27,896 [20] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:27,898 [20] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4772409
+2024-07-22 12:20:27,900 [20] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:28,092 [22] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:28,093 [22] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3269532
+2024-07-22 12:20:28,095 [22] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 12:20:28,149 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 12:20:28,150 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5460329
+2024-07-22 12:20:28,153 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:25,634 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:26,153 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:26,922 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:27,221 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:27,745 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:27,750 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:27,785 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.5365783
+2024-07-22 13:09:27,799 [9] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:27,847 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:27,961 [9] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.0133191
+2024-07-22 13:09:28,024 [9] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:28,232 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:28,327 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.0905257
+2024-07-22 13:09:28,332 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:28,572 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:28,763 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:28,966 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.2057946
+2024-07-22 13:09:28,968 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:29,085 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:29,701 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:29,722 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.1381393
+2024-07-22 13:09:29,725 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:29,969 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:29,971 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9911696
+2024-07-22 13:09:29,973 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:30,407 [26] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:30,408 [26] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7135357
+2024-07-22 13:09:30,409 [26] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:30,410 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:30,591 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:30,898 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:31,194 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:31,197 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6038078
+2024-07-22 13:09:31,207 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:31,208 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:31,500 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:31,831 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:31,832 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9250112
+2024-07-22 13:09:31,835 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:31,996 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:32,017 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:32,018 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8045188
+2024-07-22 13:09:32,020 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:32,180 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:32,366 [18] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:32,367 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:32,389 [18] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8661104
+2024-07-22 13:09:32,420 [18] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:32,642 [22] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:32,673 [22] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6738834
+2024-07-22 13:09:32,735 [22] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:32,741 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:32,985 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:32,993 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8001977
+2024-07-22 13:09:32,995 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:33,099 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:33,134 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7622839
+2024-07-22 13:09:33,137 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:33,179 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:33,327 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:33,551 [7] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:33,581 [7] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8383519
+2024-07-22 13:09:33,583 [7] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:33,644 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:33,901 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:33,913 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7301751
+2024-07-22 13:09:33,915 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:33,949 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:34,042 [9] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:34,043 [9] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6778275
+2024-07-22 13:09:34,050 [9] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:34,234 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:34,319 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:34,346 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6870529
+2024-07-22 13:09:34,386 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:34,538 [26] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:09:34,555 [7] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:34,556 [7] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6038851
+2024-07-22 13:09:34,558 [7] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:34,911 [9] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:34,976 [9] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7381603
+2024-07-22 13:09:35,027 [9] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:35,079 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:35,080 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4204012
+2024-07-22 13:09:35,082 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:09:35,128 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:09:35,144 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6005172
+2024-07-22 13:09:35,146 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:04,081 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:04,177 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:04,409 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:04,696 [25] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:04,698 [25] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5181689
+2024-07-22 13:10:04,700 [25] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:04,912 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:04,914 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5016165
+2024-07-22 13:10:04,915 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:05,196 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:05,197 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5555687
+2024-07-22 13:10:05,198 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:05,199 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:05,402 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:05,960 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:05,962 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5499735
+2024-07-22 13:10:05,964 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:06,211 [16] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:06,212 [16] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5559583
+2024-07-22 13:10:06,214 [16] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:06,215 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:06,385 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:06,589 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:06,785 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:06,852 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:06,854 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4655504
+2024-07-22 13:10:06,857 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:07,036 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:07,193 [7] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:07,195 [7] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6021949
+2024-07-22 13:10:07,197 [7] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:07,245 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:07,432 [25] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:07,433 [25] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6450354
+2024-07-22 13:10:07,435 [25] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:07,514 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:07,677 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:07,678 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6327464
+2024-07-22 13:10:07,680 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:07,775 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:07,965 [7] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:08,011 [7] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7125866
+2024-07-22 13:10:08,013 [7] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:08,125 [25] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:08,126 [25] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6092246
+2024-07-22 13:10:08,128 [25] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:08,190 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:08,380 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:08,382 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6025555
+2024-07-22 13:10:08,383 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:08,478 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:08,687 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:08,734 [7] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:08,768 [7] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5722300
+2024-07-22 13:10:08,773 [7] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:08,845 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:09,103 [25] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:09,105 [25] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6238975
+2024-07-22 13:10:09,107 [25] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:09,181 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:09,344 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:09,357 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:09,380 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6840605
+2024-07-22 13:10:09,382 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:09,493 [7] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:09,495 [7] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6450623
+2024-07-22 13:10:09,497 [7] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:09,636 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:09,851 [25] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:09,853 [25] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6579320
+2024-07-22 13:10:09,855 [25] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:09,981 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:10,070 [24] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:10,071 [24] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6853452
+2024-07-22 13:10:10,073 [24] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:10,284 [7] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:10,285 [7] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6312006
+2024-07-22 13:10:10,287 [7] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:10,306 [16] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:10:10,573 [25] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:10,575 [25] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5674800
+2024-07-22 13:10:10,576 [25] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:10,830 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:10,833 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.3582664
+2024-07-22 13:10:10,836 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:10:10,939 [7] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:10:10,942 [7] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6293053
+2024-07-22 13:10:10,945 [7] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:38,042 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:38,272 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:38,537 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:38,929 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:39,154 [25] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:39,158 [25] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8574128
+2024-07-22 13:48:39,162 [25] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:39,398 [3] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:39,404 [3] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8600007
+2024-07-22 13:48:39,407 [3] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:39,593 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:39,831 [9] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:39,861 [9] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.9169194
+2024-07-22 13:48:39,911 [9] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:40,277 [25] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:40,279 [25] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6832791
+2024-07-22 13:48:40,282 [25] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:40,923 [27] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:40,924 [27] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.0518831
+2024-07-22 13:48:40,926 [27] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:40,927 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:41,156 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:41,654 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:42,211 [9] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:42,333 [9] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.1424575
+2024-07-22 13:48:42,339 [9] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:42,502 [25] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:42,516 [25] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8423401
+2024-07-22 13:48:42,572 [25] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:42,833 [27] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:42,834 [27] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4868439
+2024-07-22 13:48:42,835 [27] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:42,836 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:43,040 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:43,205 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:43,451 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:43,753 [25] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:43,755 [25] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7109583
+2024-07-22 13:48:43,770 [9] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:43,771 [25] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:43,791 [9] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5831060
+2024-07-22 13:48:43,795 [9] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:43,828 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:43,923 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:43,925 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4706329
+2024-07-22 13:48:43,926 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:44,033 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:44,260 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:44,507 [9] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:44,571 [9] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.7381772
+2024-07-22 13:48:44,627 [9] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:44,661 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:44,719 [19] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:44,720 [19] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6269111
+2024-07-22 13:48:44,722 [19] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:44,863 [29] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:44,864 [29] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5728368
+2024-07-22 13:48:44,884 [29] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:44,891 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:45,113 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:45,163 [3] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:45,164 [3] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.4986765
+2024-07-22 13:48:45,166 [3] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:45,367 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:45,449 [29] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:45,460 [29] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5604011
+2024-07-22 13:48:45,462 [29] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:45,624 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:45,725 [25] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:45,726 [25] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6108046
+2024-07-22 13:48:45,728 [25] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:45,916 [3] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:45,917 [3] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.5433053
+2024-07-22 13:48:45,921 [3] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:45,924 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:46,266 [27] INFO ToDatabase.Processing.MoveNext[62] - Batch Processing
+2024-07-22 13:48:46,645 [29] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:46,654 [29] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:01.0263255
+2024-07-22 13:48:46,655 [29] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:46,791 [3] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:46,792 [3] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.8649274
+2024-07-22 13:48:46,794 [3] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:46,883 [9] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:46,884 [9] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.6116317
+2024-07-22 13:48:46,886 [9] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully
+2024-07-22 13:48:46,979 [27] INFO ToDatabase.Processing.MoveNext[153] - Rows Affected: 0
+2024-07-22 13:48:46,979 [27] INFO ToDatabase.Processing.MoveNext[155] - Time taken: 00:00:00.2016757
+2024-07-22 13:48:46,981 [27] INFO ToDatabase.Processing.MoveNext[168] - Batch Inserted Successfully

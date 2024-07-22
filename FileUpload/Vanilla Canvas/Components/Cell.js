@@ -8,6 +8,8 @@ class Cell {
     this.X = X;
     this.Y = Y;
     this.text = "";
+    this.isRow = false;
+    this.isColumn = false;
   }
 
   draw() {
@@ -15,12 +17,17 @@ class Cell {
     if (this.selected) {
 
       this.context.clearRect(this.topX,this.topY,this.width,this.height);
+
       this.context.fillStyle = "rgba(0, 120, 215, 0.3)"; // Light blue highlight
+      // this.context.strokeStyle = "red"
+      
       this.context.fillRect(this.topX, this.topY, this.width, this.height);
+      // this.context.strokeRect(this.topX,this.topY,this.width,this.height);
       this.context.fillStyle = "black";
       this.context.strokeStyle = "#E1E1E1";
     }
     else{
+        this.context.strokeStyle = "#E1E1E1";
         this.context.clearRect(this.topX,this.topY,this.width,this.height);
         this.context.strokeRect(this.topX, this.topY, this.width, this.height);
     }

@@ -843,3 +843,685 @@
 2024-07-19 15:59:07,899 [22] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
 2024-07-19 15:59:07,899 [22] INFO api.Controllers.UserController.MoveNext[65] - True
 2024-07-19 15:59:07,899 [22] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 17:26:08,944 [3] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-19 17:26:08,983 [3] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a5458e74db7e9ff0d96a8",
+  "FileId": "8f569f1d-bd4a-4358-80d1-3342863ebc28",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 17:26:32,654 [3] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-19 17:26:32,655 [3] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-19 17:26:32,716 [3] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-19 17:26:32,716 [3] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-19 17:26:32,717 [3] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 17:50:07,864 [5] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Application is shutting down...
+2024-07-19 17:50:31,537 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-07-19 17:50:31,594 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-07-19 17:50:31,598 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-07-19 17:50:31,599 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-07-19 17:50:51,697 [9] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-19 17:50:52,007 [9] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a5a239e35d9d12a15ecae",
+  "FileId": "3da00ce8-2ed3-4a81-a197-a25567fc938d",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 17:51:08,370 [16] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-19 17:51:08,375 [16] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a5a349e35d9d12a15ecaf",
+  "FileId": "93ca9c09-e065-474e-8798-4eebee7c425c",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 17:53:49,289 [7] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST UploadCsv/fasterupload" for actions - api.Controllers.UploadCsvController.uploadCsvFaster (api),api.Controllers.UploadCsvController.uploadCsvFaster (api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-19 17:54:33,684 [7] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST UploadCsv/fasterupload" for actions - api.Controllers.UploadCsvController.uploadCsvFaster (api),api.Controllers.UploadCsvController.uploadCsvFaster (api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-19 17:54:36,299 [18] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST UploadCsv/fasterupload" for actions - api.Controllers.UploadCsvController.uploadCsvFaster (api),api.Controllers.UploadCsvController.uploadCsvFaster (api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-19 17:54:48,547 [3] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Application is shutting down...
+2024-07-19 17:55:01,388 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-07-19 17:55:01,421 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-07-19 17:55:01,423 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-07-19 17:55:01,424 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-07-19 17:55:16,726 [9] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-19 17:55:16,929 [12] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a5b2cd644e848931bf63d",
+  "FileId": "def2c81f-5dff-47a0-ae03-7178e551f477",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 17:55:22,331 [12] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-19 17:55:22,334 [12] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-19 17:55:23,021 [12] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-19 17:55:23,026 [12] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-19 17:55:23,030 [12] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 17:56:15,794 [27] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-19 17:56:15,805 [9] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669a5b67d644e848931bf63e",
+  "FileId": "bff1d0d1-20aa-4026-ace2-b6cd3e71aa8c",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 17:56:24,790 [12] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-19 17:56:24,792 [12] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-19 17:56:24,794 [12] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-19 17:56:24,795 [12] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-19 17:56:24,797 [12] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 18:06:03,289 [7] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileuploaddata1.csv
+2024-07-19 18:06:03,318 [7] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669a5db3d644e848931bf63f",
+  "FileId": "d174f9de-3019-4d77-a812-cae0f0f6d32a",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 18:06:52,037 [18] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-19 18:06:52,040 [18] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669a5de4d644e848931bf640",
+  "FileId": "d0e71331-c5fd-40d7-bf4e-0c7361ef75c5",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 18:07:02,575 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-19 18:07:02,578 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-19 18:07:02,642 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-19 18:07:02,643 [4] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-19 18:07:02,644 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 18:12:38,550 [27] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-19 18:12:38,559 [27] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669a5f3ed644e848931bf641",
+  "FileId": "eb0ca4d3-9859-47e9-a518-fff77dc1b38e",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 18:12:44,920 [27] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-19 18:12:44,923 [27] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-19 18:12:45,088 [27] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-19 18:12:45,091 [27] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-19 18:12:45,096 [27] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-19 18:13:03,761 [9] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-19 18:13:03,764 [9] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669a5f57d644e848931bf642",
+  "FileId": "7e168638-ea9d-4a90-997b-c629617080a4",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-19 18:13:08,955 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-19 18:13:08,956 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-19 18:13:08,963 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-19 18:13:08,968 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-19 18:13:08,983 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 11:41:38,647 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-07-22 11:41:38,847 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-07-22 11:41:38,853 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-07-22 11:41:38,860 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-07-22 11:43:38,162 [16] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-22 11:43:38,631 [13] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669df8924d450440e6389ed0",
+  "FileId": "6fd08b60-c65b-4212-bf43-459944158d2e",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 11:45:47,829 [23] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-22 11:45:47,836 [23] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669df9134d450440e6389ed1",
+  "FileId": "d60f0953-a0b0-49f8-ab2e-8088a8a9c9c4",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 11:45:52,676 [23] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-22 11:45:52,692 [23] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-22 11:45:52,975 [23] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-22 11:45:52,976 [23] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-22 11:45:52,989 [23] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 12:11:26,886 [22] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+System.FormatException: An error occurred while deserializing the Batches property of class api.Models.File: Element 'BatchId' does not match any field or property of class api.Models.Batch.
+ ---> System.FormatException: Element 'BatchId' does not match any field or property of class api.Models.Batch.
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeClass(BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.EnumerableSerializerBase`2.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.SerializerBase`1.MongoDB.Bson.Serialization.IBsonSerializer.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize(IBsonSerializer serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeMemberValue(BsonDeserializationContext context, BsonMemberMap memberMap)
+   --- End of inner exception stack trace ---
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeMemberValue(BsonDeserializationContext context, BsonMemberMap memberMap)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeClass(BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Driver.Core.Operations.CursorBatchDeserializationHelper.DeserializeBatch[TDocument](RawBsonArray batch, IBsonSerializer`1 documentSerializer, MessageEncoderSettings messageEncoderSettings)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.CreateFirstCursorBatch(BsonDocument cursorDocument)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.CreateCursor(IChannelSourceHandle channelSource, IChannelHandle channel, BsonDocument commandResult)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.ExecuteAsync(IReadBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](IReadBinding binding, IReadOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.FirstOrDefaultAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at api.Services.FileService.GetAsync(String id)
+   at api.Services.FileService.GetProgress(String)
+   at api.Controllers.FileController.GetProgress(String id)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-22 12:12:04,835 [11] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Application is shutting down...
+2024-07-22 12:12:48,890 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-07-22 12:12:48,982 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-07-22 12:12:48,984 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-07-22 12:12:48,984 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-07-22 12:13:26,557 [13] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+System.FormatException: An error occurred while deserializing the Batches property of class api.Models.File: Element 'BatchId' does not match any field or property of class api.Models.Batch.
+ ---> System.FormatException: Element 'BatchId' does not match any field or property of class api.Models.Batch.
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeClass(BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.EnumerableSerializerBase`2.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.Serializers.SerializerBase`1.MongoDB.Bson.Serialization.IBsonSerializer.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize(IBsonSerializer serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeMemberValue(BsonDeserializationContext context, BsonMemberMap memberMap)
+   --- End of inner exception stack trace ---
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeMemberValue(BsonDeserializationContext context, BsonMemberMap memberMap)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeClass(BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Driver.Core.Operations.CursorBatchDeserializationHelper.DeserializeBatch[TDocument](RawBsonArray batch, IBsonSerializer`1 documentSerializer, MessageEncoderSettings messageEncoderSettings)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.CreateFirstCursorBatch(BsonDocument cursorDocument)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.CreateCursor(IChannelSourceHandle channelSource, IChannelHandle channel, BsonDocument commandResult)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.ExecuteAsync(RetryableReadContext context, CancellationToken cancellationToken)
+   at MongoDB.Driver.Core.Operations.FindOperation`1.ExecuteAsync(IReadBinding binding, CancellationToken cancellationToken)
+   at MongoDB.Driver.OperationExecutor.ExecuteReadOperationAsync[TResult](IReadBinding binding, IReadOperation`1 operation, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.ExecuteReadOperationAsync[TResult](IClientSessionHandle session, IReadOperation`1 operation, ReadPreference readPreference, CancellationToken cancellationToken)
+   at MongoDB.Driver.MongoCollectionImpl`1.UsingImplicitSessionAsync[TResult](Func`2 funcAsync, CancellationToken cancellationToken)
+   at MongoDB.Driver.IAsyncCursorSourceExtensions.FirstOrDefaultAsync[TDocument](IAsyncCursorSource`1 source, CancellationToken cancellationToken)
+   at api.Services.FileService.GetAsync(String id) in D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\Services\FileService.cs:line 32
+   at api.Services.FileService.GetProgress(String id) in D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\Services\FileService.cs:line 42
+   at api.Controllers.FileController.GetProgress(String id) in D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api\Controllers\FileController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-22 12:15:23,962 [14] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Application is shutting down...
+2024-07-22 12:19:37,325 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-07-22 12:19:37,411 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-07-22 12:19:37,413 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-07-22 12:19:37,414 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-07-22 12:20:16,822 [16] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-22 12:20:17,204 [16] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669e0128b278bec1c57c7dbe",
+  "FileId": "e6655abc-7108-49eb-9e75-1d857bd8e11b",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 13:09:23,952 [34] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-22 13:09:24,052 [34] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669e0cabb278bec1c57c7dbf",
+  "FileId": "e429c0db-12ea-4635-9cf4-0732427f674f",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 13:09:35,518 [31] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-22 13:09:35,560 [31] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-22 13:09:35,740 [31] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-22 13:09:35,740 [31] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-22 13:09:35,743 [31] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 13:10:03,556 [15] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-22 13:10:03,561 [15] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669e0cd3b278bec1c57c7dc0",
+  "FileId": "bbc41aa0-ecd6-4aac-90b5-464f0f907cc8",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 13:10:12,554 [29] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-22 13:10:12,559 [29] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-22 13:10:12,560 [29] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-22 13:10:12,561 [29] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-22 13:10:12,563 [29] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 13:48:36,658 [33] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-22 13:48:36,719 [16] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669e15dcb278bec1c57c7dc1",
+  "FileId": "1777ba25-d3e4-4b38-a799-7f32218e6f1f",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 13:48:47,278 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-22 13:48:47,340 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-22 13:48:47,407 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-22 13:48:47,407 [16] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-22 13:48:47,407 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 15:46:44,428 [34] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 15:46:44,496 [22] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e318cb278bec1c57c7dc2",
+  "FileId": "76831286-33d0-41e3-8722-be0e20aeb7bb",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 15:47:21,134 [27] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 15:47:21,184 [27] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 15:47:21,247 [27] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 15:47:21,249 [27] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 15:47:21,250 [27] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 15:51:36,042 [15] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 15:51:36,069 [15] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e32b0b278bec1c57c7dc3",
+  "FileId": "a4a95983-6230-4c55-823f-5a6515c555e4",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 15:51:38,104 [13] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 15:51:38,107 [13] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 15:51:38,108 [13] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 15:51:38,109 [13] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 15:51:38,111 [13] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 15:52:30,469 [3] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 15:52:30,473 [3] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e32e6b278bec1c57c7dc4",
+  "FileId": "db591475-83b8-4579-8bdc-9936271cba79",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 15:52:33,358 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 15:52:33,359 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 15:52:33,539 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 15:52:33,542 [3] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 15:52:33,543 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 15:53:26,654 [30] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 15:53:26,658 [30] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e331eb278bec1c57c7dc5",
+  "FileId": "319a1edb-f021-4548-9948-97710426ca8d",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 15:54:31,523 [30] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 15:54:31,526 [30] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e335fb278bec1c57c7dc6",
+  "FileId": "0519f847-b8fe-4a26-ab54-01103684d842",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 15:54:33,200 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 15:54:33,278 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 15:54:33,378 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 15:54:33,395 [3] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 15:54:33,402 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 15:55:14,047 [12] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 15:55:14,049 [12] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e338ab278bec1c57c7dc7",
+  "FileId": "ddb93b1c-2c5b-4b48-9e75-7c3bc4c7c683",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 15:55:15,321 [12] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 15:55:15,325 [12] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 15:55:15,326 [12] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 15:55:15,326 [12] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 15:55:15,327 [12] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 15:57:09,637 [29] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 15:57:09,640 [29] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e33fdb278bec1c57c7dc8",
+  "FileId": "57e83799-a718-41ae-90d0-4f6af23df2c8",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 15:57:51,834 [35] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 15:57:51,836 [35] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 15:57:52,024 [35] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 15:57:52,025 [35] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 15:57:52,027 [35] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 15:57:58,100 [15] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 15:57:58,102 [15] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e342eb278bec1c57c7dc9",
+  "FileId": "28ccad36-a03c-4a46-83f1-747c3848d261",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 15:58:00,814 [31] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 15:58:00,826 [31] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 15:58:00,846 [31] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 15:58:00,852 [31] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 15:58:00,871 [31] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 15:58:47,372 [31] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 15:58:47,375 [31] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e345fb278bec1c57c7dca",
+  "FileId": "637ee252-d3ce-4686-b2cd-fa9389b0b80f",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 15:58:50,632 [34] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 15:58:50,639 [34] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 15:58:50,668 [34] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 15:58:50,683 [34] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 15:58:50,704 [34] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 16:00:47,423 [31] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 16:00:47,427 [31] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e34d7b278bec1c57c7dcb",
+  "FileId": "19d3b6b4-83a7-4029-ab20-5f19f4ea796e",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:00:55,361 [29] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 16:00:55,362 [29] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 16:00:55,363 [29] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 16:00:55,364 [29] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 16:00:55,365 [29] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 16:01:58,806 [22] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 16:01:58,808 [22] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e351eb278bec1c57c7dcc",
+  "FileId": "734f4a8c-8022-433f-8def-99731ece6003",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:02:01,769 [32] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 16:02:01,782 [32] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 16:02:01,790 [32] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 16:02:01,797 [32] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 16:02:01,805 [32] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 16:03:29,285 [28] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 16:03:29,298 [28] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e3579b278bec1c57c7dcd",
+  "FileId": "b771b0d7-6cca-4eee-ac11-312b70623950",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:03:30,750 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 16:03:30,756 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 16:03:30,872 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 16:03:30,882 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 16:03:30,884 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 16:03:56,992 [15] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 16:03:56,995 [15] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e3594b278bec1c57c7dce",
+  "FileId": "a9a2ce4e-ae6a-48d6-ab44-46019d27a36b",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:04:00,611 [32] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 16:04:00,642 [32] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 16:04:00,686 [32] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 16:04:00,697 [32] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 16:04:00,699 [32] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 16:07:28,197 [32] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 16:07:28,200 [32] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e3668b278bec1c57c7dcf",
+  "FileId": "51b28a86-3163-42de-855c-9853e77ca007",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:09:22,805 [32] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 16:09:22,807 [32] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e36dab278bec1c57c7dd0",
+  "FileId": "4acd6f1f-469f-41ee-acdf-2aee7d74db14",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:10:24,858 [30] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 16:10:24,860 [30] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e3718b278bec1c57c7dd1",
+  "FileId": "442083f2-826c-46e7-9048-ea629a96d24f",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:10:59,113 [16] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 16:10:59,116 [16] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e373bb278bec1c57c7dd2",
+  "FileId": "fdb6cd05-c256-4127-9e23-be2fb7e2e97b",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:12:48,599 [26] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 16:12:48,601 [26] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e37a8b278bec1c57c7dd3",
+  "FileId": "0dddd933-a286-4f32-b328-8eda9cbf705f",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:12:54,868 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 16:12:54,869 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 16:12:54,948 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 16:12:54,948 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 16:12:54,949 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 16:18:57,735 [26] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 16:18:57,752 [26] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e3919b278bec1c57c7dd4",
+  "FileId": "25360883-a29d-4f31-b0f1-fc9e93a2dfaa",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:19:06,009 [22] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 16:19:06,013 [22] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 16:19:06,078 [22] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 16:19:06,078 [22] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 16:19:06,080 [22] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 16:19:13,259 [12] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-22 16:19:13,261 [12] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "669e3929b278bec1c57c7dd5",
+  "FileId": "35df77fe-0460-44e7-a0a0-0e0b81f375a7",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:19:21,518 [29] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-22 16:19:21,520 [29] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-22 16:19:21,521 [29] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-22 16:19:21,522 [29] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-22 16:19:21,523 [29] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 16:19:49,948 [3] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Application is shutting down...
+2024-07-22 16:20:07,329 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-07-22 16:20:07,394 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-07-22 16:20:07,398 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-07-22 16:20:07,399 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-07-22 16:20:15,740 [13] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-22 16:20:16,031 [7] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669e39679561c90e88b66b6b",
+  "FileId": "97020b0c-0142-4161-b5da-8ddd3f184ef2",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-22 16:20:24,713 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-22 16:20:24,717 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-22 16:20:24,867 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-22 16:20:24,868 [13] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-22 16:20:24,870 [13] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 600
+2024-07-22 16:21:42,631 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-07-22 16:21:42,710 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-07-22 16:21:42,718 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-07-22 16:21:42,718 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-07-22 16:21:49,975 [13] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-22 16:21:50,295 [7] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "669e39c52e304c2d841e9b01",
+  "FileId": "90020ce3-aa82-4b33-ad39-8c76483b524e",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}

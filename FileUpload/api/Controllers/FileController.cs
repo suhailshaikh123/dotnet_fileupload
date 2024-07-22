@@ -30,5 +30,17 @@ namespace api.Controllers
    
         }
 
+        [HttpGet("GetProgresss")]
+        public async Task<IActionResult> GetProgress(string id)
+        {
+            var result = await _fileService.GetProgress(id);
+            Console.WriteLine(result);
+            if(result.status == "success")
+            {
+                return Ok(new { message = "success", totalBatches = result.totalBatches, successfullyUploadedBatches = result.successfullyUploadedBatches});
+            }
+            return Ok(new { message = "failed"});
+        }
+
     }
 }

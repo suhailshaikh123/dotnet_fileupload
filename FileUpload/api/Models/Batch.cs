@@ -9,14 +9,13 @@ namespace api.Models
 {
     public class Batch
     {
-        [BsonId]
-        [BsonRepresentation(BsonType.ObjectId)]
         public string? BatchId { get; set; }
 
+        public int TotalCount { get; set; } = 0;
         public string BatchStatus { get; set; } = null!;
 
-        public decimal ErrorDetails { get; set; }
+        public string ErrorDetails { get; set; }
 
-        
+
     }
 }

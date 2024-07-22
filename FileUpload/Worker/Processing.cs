@@ -145,11 +145,14 @@ namespace Worker.Consumer
                             BatchStatus = "Batch is successfully Sent for Uploading"
 
                         };
-                        AddToQueue(temp, fileId, batch.BatchId);
-                        await _fileService.AddBatchAsync(fileId, batch);
+                        
                         // Clear the command 0parameters and the insert query
                         userToUpload.Clear();
                         totalBatches++;
+                        result.totalBatches = totalBatches;
+                        await _fileService.UpdateAsync(fileId, result);
+                        AddToQueue(temp, fileId, batch.BatchId);
+                        await _fileService.AddBatchAsync(fileId, batch);
 
                     }
                 }
@@ -167,10 +170,12 @@ namespace Worker.Consumer
 
                     };
                     AddToQueue(temp, fileId, batch.BatchId);
-                    await _fileService.AddBatchAsync(fileId, batch);
                     // Clear the command 0parameters and the insert query
                     userToUpload.Clear();
                     totalBatches++;
+                    result.totalBatches = totalBatches;
+                    await _fileService.UpdateAsync(fileId, result);
+                    await _fileService.AddBatchAsync(fileId, batch);
                 }
 
 

@@ -92,8 +92,9 @@ namespace api.Controllers
                 channel.BasicPublish(exchange: string.Empty,
                                      routingKey: "process_queue",
                                      body: mes);
-
-                return Ok("Data inserted successfully");
+                
+            
+                return Ok(new {msg = "data inserted successfully" , fileId = fileToInsert.FileId});
                }
             
             
