@@ -141,3 +141,5 @@ D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\ToDatabase\bin\Debu
 D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\ToDatabase\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
 D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\ToDatabase\bin\Debug\net8.0\log4net.dll
 D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\ToDatabase\bin\Debug\net8.0\Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\ToDatabase\bin\Debug\net8.0\Polly.dll
+D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\ToDatabase\bin\Debug\net8.0\Polly.Core.dll

@@ -100,7 +100,7 @@ namespace Worker.Consumer
 
 
                 int i = 0;
-                int chunkSize = 4600;
+                int chunkSize = 4000;
                 int totalBatches = 0;
                 while (!reader.EndOfStream)
                 {
@@ -148,8 +148,8 @@ namespace Worker.Consumer
                         
                         // Clear the command 0parameters and the insert query
                         userToUpload.Clear();
-                        totalBatches++;
-                        result.totalBatches = totalBatches;
+                        totalBatches = totalBatches+1;
+                        result.TotalBatches = totalBatches;
                         await _fileService.UpdateAsync(fileId, result);
                         AddToQueue(temp, fileId, batch.BatchId);
                         await _fileService.AddBatchAsync(fileId, batch);
@@ -173,7 +173,7 @@ namespace Worker.Consumer
                     // Clear the command 0parameters and the insert query
                     userToUpload.Clear();
                     totalBatches++;
-                    result.totalBatches = totalBatches;
+                    result.TotalBatches = totalBatches;
                     await _fileService.UpdateAsync(fileId, result);
                     await _fileService.AddBatchAsync(fileId, batch);
                 }

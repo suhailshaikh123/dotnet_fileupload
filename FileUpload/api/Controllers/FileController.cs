@@ -41,6 +41,16 @@ namespace api.Controllers
             }
             return Ok(new { message = "failed"});
         }
+        [HttpGet("GetById")]
+        public async Task<IActionResult> GetById(string id)
+        {
+            var result = await _fileService.GetAsync(id);
+            if(result == null)
+            {
+                return BadRequest("Not found");
+            }
+            return Ok(result);
+        }
 
     }
 }

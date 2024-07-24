@@ -28,6 +28,7 @@ class Table {
       count: 0,
       count_numbers: 0,
     };
+    this.isCtrlPressed = false;
   }
 
   // Draw Functions
@@ -89,8 +90,6 @@ class Table {
     }
 
     this.indexing.draw();
-    // console.log(this.data[0][1]);
-    // console.log(this.data[1][0]);
   }
 
   createInputField(event, cell) {
@@ -124,8 +123,6 @@ class Table {
     input.focus();
     input.select();
   }
-
-  // EventListener functions
   handleDoubleClick(event) {
     const { clientX, clientY } = event;
     const rect = this.canvas.getBoundingClientRect();
@@ -215,14 +212,54 @@ class Table {
     this.isSelecting = false;
     console.log(this.metaData);
   }
-  handleKeyPress(event) {
+  handleKeyUp(event)
+  {
+    const keyUp = event.key;
+    if(keyUp == "Control")
+    {
+      this.ctrlPressed = false;
+    }
+  }
+  handleScroll(event)
+  {
+    // console.log("scroll")
+    const element  = document.documentElement;
+    const scrollTop = element.scrollTop
+    const height  = element.scrollHeight;
+    const per  = (scrollTop/height)*100
+    console.log("percentage is "+per)
+    const lower_canvas = document.getElementsByClassName("canvas-lower")[0];
+    console.log("height is "+ lower_canvas)  
+    if(per >80)
+    {
+      console.log("condition hit")
+    }
+    console.log( this.canvas.height)
+  }
+  async handleKeyPress(event) {
     const keyPressed = event.key;
-
+    if(keyPressed == "Control")
+    {
+      this.ctrlPressed = true;
+    }
     if (this.isSelecting == false && this.selectedCell.length <= 3) {
       let current_cell = this.selectedCell[0];
       let next_cell = null;
       let row_cell;
       let col_cell;
+      if(this.ctrlPressed)
+      {
+        if(keyPressed == "c"){
+        navigator.clipboard.writeText(current_cell.text);
+        }
+        else if(keyPressed == "v")
+        {
+          const pastedValue  = await navigator.clipboard.readText();
+          current_cell.text = pastedValue;
+          current_cell.draw();
+        }
+        return;
+      }
       if (keyPressed == "ArrowRight") {
         if (current_cell.Y + 1 < this.columns) {
           next_cell = this.data[current_cell.X][current_cell.Y + 1];
