@@ -9802,11 +9802,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\Worker\\worker.csproj",
+      "projectUniqueName": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\Worker\\worker.csproj",
       "projectName": "worker",
-      "projectPath": "d:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\Worker\\worker.csproj",
+      "projectPath": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\Worker\\worker.csproj",
       "packagesPath": "C:\\Users\\suhail.shaikh\\.nuget\\packages\\",
-      "outputPath": "d:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\Worker\\obj\\",
+      "outputPath": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\Worker\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9938,7 +9938,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

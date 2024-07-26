@@ -28,15 +28,16 @@ class Table {
     this.endY = 0;
     this.startX = 0;
     this.startY = 0;
-    console.log(this.columns_width)
+    this.scrollY = 0;
+    this.currentRow = 0;
     for (let i = 0; i < this.rows; i++) {
       this.data[i] = new Array(this.columns);
       for (let j = 0; j < this.columns; j++) {
         this.data[i][j] = new Cell(this.context, 0, 0, 0, 0,0,0,this.columns_width,this.rows_width);
-        console.log(this.data[i][j]);
+        
       }
     }
-    console.log(this.columns_width)
+ 
     this.metaData = {
       sum: 0,
       average: 0,
@@ -53,43 +54,67 @@ class Table {
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     this.drawVerticalLines();
     this.drawHorizontalLines();
-    this.drawCells();
     this.drawHeaders();
     this.drawIndex();
+    this.drawCells();
+    console.log(this.data)
   }
-
+  drawCsv(csvData) {
+    let keys = Object.keys(csvData[0]);
+    for (let i = 1; i <= csvData.length; i++) {
+      let text = "";
+  
+      for (let j = 1; j <= keys.length; j++) {
+        if (i == 1) {
+          text = keys[j - 1];
+        } else {
+          text = csvData[i - 1][keys[j - 1]];
+        }
+        this.data[i][j].text = text;
+      }
+    }
+    this.draw();
+  }
   drawHeaders() {
     let column_counter = "a";
     for (let i = 1; i < this.columns; i++) {
       this.data[0][i].text = column_counter;
       column_counter = String.fromCharCode(column_counter.charCodeAt() + 1);
-      this.data[0][i].draw(this.columns_width, this.rows_width);
+      // this.data[0][i].draw();
+    }
+    for(let i =1 ;i<this.verticalLines.length;i++)
+    {
+      // this.verticalLines - > columns
+      this.data[0][i].topX = this.verticalLines[i].x1;
+      this.data[0][i].topY = this.horizontalLines[0].y1;
+      this.data[0][i].X = 0;
+      this.data[0][i].Y = i;
+
+      this.data[0][i].draw();
     }
   }
   drawIndex() {
-    for (let i = 1; i < this.rows; i++) {
+    for (let i = this.currentRow; i < this.rows; i++) {
       this.data[i][0].text = i;
-      this.data[i][0].draw(this.columns_width, this.rows_width);
+      
     }
   }
   drawCells() {
-    
-    for (let i = 0; i < this.rows; i++) {
+    for (let i = this.currentRow + 1; i < this.rows; i++) {
       for (let j = 0; j < this.columns; j++) {
         this.data[i][j].topX = this.verticalLines[j].x1;
         this.data[i][j].topY = this.horizontalLines[i].y1;
         this.data[i][j].X = i;
         this.data[i][j].Y = j;
-        this.data[i][j].text = i + " " + j + "aaaaaa";
-        if (i != 0 && j != 0)
-          this.data[i][j].draw();
+        this.data[i][j].draw();
       }
     }
   }
+  
   drawHorizontalLines() {
     let temp = 0;
     let l;
-    for (let i = 0; i < this.rows_width.length; i++) {
+    for (let i = this.currentRow; i < this.rows_width.length; i++) {
       l = new Line(this.context, this.canvas, 5, temp, this.canvas.width, temp);
       temp += this.rows_width[i];
       l.isHorizontal = true;
@@ -97,6 +122,7 @@ class Table {
       l.drawLine();
     }
   }
+  
   drawVerticalLines() {
  
     let temp = 0;
@@ -114,79 +140,12 @@ class Table {
       l.drawLine();
     }
   }
-  // handleMouseDown(event) {
-  //   const rect = this.canvas.getBoundingClientRect();
-  //   const x = event.clientX - rect.left;
-  //   const y = event.clientY - rect.top;
-
-  //   // let { rowIndex, colIndex } = this.searchCell(x, y);
-  //   // console.log(rowIndex,colIndex)
-
-  //   // checking for a line
-  //   let flag =false;
-  //   for(let i = 1;i<this.verticalLines.length;i++)
-  //   {
-  //     if(this.verticalLines[i].isNearBorder(x,y))
-  //       {
-  //       this.canvas.style.cursor = "col-resize";
-  //       flag =true;
-  //       this.resizeColumnIndex = i;
-  //       this.isResizing = true;
-  //       this.startX = x;
-  //       console.log(i);
-  //       break;
-  //     }
-  //   }
-  //   if(!flag){
-  //     for(let i =1;i<this.horizontalLines.length;i++)
-  //       {
-  //         if(this.horizontalLines[i].isNearBorder(x,y))
-  //           {
-  //       this.canvas.style.cursor = "row-resize";
-  //       this.isResizing =true;
-  //       this.resizeRowIndex = i;
-  //       console.log(i);
-  //       break;
-  //     }
-  //   }
-  // }
-  //   // for (let i = 0; i < delta.length; i++) {
-  //     //   for (let j = 0; j < delta.length; j++) {
-  //       //     let row = rowIndex + delta[j];
-  //       //     let col = colIndex + delta[i];
-  //       //     if (row >= 0 && row < this.rows && col >= 0 && col < this.columns) {
-  //         //       let cell = this.data[row][col];
-  //         //       if (cell.isPointNearBorder(x, y)) {
-  //           //         this.canvas.style.cursor = "col-resize";
-  //           //         this.isResizing = true;
-  //           //         this.resizeColumnIndex = col;
-  //           //         this.startX = x;
-  //           //         this.initialWidth = cell.width;
-
-  //           //         break;
-  //           //       }
-  //           //     }
-  //           //   }
-  //           //   if (this.isResizing) break;
-  //           // }
-
-  //           // if (this.isResizing == false) {
-  //   //   this.clearSelect();
-  //   //   this.isSelecting = true;
-
-  //   //   this.startX = x;
-  //   //   this.startY = y;
-  //   //   this.endX = x;
-  //   //   this.endY = y;
-  //   //   this.selectCell(x, y);
-  //   // }
-  // }
 
   handleMouseDown(event) {
     const rect = this.canvas.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
-
+  
     // checking for a line
     let flag = false;
     for (let i = 1; i < this.verticalLines.length; i++) {
@@ -197,27 +156,25 @@ class Table {
         this.isResizing = true;
         this.startX = x;
         this.initialWidth = this.columns_width[this.resizeColumnIndex - 1];
-        console.log(i);
         break;
       }
     }
     if (!flag) {
-      for (let i = 1; i < this.horizontalLines.length; i++) {
+      for (let i = this.currentRow + 1; i < this.horizontalLines.length; i++) {
         if (this.horizontalLines[i].isNearBorder(x, y)) {
           this.canvas.style.cursor = "row-resize";
           this.isResizing = true;
           this.resizeRowIndex = i;
           this.startY = y;
           this.initialHeight = this.rows_width[this.resizeRowIndex - 1];
-          console.log(i);
           break;
         }
       }
     }
-    if (this.isResizing == false) {
+    if (!this.isResizing) {
       this.clearSelect();
       this.isSelecting = true;
-
+  
       this.startX = x;
       this.startY = y;
       this.endX = x;
@@ -225,17 +182,17 @@ class Table {
       this.selectCell(x, y);
     }
   }
+  
   handleMouseMove(event) {
     const rect = this.canvas.getBoundingClientRect();
     const x = event.clientX - rect.left;
     const y = event.clientY - rect.top;
-
+  
     if (this.isResizing) {
       if (this.resizeColumnIndex != -1) {
         const newWidth = this.initialWidth + (x - this.startX);
         if (newWidth > 30) {
           this.columns_width[this.resizeColumnIndex - 1] = newWidth;
-          console.log("newWidth is " + newWidth);
           this.draw();
         }
       }
@@ -243,7 +200,6 @@ class Table {
         const newHeight = this.initialHeight + (y - this.startY);
         if (newHeight > 30) {
           this.rows_width[this.resizeRowIndex - 1] = newHeight;
-          console.log("newHeight is " + newHeight);
           this.draw();
         }
       }
@@ -252,9 +208,57 @@ class Table {
       this.clearSelect();
       this.endX = x;
       this.endY = y;
-
+  
       this.updateSelect();
     }
+  }
+  
+  handleDoubleClick(event) {
+
+    const rect = this.canvas.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+  
+    let {rowIndex,colIndex} = this.searchCell(x,y);
+    if(rowIndex != 0 && colIndex != 0)
+    {
+      let cell = this.data[rowIndex][colIndex];
+      this.createInputField(event, cell);
+    }
+
+  }
+  createInputField(event, cell) {
+    const input = document.createElement("input");
+    input.type = "text";
+    input.value = cell.text;
+    input.style.position = "absolute";
+    input.style.left = `${cell.topX + this.canvas.offsetLeft}px`;
+    input.style.top = `${cell.topY + this.canvas.offsetTop}px`;
+    input.style.width = `${this.columns_width[cell.Y] - 2}px`;
+    input.style.height = `${this.rows_width[cell.X] - 2}px`;
+    input.style.fontSize = "12px";
+    input.style.border = "1px solid #rgb(221,221,221)";
+  
+    input.style.boxSizing = "border-box";
+  
+    input.addEventListener("focus", () => {
+      // input.style.backgroundColor = "#0B57D0";
+      input.style.borderColor = "red";
+    });
+  
+    input.addEventListener("blur", () => {
+      console.log(cell);
+      cell.text = input.value;
+      console.log(cell.text)
+      console.log(cell);
+      document.body.removeChild(input);
+      cell.deselect();
+      this.draw();
+    });
+  
+    document.body.appendChild(input);
+    input.focus();
+    input.select();
   }
   handleMouseUp(event) {
     this.canvas.style.cursor = "default";
@@ -272,18 +276,23 @@ class Table {
     }
   }
   handleScroll(event) {
-    // console.log("scroll")
-    const element = document.documentElement;
-    const scrollTop = element.scrollTop;
-    const height = element.scrollHeight;
-    const per = (scrollTop / height) * 100;
-    console.log("percentage is " + per);
-    const lower_canvas = document.getElementsByClassName("canvas-lower")[0];
-    console.log("height is " + lower_canvas);
-    if (per > 80) {
-      console.log("condition hit");
+  const deltaY = event.deltaY;
+  this.scrollY+=deltaY;
+  this.scrollY = Math.max(0,this.scrollY);
+  let temp = 0;
+  console.log("scroll")
+  for(let i = 0;i<this.rows_width.length;i++)
+  {
+    temp += this.rows_width[i];
+    if(this.scrollY < temp)
+    {
+      this.currentRow = i;
+      console.log("rowNumber is "+ i);
+      this.draw();
+      break;
     }
-    console.log(this.canvas.height);
+  }
+  
   }
   async handleKeyPress(event) {
     const keyPressed = event.key;
@@ -301,12 +310,14 @@ class Table {
         } else if (keyPressed == "v") {
           const pastedValue = await navigator.clipboard.readText();
           current_cell.text = pastedValue;
-          current_cell.draw();
+          this.draw();
         }
         return;
       }
       if (keyPressed == "ArrowRight") {
+        console.log(current_cell.Y + " " + this.columns)
         if (current_cell.Y + 1 < this.columns) {
+          console.log("ArrowRight")
           next_cell = this.data[current_cell.X][current_cell.Y + 1];
           row_cell = this.data[current_cell.X][0];
           col_cell = this.data[0][current_cell.Y + 1];
@@ -341,6 +352,7 @@ class Table {
         next_cell.select();
         row_cell.select();
         col_cell.select();
+        this.draw()
       }
     }
   }
@@ -377,7 +389,7 @@ class Table {
     const minY = Math.min(this.startY, this.endY);
     const maxY = Math.max(this.startY, this.endY);
 
-    for (let i = 0; i < this.rows; i++) {
+    for (let i = this.currentRow; i < this.rows; i++) {
       for (let j = 0; j < this.columns; j++) {
         let cell = this.data[i][j];
         const cellRight = cell.topX + this.columns_width[cell.Y];
@@ -389,9 +401,9 @@ class Table {
           cell.topY < maxY &&
           cellBottom > minY
         ) {
-          if (cell.isColumn) {
+          if (cell.X == 0) {
             this.updateColumnSelect(cell.Y);
-          } else if (cell.isRow) {
+          } else if (cell.Y == 0) {
             this.updateRowSelect(cell.X);
           } else {
             let row_cell = this.data[0][cell.Y];
@@ -413,6 +425,7 @@ class Table {
     this.draw();
     this.addMetaDataToFrontend();
   }
+
   addMetaDataToFrontend() {
     let select = document.getElementById("list");
     select.innerHTML = "";
@@ -436,6 +449,7 @@ class Table {
       this.addMetaDataToFrontend();
       this.selectedCell.push(this.data[i][column]);
     }
+    console.log(this.selectedCell)
   }
   updateRowSelect(rowIndex) {
     for (let i = 0; i < this.columns; i++) {
@@ -448,14 +462,14 @@ class Table {
   selectCell(x, y) {
     this.clearMetaData();
     let { rowIndex, colIndex } = this.searchCell(x, y);
-    if (rowIndex == -1 && colIndex == -1) return;
-    console.log(rowIndex, colIndex)
-    if (rowIndex == -1) {
+    if (rowIndex == -1 || colIndex == -1) return;
+
+    if (rowIndex == 0) {
       this.updateColumnSelect(colIndex);
-    } else if (colIndex == -1) {
+    } else if (colIndex == 0) {
       this.updateRowSelect(rowIndex);
     } else if (
-      rowIndex >= 1 &&
+      rowIndex >= this.currentRow + 1 &&
       rowIndex < this.rows &&
       colIndex >= 1 &&
       colIndex < this.columns
@@ -476,6 +490,7 @@ class Table {
     this.draw();
   }
 
+
   // Helper function
   searchCell(x, y) {
     let colIndex = -1;
@@ -492,7 +507,7 @@ class Table {
     }
 
     // Find the row index based on y coordinate
-    for (let i = 0; i < this.rows; i++) {
+    for (let i = this.currentRow; i < this.rows; i++) {
       let rowStartY = this.data[i][0].topY;
       let rowEndY = rowStartY + this.rows_width[i];
       if (y >= rowStartY && y < rowEndY) {
@@ -504,6 +519,7 @@ class Table {
     return { rowIndex, colIndex };
   }
 
+
   getData() {
     return this.data;
   }
@@ -514,26 +530,7 @@ class Table {
 }
 
 export default Table;
-// drawCsv(csvData) {
-//   let width = 130;
-//   let height = 30;
-//   let topX = width;
-//   let topY = height;
-//   let keys = Object.keys(csvData[0]);
-//   for (let i = 1; i <= csvData.length; i++) {
-//     let text = "";
 
-//     for (let j = 1; j <= keys.length; j++) {
-//       if (i == 1) {
-//         text = keys[j - 1];
-//       } else {
-//         text = csvData[i - 1][keys[j - 1]];
-//       }
-//       this.data[i][j].text = text;
-//     }
-//   }
-//   this.redraw();
-// }
 
 // redraw() {
 //   console.log("Redraw Has Been Called");
@@ -551,50 +548,5 @@ export default Table;
 //   this.indexing.draw();
 // }
 
-// createInputField(event, cell) {
-//   const input = document.createElement("input");
-//   input.type = "text";
-//   input.value = cell.text;
-//   input.style.position = "absolute";
-//   input.style.left = `${cell.topX + this.canvas.offsetLeft}px`;
-//   input.style.top = `${cell.topY + this.canvas.offsetTop}px`;
-//   input.style.width = `${cell.width - 2}px`;
-//   input.style.height = `${cell.height - 2}px`;
-//   input.style.fontSize = "12px";
-//   input.style.border = "1px solid #rgb(221,221,221)";
 
-//   input.style.boxSizing = "border-box";
 
-//   input.addEventListener("focus", () => {
-//     // input.style.backgroundColor = "#0B57D0";
-//     input.style.borderColor = "red";
-//   });
-
-//   input.addEventListener("blur", () => {
-//     cell.text = input.value;
-//     document.body.removeChild(input);
-//     cell.deselect(); // Ensure the cell is properly redrawn
-//     // cell.draw();
-//     // cell.AddText(cell.text);
-//   });
-
-//   document.body.appendChild(input);
-//   input.focus();
-//   input.select();
-// }
-// handleDoubleClick(event) {
-//   const { clientX, clientY } = event;
-//   const rect = this.canvas.getBoundingClientRect();
-//   const x = event.clientX - rect.left;
-//   const y = event.clientY - rect.top;
-
-//   for (let i = 1; i < this.rows; i++) {
-//     for (let j = 1; j < this.columns; j++) {
-//       let cell = this.data[i][j];
-//       if (cell.containsPoint(x, y)) {
-//         this.createInputField(event, cell);
-//         break;
-//       }
-//     }
-//   }
-// }

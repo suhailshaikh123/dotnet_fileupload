@@ -26,31 +26,20 @@ class Cell {
   }
 
   draw() {
-    // if (this.selected) {
-
-    //   this.context.clearRect(this.topX,this.topY,this.width,this.height);
-
-    //   this.context.fillStyle = "rgba(0, 120, 215, 0.3)"; // Light blue highlight
-    //   // this.context.strokeStyle = "red"
-
-    //   this.context.fillRect(this.topX, this.topY, this.width, this.height);
-    //   // this.context.strokeRect(this.topX,this.topY,this.width,this.height);
-    //   this.context.fillStyle = "black";
-    //   this.context.strokeStyle = "#E1E1E1";
-    // }
-    // else{
-    //     this.AddText(this.text);
-    // }
-    // this.DrawText();
     if (this.selected) {
-      console.log("inside select function")
+      
       this.context.fillStyle = "rgba(0, 120, 215, 0.3)"; // Light blue highlight
-      this.context.fillRect(this.topX, this.topY,this.columns_width[this.Y],this.rows_width[this.X]);
-        
-        this.context.fillStyle = "black";
-        this.context.strokeStyle = "#E1E1E1";
-    } 
-    this.DrawText()
+      this.context.fillRect(
+        this.topX,
+        this.topY,
+        this.columns_width[this.Y],
+        this.rows_width[this.X]
+      );
+
+      this.context.fillStyle = "black";
+      this.context.strokeStyle = "#E1E1E1";
+    }
+    this.DrawText();
   }
   containsPoint(x, y) {
     return (
@@ -102,7 +91,6 @@ class Cell {
   }
 
   deselect() {
-    console.log("deselect has been caled");
     this.selected = false;
   }
 }
