@@ -63,7 +63,7 @@ namespace api.Controllers
             }
 
             log.Info(String.Equals(search, "none"));
-            query = query + "offset " + offset + " limit 600";
+            query = query + "offset " + offset + " limit 1000";
             log.Info(query);
             List<User> users = (List<User>)await conn.QueryAsync<User>(query);
 

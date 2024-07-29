@@ -7,7 +7,7 @@ class Table {
     this.context = context;
     this.columns = columns;
     this.rows = rows;
-    this.data = new Array(this.rows);
+    
   
     this.isResizing = false;
     this.resizeColumnIndex = -1;
@@ -15,26 +15,33 @@ class Table {
     this.startX = 0;
     this.initialWidth = 0;
     this.canvas = canvas;
-    this.columns_width = new Array(this.columns);
-    this.columns_width.fill(130);
-    this.rows_width = new Array(this.rows);
-    this.rows_width.fill(30);
+    this.columns_width = new Array();
+    for(let i = 0;i<this.columns;i++)
+      this.columns_width.push(130);
+
+    this.rows_width = new Array();
+    for(let i =0;i<this.rows;i++)
+    this.rows_width.push(30);
     this.indexing = new Indexing(this.context, this.rows, this.data);
     this.selectedCell = [];
     this.isSelecting = false;
-    this.verticalLines = new Array(this.columns);
-    this.horizontalLines = new Array(this.rows);
+    this.verticalLines = new Array();
+    for(let i =0;i<this.columns;i++)
+      this.verticalLines.push(30);
+    this.horizontalLines = new Array();
+    for(let i =0;i<this.rows;i++)
+      this.horizontalLines.push(30);
     this.endX = 0;
     this.endY = 0;
     this.startX = 0;
     this.startY = 0;
     this.scrollY = 0;
     this.currentRow = 0;
+    this.data = new Array();
     for (let i = 0; i < this.rows; i++) {
-      this.data[i] = new Array(this.columns);
+      this.data.push(new Array());
       for (let j = 0; j < this.columns; j++) {
-        this.data[i][j] = new Cell(this.context, 0, 0, 0, 0,0,0,this.columns_width,this.rows_width);
-        
+        this.data[i].push( new Cell(this.context, 0, 0, 0, 0,0,0,this.columns_width,this.rows_width))        
       }
     }
  
@@ -51,13 +58,13 @@ class Table {
 
   // Draw Functions
   draw() {
+    console.log("draw called")
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     this.drawVerticalLines();
     this.drawHorizontalLines();
     this.drawHeaders();
     this.drawIndex();
     this.drawCells();
-    console.log(this.data)
   }
   drawCsv(csvData) {
     let keys = Object.keys(csvData[0]);
@@ -70,28 +77,30 @@ class Table {
         } else {
           text = csvData[i - 1][keys[j - 1]];
         }
+        if(i >= this.data.length)
+        {
+          console.log(i,this.data.length)
+          this.appendRows();
+          this.draw();
+        }
         this.data[i][j].text = text;
+        
       }
     }
     this.draw();
   }
   drawHeaders() {
-    let column_counter = "a";
+    let column_counter = "A";
     for (let i = 1; i < this.columns; i++) {
       this.data[0][i].text = column_counter;
-      column_counter = String.fromCharCode(column_counter.charCodeAt() + 1);
-      // this.data[0][i].draw();
-    }
-    for(let i =1 ;i<this.verticalLines.length;i++)
-    {
-      // this.verticalLines - > columns
       this.data[0][i].topX = this.verticalLines[i].x1;
       this.data[0][i].topY = this.horizontalLines[0].y1;
       this.data[0][i].X = 0;
       this.data[0][i].Y = i;
-
+      column_counter = String.fromCharCode(column_counter.charCodeAt() + 1);
       this.data[0][i].draw();
     }
+
   }
   drawIndex() {
     for (let i = this.currentRow; i < this.rows; i++) {
@@ -110,7 +119,24 @@ class Table {
       }
     }
   }
-  
+  appendRows()
+  {
+    let rows_to_add =500;
+    this.rows += rows_to_add;
+    while(rows_to_add>0)
+      {
+        this.data.push(new Array());
+        for (let j = 0; j < this.columns; j++) {
+          this.data[this.data.length-1].push(new Cell(this.context, 0, 0, 0, 0,0,0,this.columns_width,this.rows_width))        
+        }
+        this.rows_width.push(30);
+        this.horizontalLines.push(30);
+        rows_to_add--;
+
+
+      }
+      
+  }
   drawHorizontalLines() {
     let temp = 0;
     let l;
@@ -119,6 +145,7 @@ class Table {
       temp += this.rows_width[i];
       l.isHorizontal = true;
       this.horizontalLines[i] = l;
+      
       l.drawLine();
     }
   }
@@ -137,6 +164,7 @@ class Table {
       );
       temp = temp + this.columns_width[i];
       this.verticalLines[i] = l;
+      
       l.drawLine();
     }
   }
@@ -280,15 +308,22 @@ class Table {
   this.scrollY+=deltaY;
   this.scrollY = Math.max(0,this.scrollY);
   let temp = 0;
-  console.log("scroll")
   for(let i = 0;i<this.rows_width.length;i++)
   {
     temp += this.rows_width[i];
     if(this.scrollY < temp)
     {
-      this.currentRow = i;
-      console.log("rowNumber is "+ i);
-      this.draw();
+      if(this.data.length - this.currentRow  <= 30)
+        {
+          console.log("append rows")
+          this.appendRows();
+        }
+        
+        this.currentRow = i;
+        console.log(this.data.length,this.currentRow)
+        this.draw();
+      
+      
       break;
     }
   }
@@ -338,7 +373,7 @@ class Table {
         }
       }
       if (keyPressed == "ArrowDown") {
-        if (current_cell.X + 1 <= this.columns) {
+        if (current_cell.X + 1 <= this.rows) {
           next_cell = this.data[current_cell.X + 1][current_cell.Y];
           row_cell = this.data[current_cell.X + 1][0];
           col_cell = this.data[0][current_cell.Y];
@@ -449,7 +484,7 @@ class Table {
       this.addMetaDataToFrontend();
       this.selectedCell.push(this.data[i][column]);
     }
-    console.log(this.selectedCell)
+    
   }
   updateRowSelect(rowIndex) {
     for (let i = 0; i < this.columns; i++) {
@@ -462,8 +497,8 @@ class Table {
   selectCell(x, y) {
     this.clearMetaData();
     let { rowIndex, colIndex } = this.searchCell(x, y);
-    if (rowIndex == -1 || colIndex == -1) return;
-
+    if (rowIndex == 0 && colIndex == 0) return;
+    console.log(colIndex,rowIndex)
     if (rowIndex == 0) {
       this.updateColumnSelect(colIndex);
     } else if (colIndex == 0) {
@@ -493,8 +528,8 @@ class Table {
 
   // Helper function
   searchCell(x, y) {
-    let colIndex = -1;
-    let rowIndex = -1;
+    let colIndex = 0;
+    let rowIndex = 0;
 
     // Find the column index based on x coordinate
     for (let j = 0; j < this.columns; j++) {

@@ -29,6 +29,7 @@ class Cell {
     if (this.selected) {
       
       this.context.fillStyle = "rgba(0, 120, 215, 0.3)"; // Light blue highlight
+     
       this.context.fillRect(
         this.topX,
         this.topY,

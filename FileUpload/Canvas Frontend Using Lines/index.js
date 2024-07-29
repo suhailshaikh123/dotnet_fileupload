@@ -11,7 +11,7 @@ context.fillStyle = "black";
 context.strokeStyle = "#E1E1E1";
 
 let columns = 30;
-let rows = 2000;
+let rows = 100;
 let table = new Table(context, columns, rows, canvas);
 table.draw();
 

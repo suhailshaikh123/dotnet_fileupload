@@ -13,8 +13,8 @@ class Line {
   drawLine() {
     this.context.lineWidth = 1;
     this.context.beginPath();
-    this.context.moveTo(this.x1,this.y1);
-    this.context.lineTo(this.x2,this.y2);
+    this.context.moveTo(this.x1 + 0.5,this.y1);
+    this.context.lineTo(this.x2 + 0.5,this.y2);
     // this.context.strokeFill("red");
     this.context.stroke();
   }
