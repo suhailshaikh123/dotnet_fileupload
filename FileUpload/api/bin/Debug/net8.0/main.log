@@ -2903,3 +2903,997 @@ System.FormatException: An error occurred while deserializing the Batches proper
 2024-07-29 18:45:51,319 [26] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
 2024-07-29 18:45:51,319 [26] INFO api.Controllers.UserController.MoveNext[65] - True
 2024-07-29 18:45:51,320 [26] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 10:18:02,211 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-07-31 10:18:02,328 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-07-31 10:18:02,330 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-07-31 10:18:02,330 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-07-31 10:18:31,335 [14] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 10:18:31,586 [20] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9c21f9737463c8c1683b5",
+  "FileId": "817622d9-89f4-486a-939e-89742e073e74",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 10:19:01,122 [14] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 10:19:01,126 [14] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9c23d9737463c8c1683b6",
+  "FileId": "aed5b21b-179d-420b-9b2c-e94ab8f9fbba",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 10:19:11,564 [14] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 10:19:11,567 [14] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 10:19:11,767 [14] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 10:19:11,767 [14] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 10:19:11,769 [14] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 10:19:51,890 [15] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 10:19:51,893 [15] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9c26f9737463c8c1683b7",
+  "FileId": "80dc3fb8-5522-4cdf-b6ec-15ed428656b3",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 10:20:00,169 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 10:20:00,206 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 10:20:00,211 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 10:20:00,246 [13] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 10:20:00,251 [13] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 10:28:29,605 [3] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 10:28:29,608 [3] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9c4759737463c8c1683b8",
+  "FileId": "2425d693-5b4e-4a07-ba85-bb98a889ea0c",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 10:28:37,899 [20] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 10:28:37,902 [20] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 10:28:37,955 [20] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 10:28:37,955 [20] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 10:28:37,956 [20] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:09:44,130 [16] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 11:09:44,251 [16] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9ce209737463c8c1683b9",
+  "FileId": "47068d2d-d7d7-41bc-9896-91151d2ae3c5",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:09:54,793 [8] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:09:54,858 [8] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:09:54,947 [8] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:09:54,947 [8] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:09:54,948 [8] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:12:32,587 [8] INFO api.Controllers.UserController.MoveNext[121] - {
+  "Email": null,
+  "Name": null,
+  "Country": null,
+  "State": null,
+  "City": null,
+  "Telephone": null,
+  "AddressLine1": null,
+  "AddressLine2": null,
+  "DateOfBirth": "0001-01-01T00:00:00",
+  "SalaryFY2019": 0.0,
+  "SalaryFY2020": 0.0,
+  "SalaryFY2021": 0.0,
+  "SalaryFY2022": 0.0,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 11:13:34,501 [23] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "POST api/User/Create" for actions - api.Controllers.UserController.Create (api),api.Controllers.UserController.Create (api). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-07-31 11:14:54,092 [12] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Application is shutting down...
+2024-07-31 11:15:19,722 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-07-31 11:15:19,808 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-07-31 11:15:19,811 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-07-31 11:15:19,811 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-07-31 11:15:42,406 [13] INFO api.Controllers.UserController.MoveNext[121] - {
+  "Email": "suhail@gmail.com",
+  "Name": "string",
+  "Country": "string",
+  "State": "string",
+  "City": "string",
+  "Telephone": "string",
+  "AddressLine1": "string",
+  "AddressLine2": "string",
+  "DateOfBirth": "2024-07-31T05:45:32.706Z",
+  "SalaryFY2019": 0.0,
+  "SalaryFY2020": 0.0,
+  "SalaryFY2021": 0.0,
+  "SalaryFY2022": 0.0,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 11:15:42,802 [13] INFO api.Controllers.UserController.MoveNext[135] - 0
+2024-07-31 11:15:42,806 [13] INFO api.Controllers.UserController.MoveNext[151] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 11:15:42,921 [13] INFO api.Controllers.UserController.MoveNext[152] - Rows Affected: 1
+2024-07-31 11:16:57,821 [13] INFO api.Controllers.UserController.MoveNext[103] - SELECT * FROM "Users" WHERE "Email" = 'suhail@gmail.com';
+2024-07-31 11:17:11,163 [12] INFO api.Controllers.UserController.MoveNext[121] - {
+  "Email": "suhail@gmail.com",
+  "Name": "suahil",
+  "Country": "string",
+  "State": "string",
+  "City": "string",
+  "Telephone": "string",
+  "AddressLine1": "string",
+  "AddressLine2": "string",
+  "DateOfBirth": "2024-07-31T05:45:32.706Z",
+  "SalaryFY2019": 0.0,
+  "SalaryFY2020": 0.0,
+  "SalaryFY2021": 0.0,
+  "SalaryFY2022": 0.0,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 11:17:11,165 [12] INFO api.Controllers.UserController.MoveNext[135] - 0
+2024-07-31 11:17:11,167 [12] INFO api.Controllers.UserController.MoveNext[151] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 11:17:11,187 [13] INFO api.Controllers.UserController.MoveNext[152] - Rows Affected: 1
+2024-07-31 11:17:25,721 [7] INFO api.Controllers.UserController.MoveNext[103] - SELECT * FROM "Users" WHERE "Email" = 'suhail@gmail.com';
+2024-07-31 11:17:48,446 [13] INFO api.Controllers.UserController.MoveNext[121] - {
+  "Email": "suhai2l@gmail.com",
+  "Name": "suahil",
+  "Country": "string",
+  "State": "string",
+  "City": "string",
+  "Telephone": "string",
+  "AddressLine1": "string",
+  "AddressLine2": "string",
+  "DateOfBirth": "2024-07-31T05:45:32.706Z",
+  "SalaryFY2019": 0.0,
+  "SalaryFY2020": 0.0,
+  "SalaryFY2021": 0.0,
+  "SalaryFY2022": 0.0,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 11:17:48,447 [13] INFO api.Controllers.UserController.MoveNext[135] - 0
+2024-07-31 11:17:48,450 [13] INFO api.Controllers.UserController.MoveNext[151] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 11:17:48,469 [13] INFO api.Controllers.UserController.MoveNext[152] - Rows Affected: 1
+2024-07-31 11:18:01,056 [16] INFO api.Controllers.UserController.MoveNext[103] - SELECT * FROM "Users" WHERE "Email" = 'suhai2l@gmail.com';
+2024-07-31 11:18:08,401 [13] INFO api.Controllers.UserController.MoveNext[103] - SELECT * FROM "Users" WHERE "Email" = 'suhail@gmail.com';
+2024-07-31 11:18:23,824 [16] INFO api.Controllers.UserController.MoveNext[121] - {
+  "Email": "suhai2l",
+  "Name": "suahil",
+  "Country": "string",
+  "State": "string",
+  "City": "string",
+  "Telephone": "string",
+  "AddressLine1": "string",
+  "AddressLine2": "string",
+  "DateOfBirth": "2024-07-31T05:45:32.706Z",
+  "SalaryFY2019": 0.0,
+  "SalaryFY2020": 0.0,
+  "SalaryFY2021": 0.0,
+  "SalaryFY2022": 0.0,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 11:18:23,825 [16] INFO api.Controllers.UserController.MoveNext[135] - 0
+2024-07-31 11:18:23,830 [16] INFO api.Controllers.UserController.MoveNext[151] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 11:18:23,859 [16] INFO api.Controllers.UserController.MoveNext[152] - Rows Affected: 1
+2024-07-31 11:26:41,190 [26] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 11:26:41,347 [25] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d219384417c237e3e957",
+  "FileId": "f00d58c6-5a7b-48b9-940e-5e0b8ae055fc",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:26:53,709 [25] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:26:53,710 [25] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:26:53,775 [25] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:26:53,776 [25] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:26:53,777 [25] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:28:25,617 [25] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 11:28:25,627 [25] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d281384417c237e3e958",
+  "FileId": "0fc26ed9-8360-4840-b4f0-22af8de09625",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:28:31,970 [28] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:28:31,973 [28] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:28:31,977 [28] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:28:31,979 [28] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:28:31,980 [28] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:33:07,730 [16] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 11:33:07,733 [16] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d39b384417c237e3e959",
+  "FileId": "759aedab-e858-4009-b05a-08b878c79a34",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:33:14,015 [27] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:33:14,016 [27] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:33:14,111 [27] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:33:14,111 [27] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:33:14,112 [27] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:33:46,826 [19] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 11:33:46,829 [19] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d3c2384417c237e3e95a",
+  "FileId": "2bab72f6-0cf5-4bf4-8f25-18afd9f1a5f2",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:33:53,100 [19] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:33:53,102 [19] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:33:53,105 [19] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:33:53,106 [19] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:33:53,107 [19] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:34:41,227 [19] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 11:34:41,229 [19] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d3f9384417c237e3e95b",
+  "FileId": "679b5436-c08e-40fe-9b8c-be4b2b911bda",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:34:47,533 [19] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:34:47,535 [19] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:34:47,536 [19] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:34:47,538 [19] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:34:47,540 [19] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:37:07,678 [25] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 11:37:07,681 [25] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d48b384417c237e3e95c",
+  "FileId": "be15bb0e-95d1-47d9-90bc-34ec1839fd94",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:37:15,983 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:37:15,984 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:37:15,985 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:37:15,986 [4] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:37:15,988 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:37:58,363 [19] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 11:37:58,366 [19] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d4be384417c237e3e95d",
+  "FileId": "c592d3d1-8dd2-4dce-be88-a930f39a554b",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:38:04,590 [25] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:38:04,591 [25] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:38:04,592 [25] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:38:04,593 [25] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:38:04,593 [25] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:39:16,139 [17] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 11:39:16,142 [17] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d50c384417c237e3e95e",
+  "FileId": "f26485c6-278d-4d46-bdf2-c931478f97ae",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:39:22,380 [17] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:39:22,382 [17] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:39:22,383 [17] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:39:22,383 [17] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:39:22,385 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:41:47,276 [7] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 11:41:47,280 [7] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d5a3384417c237e3e95f",
+  "FileId": "f057d326-3c6d-47f5-99e9-2558e895748a",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:41:53,506 [28] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:41:53,507 [28] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:41:53,561 [28] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:41:53,562 [28] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:41:53,563 [28] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:43:34,637 [13] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 11:43:34,640 [13] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d60e384417c237e3e960",
+  "FileId": "2b3937c6-4448-4f30-b921-f22fa58ab35e",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:43:40,901 [25] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:43:40,902 [25] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:43:40,904 [25] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:43:40,905 [25] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:43:40,906 [25] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:52:31,266 [17] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 11:52:31,269 [17] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d827384417c237e3e961",
+  "FileId": "9f822b4a-78a7-44b7-be3b-2470ed026120",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:52:37,522 [25] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:52:37,523 [25] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:52:37,601 [25] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:52:37,601 [25] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:52:37,602 [25] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:54:06,316 [20] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 11:54:06,318 [20] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d886384417c237e3e962",
+  "FileId": "9107c503-188d-4380-b3ef-62ec532213ae",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:54:12,645 [27] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:54:12,651 [27] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:54:12,652 [27] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:54:12,653 [27] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:54:12,654 [27] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:57:12,669 [4] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 11:57:12,691 [4] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9d940384417c237e3e963",
+  "FileId": "c008fb8d-280c-4441-8bd8-7faf98bdf653",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 11:57:18,913 [20] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 11:57:18,913 [20] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 11:57:18,978 [20] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 11:57:18,979 [20] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 11:57:18,980 [20] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 11:57:24,352 [20] INFO api.Controllers.UserController.MoveNext[121] - {
+  "Email": "132",
+  "Name": "Anthony Berg",
+  "Country": "Uruguay",
+  "State": "Delaware",
+  "City": "Christopherport",
+  "Telephone": "625-565-0936x586",
+  "AddressLine1": "604 Freeman Knoll Apt. 286",
+  "AddressLine2": "Apt. 794",
+  "DateOfBirth": "2004-02-15T18:30:00Z",
+  "SalaryFY2019": 82720.1,
+  "SalaryFY2020": 37808.54,
+  "SalaryFY2021": 90222.58,
+  "SalaryFY2022": 74037.04,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 11:57:24,353 [20] INFO api.Controllers.UserController.MoveNext[135] - 82720.1
+2024-07-31 11:57:24,355 [20] INFO api.Controllers.UserController.MoveNext[151] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 11:57:24,381 [20] INFO api.Controllers.UserController.MoveNext[152] - Rows Affected: 1
+2024-07-31 12:02:41,764 [35] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileuploaddata1.csv
+2024-07-31 12:02:41,767 [35] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66a9da89384417c237e3e964",
+  "FileId": "b5fd734c-8045-4418-b616-e72001665f00",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:02:49,999 [18] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-31 12:02:50,000 [18] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-31 12:02:50,059 [18] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-31 12:02:50,060 [18] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-31 12:02:50,061 [18] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:02:54,133 [18] INFO api.Controllers.UserController.MoveNext[0] - {
+  "Email": "kellermaria@example.org",
+  "Name": "1",
+  "Country": "Germany",
+  "State": "Maine",
+  "City": "Martinhaven",
+  "Telephone": "001-957-300-5357x314",
+  "AddressLine1": "79197 Teresa Cove Apt. 401",
+  "AddressLine2": "Suite 205",
+  "DateOfBirth": "2005-08-19T18:30:00Z",
+  "SalaryFY2019": 51663.72,
+  "SalaryFY2020": 48198.41,
+  "SalaryFY2021": 86461.3,
+  "SalaryFY2022": 55251.17,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 12:02:54,133 [18] INFO api.Controllers.UserController.MoveNext[0] - 51663.72
+2024-07-31 12:02:54,134 [18] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:02:54,145 [18] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-07-31 12:03:14,234 [19] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-31 12:03:14,236 [19] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66a9daaa384417c237e3e965",
+  "FileId": "246da621-91e3-4d55-a0c5-8e0f197301e9",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:03:20,488 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-31 12:03:20,491 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-31 12:03:20,565 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-31 12:03:20,565 [3] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-31 12:03:20,566 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:03:57,455 [3] INFO api.Controllers.UserController.MoveNext[0] - {
+  "Email": "charles30@example.com",
+  "Name": "suhail shaikh ",
+  "Country": "Lithuania",
+  "State": "Arizona",
+  "City": "Erinport",
+  "Telephone": "621-449-8679x788",
+  "AddressLine1": "42129 Williams Pike",
+  "AddressLine2": "Apt. 626",
+  "DateOfBirth": "1951-02-08T18:30:00Z",
+  "SalaryFY2019": 63002.26,
+  "SalaryFY2020": 57084.96,
+  "SalaryFY2021": 59618.74,
+  "SalaryFY2022": 30384.24,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 12:03:57,457 [3] INFO api.Controllers.UserController.MoveNext[0] - 63002.26
+2024-07-31 12:03:57,459 [3] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:03:57,472 [3] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-07-31 12:04:16,800 [13] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-31 12:04:16,802 [13] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66a9dae8384417c237e3e966",
+  "FileId": "862f7ffa-e32d-4ca8-9381-0bee3a548b02",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:04:23,041 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-31 12:04:23,045 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-31 12:04:23,122 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-31 12:04:23,123 [3] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-31 12:04:23,123 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:04:54,535 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" WHERE "Email" = 'charles30@example.com';
+2024-07-31 12:11:23,202 [4] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-07-31 12:11:23,205 [4] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66a9dc93384417c237e3e967",
+  "FileId": "fb0a8028-c7cb-47b8-a1f5-4630b2f3ee2b",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:11:31,524 [9] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-07-31 12:11:31,525 [9] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-07-31 12:11:31,588 [9] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-07-31 12:11:31,588 [9] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-07-31 12:11:31,589 [9] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:11:39,929 [4] INFO api.Controllers.UserController.MoveNext[0] - {
+  "Email": "s",
+  "Name": "James Allen",
+  "Country": "Niue",
+  "State": "Massachusetts",
+  "City": "South Cassandra",
+  "Telephone": "+1-524-539-0683x2998",
+  "AddressLine1": "74868 Nicholas Forge Apt. 259",
+  "AddressLine2": "Suite 744",
+  "DateOfBirth": "1995-12-09T18:30:00Z",
+  "SalaryFY2019": 58111.22,
+  "SalaryFY2020": 59787.77,
+  "SalaryFY2021": 87664.62,
+  "SalaryFY2022": 78589.17,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 12:11:39,932 [4] INFO api.Controllers.UserController.MoveNext[0] - 58111.22
+2024-07-31 12:11:39,936 [4] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:11:39,946 [4] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-07-31 12:12:30,225 [4] INFO api.Controllers.UserController.MoveNext[0] - {
+  "Email": "s",
+  "Name": "string",
+  "Country": "string",
+  "State": "string",
+  "City": "string",
+  "Telephone": "string",
+  "AddressLine1": "string",
+  "AddressLine2": "string",
+  "DateOfBirth": "2024-07-31T06:42:27.465Z",
+  "SalaryFY2019": 0.0,
+  "SalaryFY2020": 0.0,
+  "SalaryFY2021": 0.0,
+  "SalaryFY2022": 0.0,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 12:12:30,308 [4] INFO api.Controllers.UserController.MoveNext[0] - 0
+2024-07-31 12:12:30,308 [4] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:12:30,322 [4] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-07-31 12:14:00,708 [25] INFO api.Controllers.UserController.MoveNext[0] - {
+  "Email": "ss",
+  "Name": "string",
+  "Country": "string",
+  "State": "string",
+  "City": "string",
+  "Telephone": "string",
+  "AddressLine1": "string",
+  "AddressLine2": "string",
+  "DateOfBirth": "2024-07-31T06:42:27.465Z",
+  "SalaryFY2019": 0.0,
+  "SalaryFY2020": 0.0,
+  "SalaryFY2021": 0.0,
+  "SalaryFY2022": 0.0,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 12:14:00,778 [25] INFO api.Controllers.UserController.MoveNext[0] - 0
+2024-07-31 12:14:00,778 [25] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:14:00,790 [25] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-07-31 12:17:17,243 [3] INFO api.Controllers.UserController.MoveNext[0] - {
+  "Email": "ss",
+  "Name": "string",
+  "Country": "string",
+  "State": "string",
+  "City": "string",
+  "Telephone": "string",
+  "AddressLine1": "string",
+  "AddressLine2": "",
+  "DateOfBirth": "2024-07-31T06:42:27.465Z",
+  "SalaryFY2019": 0.0,
+  "SalaryFY2020": 0.0,
+  "SalaryFY2021": 0.0,
+  "SalaryFY2022": 0.0,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 12:18:51,039 [15] INFO api.Controllers.UserController.MoveNext[0] - {
+  "Email": "ss",
+  "Name": "string",
+  "Country": "string",
+  "State": "string",
+  "City": "string",
+  "Telephone": "string",
+  "AddressLine1": "string",
+  "AddressLine2": "",
+  "DateOfBirth": "2024-07-31T06:42:27.465Z",
+  "SalaryFY2019": 0.0,
+  "SalaryFY2020": 0.0,
+  "SalaryFY2021": 0.0,
+  "SalaryFY2022": 0.0,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 12:18:55,469 [15] INFO api.Controllers.UserController.MoveNext[0] - {
+  "Email": "ss",
+  "Name": "string",
+  "Country": "string",
+  "State": "string",
+  "City": "string",
+  "Telephone": "string",
+  "AddressLine1": "string",
+  "AddressLine2": "s",
+  "DateOfBirth": "2024-07-31T06:42:27.465Z",
+  "SalaryFY2019": 0.0,
+  "SalaryFY2020": 0.0,
+  "SalaryFY2021": 0.0,
+  "SalaryFY2022": 0.0,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 12:18:55,632 [15] INFO api.Controllers.UserController.MoveNext[0] - 0
+2024-07-31 12:18:55,632 [15] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:18:55,636 [15] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-07-31 12:19:37,767 [4] INFO api.Controllers.UserController.MoveNext[0] - {
+  "Email": "ss",
+  "Name": "string",
+  "Country": "string",
+  "State": "string",
+  "City": "string",
+  "Telephone": "string",
+  "AddressLine1": "string",
+  "AddressLine2": "s",
+  "DateOfBirth": "2024-07-31T06:42:27.465Z",
+  "SalaryFY2019": 0.0,
+  "SalaryFY2020": 0.0,
+  "SalaryFY2021": 0.0,
+  "SalaryFY2022": 0.0,
+  "SalaryFY2023": 0.0
+}
+2024-07-31 12:19:37,841 [4] INFO api.Controllers.UserController.MoveNext[0] - 0
+2024-07-31 12:19:37,842 [4] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:19:37,851 [4] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-07-31 12:19:55,164 [13] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Application is shutting down...
+2024-07-31 12:20:19,880 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-07-31 12:20:19,914 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-07-31 12:20:19,917 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-07-31 12:20:19,917 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-07-31 12:22:07,055 [4] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 12:22:07,263 [9] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9df177f0dc24132285d41",
+  "FileId": "e941a3da-9501-47a2-9631-1e509a86d1e0",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:22:19,690 [9] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:22:19,698 [9] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:22:19,767 [9] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:22:19,768 [9] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:22:19,770 [9] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:22:27,336 [23] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 12:22:27,340 [23] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9df2b7f0dc24132285d42",
+  "FileId": "4a14a9ac-7014-4b2f-b5f0-2ccd7752b69d",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:22:35,635 [23] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:22:35,638 [23] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:22:35,640 [23] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:22:35,640 [23] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:22:35,641 [23] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:22:52,441 [9] INFO api.Controllers.UserController.MoveNext[132] - 67218.71
+2024-07-31 12:22:52,445 [9] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:22:52,475 [9] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:23:35,112 [13] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 12:23:35,129 [4] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9df6f7f0dc24132285d43",
+  "FileId": "8d43efbd-658c-4b77-883a-affadeb78ecb",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:23:43,465 [9] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:23:43,467 [9] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:23:43,538 [9] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:23:43,539 [9] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:23:43,540 [9] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:23:49,084 [4] INFO api.Controllers.UserController.MoveNext[132] - 75004.67
+2024-07-31 12:23:49,085 [4] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:23:49,098 [4] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:23:53,319 [4] INFO api.Controllers.UserController.MoveNext[132] - 75004.67
+2024-07-31 12:23:53,321 [4] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:23:53,335 [4] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:25:12,155 [22] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 12:25:12,159 [22] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9dfd07f0dc24132285d44",
+  "FileId": "9de3d7d4-83af-44f7-8ffa-f416c2f47e8b",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:25:20,975 [22] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:25:20,976 [22] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:25:21,037 [22] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:25:21,037 [22] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:25:21,039 [22] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:25:40,192 [9] INFO api.Controllers.UserController.MoveNext[132] - 56354.8
+2024-07-31 12:25:40,194 [9] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:25:40,207 [9] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:25:59,347 [4] INFO api.Controllers.UserController.MoveNext[132] - 83179.25
+2024-07-31 12:25:59,348 [4] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:25:59,356 [4] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:26:03,098 [9] INFO api.Controllers.UserController.MoveNext[132] - 92794.06
+2024-07-31 12:26:03,099 [9] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:26:03,108 [9] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:27:04,821 [9] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 12:27:04,823 [9] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9e0407f0dc24132285d45",
+  "FileId": "9c59a9cf-9cff-493a-9fa7-ae5a059f9943",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:27:11,105 [20] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:27:11,106 [20] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:27:11,167 [20] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:27:11,167 [20] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:27:11,168 [20] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:27:21,702 [4] INFO api.Controllers.UserController.MoveNext[132] - 94723.7
+2024-07-31 12:27:21,704 [4] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:27:21,725 [20] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:27:54,004 [23] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 12:27:54,008 [23] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9e0727f0dc24132285d46",
+  "FileId": "24077470-129a-4976-bbee-a234b9b676c5",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:28:00,284 [20] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:28:00,288 [20] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:28:00,357 [20] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:28:00,357 [20] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:28:00,358 [20] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:28:09,703 [7] INFO api.Controllers.UserController.MoveNext[132] - 43733.23
+2024-07-31 12:28:09,705 [7] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:28:09,721 [7] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:28:48,781 [9] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 12:28:48,784 [9] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9e0a87f0dc24132285d47",
+  "FileId": "813ec717-6b1c-40d7-8a07-b5291c18d9cc",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:28:55,039 [9] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:28:55,039 [9] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:28:55,109 [9] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:28:55,110 [9] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:28:55,111 [9] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:29:02,320 [13] INFO api.Controllers.UserController.MoveNext[132] - 96423
+2024-07-31 12:29:02,321 [13] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:29:02,332 [13] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:29:08,322 [13] INFO api.Controllers.UserController.MoveNext[132] - 96423
+2024-07-31 12:29:08,323 [13] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:29:08,332 [13] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:29:19,693 [13] INFO api.Controllers.UserController.MoveNext[132] - 33819.27
+2024-07-31 12:29:19,694 [13] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:29:19,702 [13] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:29:30,809 [25] INFO api.Controllers.UserController.MoveNext[132] - 33819.27
+2024-07-31 12:29:30,809 [25] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:29:30,823 [25] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:29:59,974 [22] INFO api.Controllers.UserController.MoveNext[132] - 99238.21
+2024-07-31 12:29:59,975 [22] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:30:00,027 [22] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:31:26,637 [22] INFO api.Controllers.UserController.MoveNext[132] - 49537.01
+2024-07-31 12:31:26,637 [22] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:31:26,647 [22] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:31:48,285 [22] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 12:31:48,288 [22] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9e15c7f0dc24132285d48",
+  "FileId": "f71705d3-54d8-42ec-b80e-270c0a5a2aed",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:31:54,541 [28] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:31:54,541 [28] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:31:54,689 [28] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:31:54,689 [28] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:31:54,690 [28] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:32:06,027 [22] INFO api.Controllers.UserController.MoveNext[132] - 79969.02
+2024-07-31 12:32:06,028 [22] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:32:06,037 [22] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:35:00,004 [24] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 12:35:00,008 [24] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9e21c7f0dc24132285d49",
+  "FileId": "52f8ef70-6be4-4e61-a008-5bd388487679",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:35:06,290 [24] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:35:06,291 [24] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:35:06,349 [24] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:35:06,350 [24] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:35:06,351 [24] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:35:11,756 [9] INFO api.Controllers.UserController.MoveNext[132] - 34211.7
+2024-07-31 12:35:11,758 [9] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:35:11,768 [9] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:35:17,073 [9] INFO api.Controllers.UserController.MoveNext[132] - 90646.55
+2024-07-31 12:35:17,074 [9] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:35:17,083 [9] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:36:10,016 [18] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 12:36:10,019 [18] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9e2627f0dc24132285d4a",
+  "FileId": "a82016cd-1ae2-45cd-902f-102040fedf78",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:36:16,309 [18] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:36:16,309 [18] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:36:16,360 [18] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:36:16,361 [18] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:36:16,362 [18] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:42:41,696 [20] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 12:42:41,698 [20] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9e3e97f0dc24132285d4b",
+  "FileId": "0af3a01c-a7f5-4e97-b339-fc1b0bed7a45",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:42:47,987 [28] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:42:47,994 [28] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:42:48,082 [28] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:42:48,082 [28] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:42:48,083 [28] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:44:06,299 [24] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 12:44:06,301 [24] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9e43e7f0dc24132285d4c",
+  "FileId": "221bd589-edcd-49bd-9790-91d7d272f482",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:44:12,548 [20] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:44:12,557 [20] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:44:12,561 [20] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:44:12,563 [20] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:44:12,565 [20] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:44:41,851 [20] INFO api.Controllers.UserController.MoveNext[132] - 20970.99
+2024-07-31 12:44:41,855 [20] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:44:41,872 [20] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:45:05,317 [13] INFO api.Controllers.UserController.MoveNext[103] - SELECT * FROM "Users" WHERE "Email" = 'helloworld@gmail.com';
+2024-07-31 12:45:42,418 [20] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 12:45:42,421 [20] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66a9e49e7f0dc24132285d4d",
+  "FileId": "8edbf409-c3ed-45f9-84fa-53ab56706c1c",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 12:45:48,690 [7] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 12:45:48,692 [7] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 12:45:48,750 [7] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 12:45:48,751 [7] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 12:45:48,752 [7] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 12:46:31,872 [7] INFO api.Controllers.UserController.MoveNext[132] - 90533.4
+2024-07-31 12:46:31,872 [7] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:46:31,881 [7] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 12:46:51,659 [22] INFO api.Controllers.UserController.MoveNext[103] - SELECT * FROM "Users" WHERE "Email" = 'ujwal@gmail.com';
+2024-07-31 12:48:02,733 [22] INFO api.Controllers.UserController.MoveNext[132] - 90533.4
+2024-07-31 12:48:02,736 [22] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 12:48:02,741 [22] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 16:11:47,680 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-07-31 16:11:47,775 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-07-31 16:11:47,776 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-07-31 16:11:47,777 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-07-31 18:08:16,067 [16] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 18:08:16,388 [4] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66aa30387b09710170924ecc",
+  "FileId": "b317b4d8-d0e5-4d5d-b5bc-49706d3b33ff",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 18:08:31,534 [4] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-07-31 18:08:31,548 [4] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66aa30477b09710170924ecd",
+  "FileId": "67ee62b1-c5f9-4ce6-9d4a-d9383f826dee",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 18:08:42,387 [7] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 18:08:42,401 [7] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 18:08:42,729 [7] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 18:08:42,730 [7] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 18:08:42,741 [7] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 18:08:49,474 [16] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 18:08:49,477 [16] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66aa30597b09710170924ece",
+  "FileId": "e5406131-107a-48ca-807a-e6fc349f35e5",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 18:08:55,753 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 18:08:55,754 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 18:08:55,764 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 18:08:55,766 [16] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 18:08:55,767 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 18:12:53,889 [26] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-07-31 18:12:53,892 [26] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66aa314d7b09710170924ecf",
+  "FileId": "9b3418ad-8f98-4e64-9384-2e26498b6520",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-07-31 18:13:00,103 [26] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-07-31 18:13:00,107 [26] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-07-31 18:13:00,109 [26] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-07-31 18:13:00,110 [26] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-07-31 18:13:00,112 [26] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 1000
+2024-07-31 18:13:39,287 [24] INFO api.Controllers.UserController.MoveNext[132] - 95802.39
+2024-07-31 18:13:39,290 [24] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 18:13:39,313 [24] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 18:13:45,251 [27] INFO api.Controllers.UserController.MoveNext[132] - 93353.61
+2024-07-31 18:13:45,252 [27] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 18:13:45,261 [27] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1
+2024-07-31 18:13:52,357 [19] INFO api.Controllers.UserController.MoveNext[132] - 41867.91
+2024-07-31 18:13:52,358 [19] INFO api.Controllers.UserController.MoveNext[148] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-07-31 18:13:52,367 [19] INFO api.Controllers.UserController.MoveNext[149] - Rows Affected: 1

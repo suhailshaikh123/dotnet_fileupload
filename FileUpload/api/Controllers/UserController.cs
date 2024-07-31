@@ -113,12 +113,9 @@ namespace api.Controllers
 
        
         [HttpPost("Create")]
-        public async Task<IActionResult> Create()
+        public async Task<IActionResult> Create(CreateUserDto user)
         {
-            CreateUserDto user = new CreateUserDto();
-            // var temp = await Request.Body.ReadAsAsyncString();
-            string json = Newtonsoft.Json.JsonConvert.SerializeObject(user, Formatting.Indented);
-            log.Info(json);
+
             NpgsqlConnection conn = new NpgsqlConnection(connectionString);
             NpgsqlCommand cmd = new NpgsqlCommand();
             conn.Open();
@@ -150,17 +147,18 @@ namespace api.Controllers
 
                     log.Info(cmd.CommandText);
                     log.Info("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
-                    return CreatedAtAction(nameof(GetById), new { id = userModel.UserID }, userModel.ToUserDto());
+                    // return CreatedAtAction(nameof(GetById), new { id = userModel.UserID }, userModel.ToUserDto());
+                    return Ok(new {msg = "Data inserted successfully"});
                 }
                 catch
                 {
                     log.Error(user.SalaryFY2019);
-                    return BadRequest();
+                    return BadRequest(new {msg = "Failed to insert data"});
                 }
             }
             else
             {
-                return BadRequest("Data is Not valid");
+                return BadRequest(new {msg = "Data is invalid"});
             }
         }
 

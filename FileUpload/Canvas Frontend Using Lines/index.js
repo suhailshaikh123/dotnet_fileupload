@@ -2,6 +2,7 @@ import { canvas, ctx as context } from "./Components/GetCanvasContext.js";
 import Table from "./Components/Table.js";
 
 
+
 const rect =document.getElementById("navbar").getBoundingClientRect();
 console.log(rect);
 canvas.width = window.innerWidth - 20;
@@ -22,7 +23,7 @@ canvas.addEventListener("dblclick", (event) => table.handleDoubleClick(event));
 window.addEventListener("keydown", (event) => table.handleKeyPress(event));
 window.addEventListener("keyup", (event) => table.handleKeyUp(event));
 canvas.addEventListener("wheel", (event) => table.handleScroll(event));
-
+window.addEventListener("resize", (event) => table.handleResize(event));
 document.getElementById("uploadForm").addEventListener("submit", uploadCsv);
 async function fetchData() {
   let url = "http://localhost:5139/api/User/GetAll/1/none/none";
@@ -31,6 +32,7 @@ async function fetchData() {
       method: "GET",
     });
     const data = await response.json();
+    console.log(data);
     table.drawCsv(data);
   } catch (error) {
     console.log(error);
