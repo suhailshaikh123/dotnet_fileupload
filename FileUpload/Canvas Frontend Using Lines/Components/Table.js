@@ -139,6 +139,23 @@ class Table {
   {
     if(this.isDeleteValid)
     {
+      let top_cell = this.selectedCell[0];
+      let UserId = this.data[top_cell.X][1].text;
+      let url = "http://localhost:5139/api/User/Delete/"+UserId;
+      try{
+        const response = await fetch(url, {
+          method: "GET",
+        });
+        const data = await response.json();
+        console.log(data);
+        alert(data.msg);
+        this.reset();
+        this.fetchCsv();
+      }
+      catch(error)
+      {
+        alert(data.msg);
+      }
       console.log("can be deleted")
     }
     else{

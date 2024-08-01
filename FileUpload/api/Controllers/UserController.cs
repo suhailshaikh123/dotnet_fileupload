@@ -215,8 +215,13 @@ namespace api.Controllers
             string query = $"Delete from \"Users\" where \"UserID\"={id}";
             log.Info(query);
             cmd.CommandText = query;
+            try{
             log.Info("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
-            return Ok("Successfully Deleted");
+            }
+            catch{
+                return BadRequest(new {msg = "Deletion Failed"});
+            }
+            return Ok(new {msg = "Deleted Successfully"});
         }
 
         [HttpGet("DeleteByMail/{Email}")]
