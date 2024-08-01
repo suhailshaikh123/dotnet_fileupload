@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\Worker\\worker.csproj": {}
+    "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\worker\\worker.csproj": {}
   },
   "projects": {
-    "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\Worker\\worker.csproj": {
+    "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\worker\\worker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\Worker\\worker.csproj",
+        "projectUniqueName": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\worker\\worker.csproj",
         "projectName": "worker",
-        "projectPath": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\Worker\\worker.csproj",
+        "projectPath": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\worker\\worker.csproj",
         "packagesPath": "C:\\Users\\suhail.shaikh\\.nuget\\packages\\",
-        "outputPath": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\Worker\\obj\\",
+        "outputPath": "D:\\All MY Task\\ASP.NET practice\\dotnet_fileupload\\FileUpload\\worker\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

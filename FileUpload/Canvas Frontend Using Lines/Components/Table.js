@@ -64,11 +64,12 @@ class Table {
     this.isCtrlPressed = false;
     this.isFileUploaded = false;
     this.csvData = [];
+    this.dataMark = 0;
+    this.currentPage = 1;
   }
 
   // Draw Functions
   draw() {
-    console.log("draw called");
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     this.drawVerticalLines();
     this.drawHorizontalLines();
@@ -76,10 +77,31 @@ class Table {
     this.drawIndex();
     this.drawCells();
   }
+  async fetchCsv() {
+    console.log("I am inside fetchCSv");
+    let url =
+      "http://localhost:5139/api/User/GetAll/" +
+      this.currentPage +
+      "/none/none";
+    try {
+      const response = await fetch(url, {
+        method: "GET",
+      });
+      const data = await response.json();
+
+      this.drawCsv(data);
+    } catch (error) {
+      console.log(error);
+    }
+  }
   drawCsv(csvData) {
+    this.currentPage++;
+
+    console.log("I am inside drawCsv " + this.dataMark, csvData.length);
     this.isFileUploaded = true;
     this.csvData = csvData;
     let keys = Object.keys(csvData[0]);
+    console.log("Data Fetched " + csvData.length);
     for (let i = 1; i <= csvData.length; i++) {
       let text = "";
 
@@ -89,14 +111,15 @@ class Table {
         } else {
           text = csvData[i - 1][keys[j - 1]];
         }
-        if (i >= this.data.length) {
+        if (i + this.dataMark >= this.data.length) {
           console.log(i, this.data.length);
           this.appendRows();
           this.draw();
         }
-        this.data[i][j].text = text;
+        this.data[i + this.dataMark][j].text = text;
       }
     }
+    this.dataMark += csvData.length;
     this.draw();
   }
   getVisibleHeight() {
@@ -299,19 +322,32 @@ class Table {
       if (this.isFileUploaded) {
         let text = input.value;
         let csv_columns = Object.keys(this.csvData[0]).length;
-
-        for (let i = 2; i < csv_columns; i++) {
-          console.log("hello world ");
-          if (cell.Y == i) {
-            formObject[this.data[1][i].text] = text;
-            console.log(this.data[1][i].text, text);
-          } else {
-            formObject[this.data[1][i].text] = this.data[cell.X][i].text;
-            console.log(this.data[1][i].text, this.data[cell.X][i].text);
+        if (this.data[1][cell.Y].text == "email") {
+          for (let i = 1; i < csv_columns; i++) {
+            console.log("hello world");
+            if (cell.Y == i) {
+              formObject[this.data[1][i].text] = text;
+              console.log(this.data[1][i].text, text);
+            } else {
+              formObject[this.data[1][i].text] = this.data[cell.X][i].text;
+              console.log(this.data[1][i].text, this.data[cell.X][i].text);
+            }
           }
-        }
+        UpdateEmail(formObject);
+        } else {
+          for (let i = 2; i < csv_columns; i++) {
+            console.log("hello world ");
+            if (cell.Y == i) {
+              formObject[this.data[1][i].text] = text;
+              console.log(this.data[1][i].text, text);
+            } else {
+              formObject[this.data[1][i].text] = this.data[cell.X][i].text;
+              console.log(this.data[1][i].text, this.data[cell.X][i].text);
+            }
+          }
 
-        UpdateData(formObject);
+          UpdateData(formObject);
+        }
       } else {
         cell.text = input.value;
         document.body.removeChild(input);
@@ -347,8 +383,36 @@ class Table {
           console.log("Error while updating data", error);
         }
       }
-    });
 
+      async function UpdateEmail(formObject) {
+        try {
+          const response = await fetch(
+            "http://localhost:5139/api/User/UpdateEmail",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+              },
+              body: JSON.stringify(formObject),
+            }
+          );
+          const data = await response.json();
+          console.log(data);
+
+          if (response.status === 200) {
+            cell.text = input.value;
+          } else {
+            alert(data.msg);
+          }
+          document.body.removeChild(input);
+          cell.deselect();
+          self.draw();
+        } catch (error) {
+          console.log("Error while updating data", error);
+        }
+      }
+    });
     document.body.appendChild(input);
     input.focus();
     input.select();
@@ -382,7 +446,16 @@ class Table {
     for (let i = 0; i < this.rows_width.length; i++) {
       temp += this.rows_width[i];
       if (this.scrollY < temp) {
-        if (this.data.length - this.currentRow <= 30) {
+        console.log(this.data.length, this.dataMark);
+        if (this.isFileUploaded && this.dataMark - this.currentRow <= 100) {
+          console.log(
+            "dataLength is " +
+              this.data.length +
+              " dataMark is " +
+              this.dataMark
+          );
+          this.fetchCsv();
+        } else if (this.data.length - this.currentRow <= 30) {
           console.log("append rows");
           this.appendRows();
         }

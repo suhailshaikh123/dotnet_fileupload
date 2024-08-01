@@ -42,7 +42,7 @@ namespace api.Controllers
             conn.Open();
             var cmd = new NpgsqlCommand();
             cmd.Connection = conn;
-            int offset = (currentPage - 1);
+            int offset = (currentPage - 1)*100;
             log.Info("offset: " + offset + "currentPage: " + currentPage);
             string query = "SELECT * FROM \"Users\" ";
             // string query="SELECT * FROM \"getAllData\"();";
@@ -63,7 +63,7 @@ namespace api.Controllers
             }
 
             log.Info(String.Equals(search, "none"));
-            query = query + "offset " + offset + " limit 1000";
+            query = query + "offset " + offset + " limit 100";
             log.Info(query);
             List<User> users = (List<User>)await conn.QueryAsync<User>(query);
 
@@ -154,6 +154,45 @@ namespace api.Controllers
                 {
                     log.Error(user.SalaryFY2019);
                     return BadRequest(new {msg = "Failed to insert data"});
+                }
+            }
+            else
+            {
+                return BadRequest(new {msg = "Data is invalid"});
+            }
+        }
+
+        [HttpPost("UpdateEmail")]
+        public async Task<IActionResult> UpdateEmail(User user)
+        {
+
+            NpgsqlConnection conn = new NpgsqlConnection(connectionString);
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            conn.Open();
+            cmd.Connection = conn;
+
+            
+            if (ValidateCSV.Validate(user))
+            {
+                try
+                {
+                    StringBuilder insertQuery = new StringBuilder($"UPDATE \"Users\" SET \"Email\" = @Email WHERE \"UserID\" = @UserID");
+                    // StringBuilder insertQuery = new StringBuilder($"INSERT INTO \"Users\" (\"Email\", \"Name\", \"Country\", \"State\", \"City\", \"Telephone\", \"AddressLine1\", \"AddressLine2\", \"DateOfBirth\", \"SalaryFY2019\", \"SalaryFY2020\", \"SalaryFY2021\", \"SalaryFY2022\", \"SalaryFY2023\") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT (\"Email\") DO UPDATE SET \"Email\"=\"excluded\".\"Email\", \"Name\"=\"excluded\".\"Name\", \"Country\"=\"excluded\".\"Country\", \"State\"=\"excluded\".\"State\", \"City\"=\"excluded\".\"City\", \"Telephone\"=\"excluded\".\"Telephone\", \"AddressLine1\"=\"excluded\".\"AddressLine1\", \"AddressLine2\"=\"excluded\".\"AddressLine2\", \"DateOfBirth\"=\"excluded\".\"DateOfBirth\", \"SalaryFY2019\"=\"excluded\".\"SalaryFY2019\", \"SalaryFY2020\"=\"excluded\".\"SalaryFY2020\", \"SalaryFY2021\"=\"excluded\".\"SalaryFY2021\", \"SalaryFY2022\"=\"excluded\".\"SalaryFY2022\", \"SalaryFY2023\"=\"excluded\".\"SalaryFY2023\";");
+                    cmd.CommandText = insertQuery.ToString();
+
+                    log.Info(user.SalaryFY2019);
+                    cmd.Parameters.AddWithValue($"@Email", user.Email);
+                    cmd.Parameters.AddWithValue($"@UserId", user.UserID);
+
+                    log.Info(cmd.CommandText);
+                    log.Info("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
+                    // return CreatedAtAction(nameof(GetById), new { id = userModel.UserID }, userModel.ToUserDto());
+                    return Ok(new {msg = "Data Updated successfully"});
+                }
+                catch
+                {
+                    log.Error(user.SalaryFY2019);
+                    return BadRequest(new {msg = "Failed to Update data"});
                 }
             }
             else

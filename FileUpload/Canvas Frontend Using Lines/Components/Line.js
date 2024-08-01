@@ -11,18 +11,19 @@ class Line {
   }
 
   drawLine() {
+    this.context.fillStyle = "black";
+    this.context.strokeStyle = "#E1E1E1";
     this.context.lineWidth = 1;
     this.context.beginPath();
-    this.context.moveTo(this.x1 + 0.5,this.y1);
-    this.context.lineTo(this.x2 + 0.5,this.y2);
+    this.context.moveTo(this.x1 + 0.5, this.y1);
+    this.context.lineTo(this.x2 + 0.5, this.y2);
     // this.context.strokeFill("red");
     this.context.stroke();
   }
-  isNearBorder(x,y)
-  {
+  isNearBorder(x, y) {
     let margin = 3;
 
-    return Math.abs(x-this.x1) <= margin || Math.abs(y-this.y1) <= margin;
+    return Math.abs(x - this.x1) <= margin || Math.abs(y - this.y1) <= margin;
   }
 }
 
