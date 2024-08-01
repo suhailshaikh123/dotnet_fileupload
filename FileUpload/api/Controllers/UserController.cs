@@ -51,17 +51,12 @@ namespace api.Controllers
                 log.Info("hello world!");
                 query = query + "Where \"Email\" like '" + search + "%' ";
             }
-
-            if (sort == "name")
+            if(!String.Equals(sort,"none"))
             {
-                query = query + "ORDER BY \"Name\" ";
-
+                string temp = string.Concat(sort[0].ToString().ToUpper(), sort.AsSpan(1));
+                Console.WriteLine("sorted value is "+temp);
+                query = query +"ORDER BY \""+temp + "\"";
             }
-            else if (sort == "email")
-            {
-                query = query + "ORDER BY \"Email\" ";
-            }
-
             log.Info(String.Equals(search, "none"));
             query = query + "offset " + offset + " limit 100";
             log.Info(query);

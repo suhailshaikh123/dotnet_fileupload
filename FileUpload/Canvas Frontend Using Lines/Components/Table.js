@@ -67,7 +67,10 @@ class Table {
     this.dataMark = 0;
     this.currentPage = 1;
     this.searchInput = "none";
+    this.sortInput = "none";
     this.isDataThere = true;
+    this.isDeleteValid = false;
+    this.isSortValid = false;
   }
 
   reset()
@@ -86,7 +89,7 @@ class Table {
     }
     this.currentPage = 1;
     this.scrollY = 0;
-   
+    this.isDataThere = true;
     this.dataMark = 0;
     
   }
@@ -104,7 +107,7 @@ class Table {
     let url =
       "http://localhost:5139/api/User/GetAll/" +
       this.currentPage +
-      "/none/" + this.searchInput;
+      "/"+this.sortInput+"/" + this.searchInput;
     try {
       const response = await fetch(url, {
         method: "GET",
@@ -132,6 +135,34 @@ class Table {
     this.fetchCsv();    
   }
 
+  async handleDelete()
+  {
+    if(this.isDeleteValid)
+    {
+      console.log("can be deleted")
+    }
+    else{
+      alert("Please select single row")
+    }
+  }
+  async handleSort()
+  {
+    if(this.isSortValid)
+    {
+      console.log("can be sorted")
+      let top_cell = this.selectedCell[0];
+      let column_name = this.data[1][top_cell.Y].text;
+
+      this.sortInput = column_name;
+      console.log("sorting by "+ column_name)
+      this.reset();
+      this.fetchCsv();
+
+    }
+    else{
+      alert("Please select single column")
+    }
+  }
   drawCsv(csvData) {
     this.currentPage++;
 
@@ -141,10 +172,7 @@ class Table {
     if(csvData.length != 0){
     this.csvData = csvData;
     let keys = Object.keys(csvData[0]);
-    console.log("Data Fetched " + csvData.length);
-    console.log("Data Fetched "+ csvData)
-    for(let i =0;i<csvData.length;i++)
-      console.log(csvData[i])
+   
 
     //adding column name 
     for(let j=1;j<=keys.length;j++)
@@ -168,6 +196,9 @@ class Table {
         this.data[i + this.dataMark][j].text = text;
       }
     }
+  }
+  else{
+    this.isDataThere = false;
   }
     this.dataMark += csvData.length;
     this.draw();
@@ -494,7 +525,7 @@ class Table {
       temp += this.rows_width[i];
       if (this.scrollY < temp) {
         console.log(this.data.length, this.dataMark);
-        if (this.isFileUploaded && this.dataMark - this.currentRow <= 100) {
+        if (this.isFileUploaded && this.isDataThere && this.dataMark - this.currentRow <= 100) {
           console.log(
             "dataLength is " +
               this.data.length +
@@ -660,10 +691,20 @@ class Table {
       this.selectedCell[i].deselect();
     }
     this.selectedCell = [];
+    this.isDeleteValid = false;
+    this.isSortValid = false;
   }
 
   updateColumnSelect(column) {
+    if(this.selectedCell.length == 0)
+      {
+        this.isSortValid = true;
+      }
+      else{
+        this.isSortValid = false;
+      }
     for (let i = 1; i < this.rows; i++) {
+
       this.data[i][column].select();
       this.updateMetaData(this.data[i][column]);
       this.addMetaDataToFrontend();
@@ -671,6 +712,14 @@ class Table {
     }
   }
   updateRowSelect(rowIndex) {
+    console.log(this.selectedCell.length +" is")
+    if(this.selectedCell.length == 0)
+    {
+      this.isDeleteValid = true;
+    }
+    else{
+      this.isDeleteValid = false;
+    }
     for (let i = 0; i < this.columns; i++) {
       this.data[rowIndex][i].select();
       if(i!= 0){

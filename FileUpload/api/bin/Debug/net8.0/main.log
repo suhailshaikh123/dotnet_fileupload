@@ -22142,3 +22142,881 @@ DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error
 2024-08-01 15:47:21,793 [17] INFO api.Controllers.UserController.MoveNext[51] - hello world!
 2024-08-01 15:47:22,067 [17] INFO api.Controllers.UserController.MoveNext[65] - False
 2024-08-01 15:47:22,068 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'coo%' offset 11200 limit 100
+2024-08-01 15:54:54,564 [4] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-08-01 15:54:54,567 [4] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ab62761642c8011819498a",
+  "FileId": "7f0882a9-df7d-4045-ac03-c6e6c307576c",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 15:55:00,787 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 15:55:00,788 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:00,837 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 15:55:00,838 [4] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 15:55:00,839 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 15:55:06,239 [3] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 15:55:06,239 [3] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:06,240 [3] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:55:06,241 [3] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 15:55:06,242 [3] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 15:55:06,315 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 15:55:06,318 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:06,320 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:55:06,322 [4] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 15:55:06,326 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 15:55:06,384 [31] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 15:55:06,406 [31] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:06,410 [31] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:55:06,411 [31] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 15:55:06,412 [31] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 15:55:17,521 [31] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 15:55:17,522 [31] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:17,523 [31] INFO api.Controllers.UserController.MoveNext[46] - offset: 400currentPage: 5
+2024-08-01 15:55:17,523 [31] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 15:55:17,524 [31] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 400 limit 100
+2024-08-01 15:55:17,558 [3] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 15:55:17,559 [3] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:17,560 [3] INFO api.Controllers.UserController.MoveNext[46] - offset: 400currentPage: 5
+2024-08-01 15:55:17,560 [3] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 15:55:17,570 [3] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 400 limit 100
+2024-08-01 15:55:17,607 [31] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 15:55:17,630 [31] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:17,637 [31] INFO api.Controllers.UserController.MoveNext[46] - offset: 400currentPage: 5
+2024-08-01 15:55:17,641 [31] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 15:55:17,643 [31] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 400 limit 100
+2024-08-01 15:55:26,220 [3] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-08-01 15:55:26,222 [3] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ab62961642c8011819498b",
+  "FileId": "c4d232d1-b7aa-45bb-93c6-edac153a518f",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 15:55:32,483 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 15:55:32,484 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:32,485 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 15:55:32,486 [4] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 15:55:32,487 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 15:55:36,736 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 15:55:36,737 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:36,737 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 15:55:36,738 [16] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:55:36,739 [16] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:55:36,739 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 0 limit 100
+2024-08-01 15:55:38,887 [17] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 15:55:38,902 [17] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:38,903 [17] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:55:38,904 [17] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:55:38,905 [17] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:55:38,908 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 15:55:39,060 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 15:55:39,061 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:39,065 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:55:39,065 [4] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:55:39,066 [4] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:55:39,068 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 15:55:39,204 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 15:55:39,204 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:39,207 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:55:39,208 [4] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:55:39,209 [4] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:55:39,210 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 15:55:39,297 [17] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 15:55:39,297 [17] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:39,298 [17] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:55:39,300 [17] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:55:39,301 [17] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:55:39,302 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 15:55:59,538 [17] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:55:59,538 [17] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:55:59,539 [17] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 15:55:59,540 [17] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:55:59,541 [17] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:55:59,542 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 0 limit 100
+2024-08-01 15:56:00,916 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:00,917 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:00,920 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:56:00,923 [4] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:00,925 [4] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:00,934 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 100 limit 100
+2024-08-01 15:56:06,543 [17] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:06,543 [17] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:06,544 [17] INFO api.Controllers.UserController.MoveNext[46] - offset: 200currentPage: 3
+2024-08-01 15:56:06,547 [17] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:06,556 [17] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:06,558 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 200 limit 100
+2024-08-01 15:56:06,627 [14] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:06,633 [14] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:06,635 [14] INFO api.Controllers.UserController.MoveNext[46] - offset: 200currentPage: 3
+2024-08-01 15:56:06,635 [14] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:06,637 [14] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:06,638 [14] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 200 limit 100
+2024-08-01 15:56:06,677 [14] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:06,682 [14] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:06,686 [14] INFO api.Controllers.UserController.MoveNext[46] - offset: 200currentPage: 3
+2024-08-01 15:56:06,692 [14] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:06,692 [14] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:06,693 [14] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 200 limit 100
+2024-08-01 15:56:15,936 [14] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:15,938 [14] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:15,941 [14] INFO api.Controllers.UserController.MoveNext[46] - offset: 500currentPage: 6
+2024-08-01 15:56:15,941 [14] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:15,942 [14] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:15,943 [14] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 500 limit 100
+2024-08-01 15:56:16,005 [14] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:16,017 [14] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:16,018 [14] INFO api.Controllers.UserController.MoveNext[46] - offset: 500currentPage: 6
+2024-08-01 15:56:16,018 [14] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:16,019 [14] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:16,020 [14] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 500 limit 100
+2024-08-01 15:56:16,065 [17] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:16,071 [17] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:16,076 [17] INFO api.Controllers.UserController.MoveNext[46] - offset: 500currentPage: 6
+2024-08-01 15:56:16,077 [17] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:16,077 [17] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:16,078 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 500 limit 100
+2024-08-01 15:56:16,107 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:16,109 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:16,112 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 500currentPage: 6
+2024-08-01 15:56:16,115 [4] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:16,119 [4] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:16,121 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 500 limit 100
+2024-08-01 15:56:23,004 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:23,005 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:23,007 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 900currentPage: 10
+2024-08-01 15:56:23,008 [4] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:23,010 [4] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:23,013 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 900 limit 100
+2024-08-01 15:56:23,088 [17] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:23,089 [17] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:23,092 [17] INFO api.Controllers.UserController.MoveNext[46] - offset: 900currentPage: 10
+2024-08-01 15:56:23,096 [17] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:23,100 [17] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:23,103 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 900 limit 100
+2024-08-01 15:56:27,102 [14] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:27,103 [14] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:27,103 [14] INFO api.Controllers.UserController.MoveNext[46] - offset: 1100currentPage: 12
+2024-08-01 15:56:27,104 [14] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:27,105 [14] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:27,105 [14] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 1100 limit 100
+2024-08-01 15:56:28,743 [14] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:28,743 [14] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:28,744 [14] INFO api.Controllers.UserController.MoveNext[46] - offset: 1200currentPage: 13
+2024-08-01 15:56:28,745 [14] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:28,747 [14] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:28,749 [14] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 1200 limit 100
+2024-08-01 15:56:32,604 [23] INFO api.Controllers.UserController.MoveNext[40] -  Search: s
+2024-08-01 15:56:32,604 [23] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:32,605 [23] INFO api.Controllers.UserController.MoveNext[46] - offset: 1300currentPage: 14
+2024-08-01 15:56:32,606 [23] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:32,608 [23] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:32,609 [23] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 's%' offset 1300 limit 100
+2024-08-01 15:56:38,500 [15] INFO api.Controllers.UserController.MoveNext[40] -  Search: hello
+2024-08-01 15:56:38,500 [15] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:38,501 [15] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 15:56:38,502 [15] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:38,502 [15] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:38,503 [15] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'hello%' offset 0 limit 100
+2024-08-01 15:56:42,936 [15] INFO api.Controllers.UserController.MoveNext[40] -  Search: hello
+2024-08-01 15:56:42,938 [15] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:56:42,941 [15] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:56:42,944 [15] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:56:42,954 [15] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:56:42,958 [15] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'hello%' offset 100 limit 100
+2024-08-01 15:56:57,143 [23] INFO api.Controllers.UserController.MoveNext[183] - 73356.93
+2024-08-01 15:56:57,144 [23] INFO api.Controllers.UserController.MoveNext[187] - UPDATE "Users" SET "Email" = @Email WHERE "UserID" = @UserID
+2024-08-01 15:56:57,155 [23] INFO api.Controllers.UserController.MoveNext[188] - Rows Affected: 1
+2024-08-01 15:57:05,232 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: wow@gmail.com
+2024-08-01 15:57:05,232 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:57:05,297 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 15:57:05,297 [4] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:57:05,298 [4] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:57:05,299 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'wow@gmail.com%' offset 0 limit 100
+2024-08-01 15:57:20,667 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: wow@gmail.com
+2024-08-01 15:57:20,668 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:57:20,670 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:57:20,683 [4] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:57:20,693 [4] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:57:20,696 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'wow@gmail.com%' offset 100 limit 100
+2024-08-01 15:57:20,901 [23] INFO api.Controllers.UserController.MoveNext[40] -  Search: wow@gmail.com
+2024-08-01 15:57:20,902 [23] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:57:20,903 [23] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:57:20,904 [23] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:57:20,904 [23] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:57:20,905 [23] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'wow@gmail.com%' offset 100 limit 100
+2024-08-01 15:57:21,059 [15] INFO api.Controllers.UserController.MoveNext[40] -  Search: wow@gmail.com
+2024-08-01 15:57:21,060 [15] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:57:21,061 [15] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:57:21,063 [15] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:57:21,064 [15] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:57:21,065 [15] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'wow@gmail.com%' offset 100 limit 100
+2024-08-01 15:57:21,190 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: wow@gmail.com
+2024-08-01 15:57:21,192 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 15:57:21,195 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 15:57:21,196 [4] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 15:57:21,196 [4] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 15:57:21,199 [4] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'wow@gmail.com%' offset 100 limit 100
+2024-08-01 16:09:54,159 [16] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-08-01 16:09:54,186 [23] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ab65fa1642c8011819498c",
+  "FileId": "7a4aeee3-02fe-4a1f-8004-38b380dc052d",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 16:10:00,457 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:10:00,458 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:10:00,517 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:10:00,517 [16] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:10:00,518 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 16:10:03,999 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:10:04,000 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:10:04,001 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:10:04,001 [16] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:10:04,002 [16] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:10:04,002 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 0 limit 100
+2024-08-01 16:14:09,402 [22] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:09,403 [22] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:09,503 [22] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:09,504 [22] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:09,504 [22] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:09,505 [22] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:11,533 [17] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:11,534 [17] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:11,535 [17] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:11,536 [17] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:11,537 [17] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:11,538 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:11,641 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:11,644 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:11,646 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:11,647 [16] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:11,648 [16] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:11,649 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:11,755 [17] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:11,757 [17] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:11,758 [17] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:11,758 [17] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:11,759 [17] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:11,760 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:11,885 [22] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:11,886 [22] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:11,887 [22] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:11,888 [22] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:11,888 [22] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:11,892 [22] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:12,057 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:12,057 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:12,059 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:12,060 [16] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:12,061 [16] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:12,062 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:12,158 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:12,159 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:12,161 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:12,162 [16] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:12,163 [16] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:12,164 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:12,256 [22] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:12,256 [22] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:12,259 [22] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:12,261 [22] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:12,263 [22] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:12,264 [22] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:12,342 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:12,342 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:12,344 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:12,345 [16] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:12,345 [16] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:12,348 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:12,442 [17] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:12,446 [17] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:12,453 [17] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:12,454 [17] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:12,456 [17] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:12,456 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:12,566 [17] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:12,567 [17] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:12,567 [17] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:12,568 [17] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:12,568 [17] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:12,569 [17] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:12,673 [22] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:12,674 [22] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:12,674 [22] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:12,675 [22] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:12,676 [22] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:12,676 [22] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:12,760 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:12,761 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:12,762 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:12,763 [16] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:12,764 [16] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:12,765 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:12,845 [22] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:12,846 [22] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:12,847 [22] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:12,848 [22] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:12,849 [22] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:12,850 [22] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:12,927 [31] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:12,927 [31] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:12,929 [31] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:12,929 [31] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:12,930 [31] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:12,931 [31] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:13,015 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:13,015 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:13,016 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:13,019 [16] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:13,020 [16] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:13,021 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:13,119 [22] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:13,121 [22] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:13,121 [22] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:13,122 [22] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:13,123 [22] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:13,123 [22] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:13,238 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:13,240 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:13,242 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:13,243 [16] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:13,243 [16] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:13,244 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:13,334 [31] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:13,335 [31] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:13,336 [31] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:13,337 [31] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:13,339 [31] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:13,340 [31] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:13,429 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:13,430 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:13,431 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:13,432 [16] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:13,432 [16] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:13,433 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:13,530 [31] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:13,530 [31] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:13,532 [31] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:13,532 [31] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:13,534 [31] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:13,535 [31] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:13,626 [16] INFO api.Controllers.UserController.MoveNext[40] -  Search: suh
+2024-08-01 16:14:13,631 [16] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:14:13,632 [16] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:14:13,633 [16] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-01 16:14:13,634 [16] INFO api.Controllers.UserController.MoveNext[65] - False
+2024-08-01 16:14:13,635 [16] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" Where "Email" like 'suh%' offset 100 limit 100
+2024-08-01 16:14:59,764 [31] INFO api.Controllers.UserController.MoveNext[183] - 79308
+2024-08-01 16:14:59,765 [31] INFO api.Controllers.UserController.MoveNext[187] - UPDATE "Users" SET "Email" = @Email WHERE "UserID" = @UserID
+2024-08-01 16:14:59,774 [31] INFO api.Controllers.UserController.MoveNext[188] - Rows Affected: 1
+2024-08-01 16:47:26,101 [15] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:26,102 [15] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:26,299 [15] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:47:26,299 [15] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:26,299 [15] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 16:47:27,567 [31] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:27,567 [31] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:27,568 [31] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:47:27,568 [31] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:27,569 [31] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 16:47:40,268 [15] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:40,268 [15] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:40,269 [15] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:47:40,269 [15] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:40,270 [15] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 16:47:41,698 [23] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:41,699 [23] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:41,699 [23] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:47:41,700 [23] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:41,700 [23] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 16:47:42,346 [15] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:42,347 [15] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:42,347 [15] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:47:42,348 [15] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:42,348 [15] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 16:47:43,411 [15] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:43,411 [15] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:43,412 [15] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:47:43,412 [15] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:43,413 [15] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 16:47:43,915 [29] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:43,915 [29] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:43,915 [29] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:47:43,916 [29] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:43,916 [29] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 16:47:49,011 [3] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:49,013 [3] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:49,013 [3] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:47:49,014 [3] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:49,014 [3] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 16:47:49,372 [15] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:49,373 [15] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:49,374 [15] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:47:49,374 [15] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:49,374 [15] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 16:47:50,875 [23] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:50,880 [23] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:50,880 [23] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:47:50,881 [23] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:50,882 [23] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 16:47:50,900 [3] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:50,903 [3] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:50,906 [3] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:47:50,907 [3] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:50,908 [3] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 16:47:50,949 [29] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:47:50,950 [29] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:47:50,958 [29] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-01 16:47:50,961 [29] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:47:50,963 [29] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 16:48:47,627 [29] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-08-01 16:48:47,652 [23] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ab6f171642c8011819498d",
+  "FileId": "bf60669a-ab83-4ba2-8c76-0d03bc1dac13",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 16:49:03,747 [29] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-08-01 16:49:03,749 [29] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ab6f271642c8011819498e",
+  "FileId": "7a11da2d-4031-4621-8885-0e5bda7985a9",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 16:49:10,015 [29] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:49:10,016 [29] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-01 16:49:10,018 [29] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:49:10,018 [29] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:49:10,019 [29] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 16:49:15,205 [29] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-01 16:49:15,206 [29] INFO api.Controllers.UserController.MoveNext[41] - sORT: [object Object]
+2024-08-01 16:49:15,207 [29] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-01 16:49:15,207 [29] INFO api.Controllers.UserController.MoveNext[65] - True
+2024-08-01 16:49:15,208 [29] INFO api.Controllers.UserController.MoveNext[67] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 17:00:59,686 [31] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:00:59,691 [31] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:00:59,748 [31] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:00:59,748 [31] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:00:59,748 [31] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "NAMEame"offset 0 limit 100
+2024-08-01 17:00:59,875 [31] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42703: column "NAMEame" does not exist
+
+POSITION: 32
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at api.Controllers.UserController.GetAll(Int32 currentPage, String sort, String search)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "NAMEame" does not exist
+    Hint: Perhaps you meant to reference the column "Users.Name".
+    Position: 32
+    File: parse_relation.c
+    Line: 3738
+    Routine: errorMissingColumn
+2024-08-01 17:01:55,205 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:01:55,205 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:01:55,266 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:01:55,267 [3] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:01:55,268 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "NAMEame"offset 0 limit 100
+2024-08-01 17:01:55,285 [3] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42703: column "NAMEame" does not exist
+
+POSITION: 32
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at api.Controllers.UserController.GetAll(Int32 currentPage, String sort, String search)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "NAMEame" does not exist
+    Hint: Perhaps you meant to reference the column "Users.Name".
+    Position: 32
+    File: parse_relation.c
+    Line: 3738
+    Routine: errorMissingColumn
+2024-08-01 17:02:55,337 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: hello
+2024-08-01 17:02:55,337 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:02:55,404 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:02:55,405 [3] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:02:55,405 [3] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:02:55,406 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'hello%' ORDER BY "NAMEame"offset 0 limit 100
+2024-08-01 17:02:55,417 [3] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42703: column "NAMEame" does not exist
+
+POSITION: 60
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at api.Controllers.UserController.GetAll(Int32 currentPage, String sort, String search)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "NAMEame" does not exist
+    Hint: Perhaps you meant to reference the column "Users.Name".
+    Position: 60
+    File: parse_relation.c
+    Line: 3738
+    Routine: errorMissingColumn
+2024-08-01 17:04:54,853 [17] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:04:54,854 [17] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:04:55,019 [17] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:04:55,020 [17] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:04:55,020 [17] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "NAMEame"offset 0 limit 100
+2024-08-01 17:04:55,026 [17] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42703: column "NAMEame" does not exist
+
+POSITION: 32
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at api.Controllers.UserController.GetAll(Int32 currentPage, String sort, String search)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "NAMEame" does not exist
+    Hint: Perhaps you meant to reference the column "Users.Name".
+    Position: 32
+    File: parse_relation.c
+    Line: 3738
+    Routine: errorMissingColumn
+2024-08-01 17:06:42,911 [29] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:06:42,912 [29] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:06:42,970 [29] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:06:42,971 [29] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:06:42,971 [29] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:07:24,416 [13] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-08-01 17:07:24,455 [13] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66ab73741642c8011819498f",
+  "FileId": "dcb1cfc6-bf61-4de1-b9d0-1f061c24ba0f",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 17:07:34,893 [13] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:07:34,894 [13] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:07:34,896 [13] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:07:34,897 [13] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:07:34,898 [13] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 17:08:02,392 [33] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:08:02,396 [33] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:08:02,400 [33] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:08:02,400 [33] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:08:02,401 [33] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 17:08:02,448 [14] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:08:02,449 [14] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:08:02,450 [14] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:08:02,451 [14] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:08:02,452 [14] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 17:08:02,470 [14] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:08:02,470 [14] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:08:02,471 [14] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:08:02,472 [14] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:08:02,473 [14] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 17:10:17,419 [33] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:10:17,419 [33] INFO api.Controllers.UserController.MoveNext[0] - sORT: [object Object]
+2024-08-01 17:10:17,482 [33] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:10:17,482 [33] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:10:17,483 [33] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "[object Object]"offset 0 limit 100
+2024-08-01 17:10:17,491 [33] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42703: column "[object Object]" does not exist
+
+POSITION: 32
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at api.Controllers.UserController.GetAll(Int32 currentPage, String sort, String search)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42703
+    MessageText: column "[object Object]" does not exist
+    Position: 32
+    File: parse_relation.c
+    Line: 3727
+    Routine: errorMissingColumn
+2024-08-01 17:11:18,743 [16] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-08-01 17:11:18,745 [16] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66ab745e1642c80118194990",
+  "FileId": "57b1547f-f515-481c-8317-db025b4d9217",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 17:11:25,002 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:11:25,005 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:11:25,060 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:11:25,061 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:11:25,061 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 17:11:34,114 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:11:34,114 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 17:11:34,115 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:11:34,116 [4] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:11:34,119 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "State"offset 0 limit 100
+2024-08-01 17:11:37,369 [33] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:11:37,370 [33] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 17:11:37,372 [33] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:11:37,373 [33] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:11:37,374 [33] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "State"offset 100 limit 100
+2024-08-01 17:11:37,543 [33] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:11:37,552 [33] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 17:11:37,553 [33] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:11:37,554 [33] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:11:37,555 [33] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "State"offset 100 limit 100
+2024-08-01 17:11:40,993 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:11:40,993 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 17:11:40,994 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:11:40,995 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:11:40,995 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-01 17:11:42,497 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:11:42,499 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 17:11:42,516 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:11:42,517 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:11:42,518 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 100 limit 100
+2024-08-01 17:11:58,448 [23] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:11:58,448 [23] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:11:58,449 [23] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:11:58,449 [23] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:11:58,450 [23] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 0 limit 100
+2024-08-01 17:11:59,771 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:11:59,772 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:11:59,774 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:11:59,778 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:11:59,781 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:11:59,937 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:11:59,941 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:11:59,941 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:11:59,942 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:11:59,946 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:12:03,854 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:12:03,855 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:12:03,855 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 300currentPage: 4
+2024-08-01 17:12:03,856 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:12:03,857 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 300 limit 100
+2024-08-01 17:12:05,917 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:12:05,918 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:12:05,919 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 400currentPage: 5
+2024-08-01 17:12:05,920 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:12:05,921 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 400 limit 100
+2024-08-01 17:12:07,606 [23] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:12:07,607 [23] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:12:07,615 [23] INFO api.Controllers.UserController.MoveNext[0] - offset: 500currentPage: 6
+2024-08-01 17:12:07,618 [23] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:12:07,619 [23] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 500 limit 100
+2024-08-01 17:12:07,780 [33] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:12:07,781 [33] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:12:07,781 [33] INFO api.Controllers.UserController.MoveNext[0] - offset: 500currentPage: 6
+2024-08-01 17:12:07,782 [33] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:12:07,783 [33] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 500 limit 100
+2024-08-01 17:12:13,829 [31] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:12:13,830 [31] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:12:13,833 [31] INFO api.Controllers.UserController.MoveNext[0] - offset: 700currentPage: 8
+2024-08-01 17:12:13,837 [31] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:12:13,841 [31] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 700 limit 100
+2024-08-01 17:12:14,079 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:12:14,079 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:12:14,080 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 700currentPage: 8
+2024-08-01 17:12:14,081 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:12:14,082 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 700 limit 100
+2024-08-01 17:12:14,289 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:12:14,290 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:12:14,291 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 700currentPage: 8
+2024-08-01 17:12:14,291 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:12:14,292 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 700 limit 100
+2024-08-01 17:12:14,462 [31] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:12:14,464 [31] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:12:14,464 [31] INFO api.Controllers.UserController.MoveNext[0] - offset: 700currentPage: 8
+2024-08-01 17:12:14,467 [31] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:12:14,468 [31] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 700 limit 100
+2024-08-01 17:12:14,677 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:12:14,679 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:12:14,680 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 700currentPage: 8
+2024-08-01 17:12:14,681 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:12:14,681 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 700 limit 100
+2024-08-01 17:12:23,360 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:12:23,360 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: city
+2024-08-01 17:12:23,361 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:12:23,361 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:12:23,362 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "City"offset 0 limit 100
+2024-08-01 17:12:25,858 [31] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:12:25,863 [31] INFO api.Controllers.UserController.MoveNext[0] - sORT: city
+2024-08-01 17:12:25,871 [31] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:12:25,872 [31] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:12:25,873 [31] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "City"offset 100 limit 100
+2024-08-01 17:14:41,393 [16] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-08-01 17:14:41,395 [16] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66ab75291642c80118194991",
+  "FileId": "c477878b-3d5b-44be-834e-9795e5bcb888",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 17:14:51,711 [31] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:14:51,712 [31] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:14:51,767 [31] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:14:51,768 [31] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:14:51,769 [31] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 17:14:59,024 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:14:59,026 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 17:14:59,029 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:14:59,030 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:14:59,030 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "State"offset 0 limit 100
+2024-08-01 17:15:02,047 [22] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:15:02,048 [22] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 17:15:02,049 [22] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:15:02,051 [22] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:15:02,053 [22] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "State"offset 100 limit 100
+2024-08-01 17:15:02,226 [31] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:15:02,228 [31] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 17:15:02,229 [31] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:15:02,230 [31] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:15:02,231 [31] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "State"offset 100 limit 100
+2024-08-01 17:15:02,351 [17] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:15:02,351 [17] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 17:15:02,352 [17] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:15:02,353 [17] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:15:02,355 [17] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "State"offset 100 limit 100
+2024-08-01 17:15:02,458 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:15:02,459 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 17:15:02,460 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:15:02,461 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:15:02,463 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "State"offset 100 limit 100
+2024-08-01 17:15:02,581 [17] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:15:02,582 [17] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 17:15:02,583 [17] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:15:02,588 [17] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:15:02,589 [17] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "State"offset 100 limit 100
+2024-08-01 17:15:06,271 [22] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:15:06,272 [22] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 17:15:06,273 [22] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:15:06,274 [22] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:15:06,275 [22] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-01 17:15:07,478 [22] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:15:07,479 [22] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 17:15:07,480 [22] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:15:07,481 [22] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:15:07,483 [22] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 100 limit 100

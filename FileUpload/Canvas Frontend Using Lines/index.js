@@ -1,9 +1,7 @@
 import { canvas, ctx as context } from "./Components/GetCanvasContext.js";
 import Table from "./Components/Table.js";
 
-
-
-const rect =document.getElementById("navbar").getBoundingClientRect();
+const rect = document.getElementById("navbar").getBoundingClientRect();
 canvas.width = window.innerWidth - 20;
 canvas.height = window.innerHeight - rect.height - 20;
 
@@ -41,25 +39,67 @@ async function fetchData() {
 }
 function appendElements() {
   const form = document.getElementById("uploadForm");
+ 
+  function appendDelete()
+  {
+    const div = document.createElement("div");
+    div.classList.add("delete");
 
-  const div = document.createElement("div");
-  div.classList.add("search-bar");
+    const i = document.createElement("i");
+    i.classList.add("fa-solid");
+    i.classList.add("fa-trash");
+    
+    const p = document.createElement("p");
+    p.innerHTML = "Delete"
 
-  const input = document.createElement("input");
-  input.classList.add("input-email");
-  input.type = "text";
-  input.placeholder = "Search by email";
+    div.appendChild(i);
+    div.appendChild(p);
 
-  const button = document.createElement("button");
-  button.classList.add("btn-search");
-  button.type = "button";
-  button.innerHTML = "Search";
-  form.appendChild(div);
-  div.appendChild(input);
-  div.appendChild(button);
+    form.appendChild(div);
 
+    div.addEventListener("click",()=>table.handleDelete());
+  }
+  function appendSearching()
+  {
+    const div = document.createElement("div");
+    div.classList.add("search-bar");
 
-  button.addEventListener("click",() => table.handleSearching());
+    const input = document.createElement("input");
+    input.classList.add("input-email");
+    input.type = "text";
+    input.placeholder = "Search by email";
+
+    const button = document.createElement("button");
+    button.classList.add("btn-search");
+    button.type = "button";
+    button.innerHTML = "Search";
+    form.appendChild(div);
+    div.appendChild(input);
+    div.appendChild(button);
+    button.addEventListener("click", () => table.handleSearching());
+  }
+  function appendSort()
+  {
+    const div = document.createElement("div");
+    div.classList.add("sort");
+
+    const i = document.createElement("i");
+    i.classList.add("fa-solid");
+    i.classList.add("fa-arrow-down-1-9");
+    
+    const p = document.createElement("p");
+    p.innerHTML = "Sort"
+
+    div.appendChild(i);
+    div.appendChild(p);
+
+    form.appendChild(div);
+
+    div.addEventListener("click",()=>{table.handleSort()})
+  }
+  appendSearching();
+  appendDelete();
+  appendSort();
 }
 async function uploadCsv(event) {
   event.preventDefault();
