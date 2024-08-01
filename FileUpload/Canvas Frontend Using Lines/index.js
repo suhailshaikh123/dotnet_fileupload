@@ -4,7 +4,6 @@ import Table from "./Components/Table.js";
 
 
 const rect =document.getElementById("navbar").getBoundingClientRect();
-console.log(rect);
 canvas.width = window.innerWidth - 20;
 canvas.height = window.innerHeight - rect.height - 20;
 
@@ -15,7 +14,7 @@ let columns = 30;
 let rows = 100;
 let table = new Table(context, columns, rows, canvas);
 table.draw();
-
+// appendElements()
 canvas.addEventListener("mousedown", (event) => table.handleMouseDown(event));
 canvas.addEventListener("mousemove", (event) => table.handleMouseMove(event));
 canvas.addEventListener("mouseup", (event) => table.handleMouseUp(event));
@@ -25,6 +24,7 @@ window.addEventListener("keyup", (event) => table.handleKeyUp(event));
 canvas.addEventListener("wheel", (event) => table.handleScroll(event));
 window.addEventListener("resize", (event) => table.handleResize(event));
 document.getElementById("uploadForm").addEventListener("submit", uploadCsv);
+
 async function fetchData() {
   let url = "http://localhost:5139/api/User/GetAll/1/none/none";
   try {
@@ -37,6 +37,29 @@ async function fetchData() {
   } catch (error) {
     console.log(error);
   }
+  appendElements();
+}
+function appendElements() {
+  const form = document.getElementById("uploadForm");
+
+  const div = document.createElement("div");
+  div.classList.add("search-bar");
+
+  const input = document.createElement("input");
+  input.classList.add("input-email");
+  input.type = "text";
+  input.placeholder = "Search by email";
+
+  const button = document.createElement("button");
+  button.classList.add("btn-search");
+  button.type = "button";
+  button.innerHTML = "Search";
+  form.appendChild(div);
+  div.appendChild(input);
+  div.appendChild(button);
+
+
+  button.addEventListener("click",() => table.handleSearching());
 }
 async function uploadCsv(event) {
   event.preventDefault();

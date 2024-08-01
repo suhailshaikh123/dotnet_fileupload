@@ -66,8 +66,30 @@ class Table {
     this.csvData = [];
     this.dataMark = 0;
     this.currentPage = 1;
+    this.searchInput = "none";
+    this.isDataThere = true;
   }
 
+  reset()
+  {
+    for (let i = 0; i < this.columns; i++) 
+    this.columns_width.push(130);
+
+    for (let i = 0; i < this.rows; i++) this.rows_width.push(30);
+   
+
+    for (let i = 0; i < this.rows; i++) {
+      for (let j = 0; j < this.columns; j++) {
+          let cell = this.data[i][j];
+          cell.text ="";
+      }
+    }
+    this.currentPage = 1;
+    this.scrollY = 0;
+   
+    this.dataMark = 0;
+    
+  }
   // Draw Functions
   draw() {
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
@@ -77,12 +99,12 @@ class Table {
     this.drawIndex();
     this.drawCells();
   }
-  async fetchCsv() {
+    async fetchCsv() {
     console.log("I am inside fetchCSv");
     let url =
       "http://localhost:5139/api/User/GetAll/" +
       this.currentPage +
-      "/none/none";
+      "/none/" + this.searchInput;
     try {
       const response = await fetch(url, {
         method: "GET",
@@ -94,23 +116,50 @@ class Table {
       console.log(error);
     }
   }
+  async handleSearching()
+  {
+
+    console.log("I am here to handle search ");
+    const input  = document.getElementsByClassName("input-email")[0];
+    if(input.value == "")
+    {
+      this.searchInput = "none";
+    }
+    else{
+      this.searchInput = input.value;
+    }
+    this.reset();
+    this.fetchCsv();    
+  }
+
   drawCsv(csvData) {
     this.currentPage++;
 
     console.log("I am inside drawCsv " + this.dataMark, csvData.length);
     this.isFileUploaded = true;
+    
+    if(csvData.length != 0){
     this.csvData = csvData;
     let keys = Object.keys(csvData[0]);
     console.log("Data Fetched " + csvData.length);
+    console.log("Data Fetched "+ csvData)
+    for(let i =0;i<csvData.length;i++)
+      console.log(csvData[i])
+
+    //adding column name 
+    for(let j=1;j<=keys.length;j++)
+    {
+      let text = keys[j-1];
+      this.data[this.dataMark + 1][j].text = text;
+    }
+    this.dataMark ++;
     for (let i = 1; i <= csvData.length; i++) {
       let text = "";
 
       for (let j = 1; j <= keys.length; j++) {
-        if (i == 1) {
-          text = keys[j - 1];
-        } else {
+       
           text = csvData[i - 1][keys[j - 1]];
-        }
+        
         if (i + this.dataMark >= this.data.length) {
           console.log(i, this.data.length);
           this.appendRows();
@@ -119,6 +168,7 @@ class Table {
         this.data[i + this.dataMark][j].text = text;
       }
     }
+  }
     this.dataMark += csvData.length;
     this.draw();
   }
@@ -324,13 +374,10 @@ class Table {
         let csv_columns = Object.keys(this.csvData[0]).length;
         if (this.data[1][cell.Y].text == "email") {
           for (let i = 1; i < csv_columns; i++) {
-            console.log("hello world");
             if (cell.Y == i) {
               formObject[this.data[1][i].text] = text;
-              console.log(this.data[1][i].text, text);
             } else {
               formObject[this.data[1][i].text] = this.data[cell.X][i].text;
-              console.log(this.data[1][i].text, this.data[cell.X][i].text);
             }
           }
         UpdateEmail(formObject);
@@ -626,8 +673,10 @@ class Table {
   updateRowSelect(rowIndex) {
     for (let i = 0; i < this.columns; i++) {
       this.data[rowIndex][i].select();
+      if(i!= 0){
       this.updateMetaData(this.data[rowIndex][i]);
       this.addMetaDataToFrontend();
+      }
       this.selectedCell.push(this.data[rowIndex][i]);
     }
   }
@@ -689,7 +738,7 @@ class Table {
 
     return { rowIndex, colIndex };
   }
-
+ 
   getData() {
     return this.data;
   }

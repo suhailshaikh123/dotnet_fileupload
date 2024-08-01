@@ -189,9 +189,18 @@ namespace api.Controllers
                     // return CreatedAtAction(nameof(GetById), new { id = userModel.UserID }, userModel.ToUserDto());
                     return Ok(new {msg = "Data Updated successfully"});
                 }
-                catch
+                catch(PostgresException ex)
                 {
-                    log.Error(user.SalaryFY2019);
+                    Console.WriteLine("I am printing sql state"+ex.SqlState);
+                    if(ex.SqlState == "23505")
+                    {
+                        return BadRequest(new {msg = "User with same Email already exists."});
+                    }
+                    return BadRequest(new {msg = "Sql Exception Occured"});
+                }
+                catch(Exception e)
+                {
+                    log.Error(e);
                     return BadRequest(new {msg = "Failed to Update data"});
                 }
             }
