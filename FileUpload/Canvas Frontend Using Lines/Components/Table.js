@@ -32,7 +32,9 @@ class Table {
     this.startX = 0;
     this.startY = 0;
     this.scrollY = 0;
+    this.scrollX = 0;
     this.currentRow = 0;
+    this.currentColumn = 0;
     this.data = new Array();
     for (let i = 0; i < this.rows; i++) {
       this.data.push(new Array());
@@ -62,6 +64,7 @@ class Table {
       count_numbers: 0,
     };
     this.isCtrlPressed = false;
+    this.isShftPressed = false;
     this.isFileUploaded = false;
     this.csvData = [];
     this.dataMark = 0;
@@ -71,43 +74,45 @@ class Table {
     this.isDataThere = true;
     this.isDeleteValid = false;
     this.isSortValid = false;
+    this.headersCode = {};
+
   }
 
-  reset()
-  {
-    for (let i = 0; i < this.columns; i++) 
-    this.columns_width.push(130);
+  reset() {
+    for (let i = 0; i < this.columns; i++) this.columns_width.push(130);
 
     for (let i = 0; i < this.rows; i++) this.rows_width.push(30);
-   
 
     for (let i = 0; i < this.rows; i++) {
       for (let j = 0; j < this.columns; j++) {
-          let cell = this.data[i][j];
-          cell.text ="";
+        let cell = this.data[i][j];
+        cell.text = "";
       }
     }
     this.currentPage = 1;
     this.scrollY = 0;
+    this.scrollX = 0;
     this.isDataThere = true;
     this.dataMark = 0;
-    
   }
   // Draw Functions
   draw() {
     this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     this.drawVerticalLines();
     this.drawHorizontalLines();
-    this.drawHeaders();
     this.drawIndex();
+    this.drawHeaders();
     this.drawCells();
   }
-    async fetchCsv() {
+  async fetchCsv() {
     console.log("I am inside fetchCSv");
     let url =
       "http://localhost:5139/api/User/GetAll/" +
       this.currentPage +
-      "/"+this.sortInput+"/" + this.searchInput;
+      "/" +
+      this.sortInput +
+      "/" +
+      this.searchInput;
     try {
       const response = await fetch(url, {
         method: "GET",
@@ -119,30 +124,24 @@ class Table {
       console.log(error);
     }
   }
-  async handleSearching()
-  {
-
+  async handleSearching() {
     console.log("I am here to handle search ");
-    const input  = document.getElementsByClassName("input-email")[0];
-    if(input.value == "")
-    {
+    const input = document.getElementsByClassName("input-email")[0];
+    if (input.value == "") {
       this.searchInput = "none";
-    }
-    else{
+    } else {
       this.searchInput = input.value;
     }
     this.reset();
-    this.fetchCsv();    
+    this.fetchCsv();
   }
 
-  async handleDelete()
-  {
-    if(this.isDeleteValid)
-    {
+  async handleDelete() {
+    if (this.isDeleteValid) {
       let top_cell = this.selectedCell[0];
       let UserId = this.data[top_cell.X][1].text;
-      let url = "http://localhost:5139/api/User/Delete/"+UserId;
-      try{
+      let url = "http://localhost:5139/api/User/Delete/" + UserId;
+      try {
         const response = await fetch(url, {
           method: "GET",
         });
@@ -151,72 +150,62 @@ class Table {
         alert(data.msg);
         this.reset();
         this.fetchCsv();
-      }
-      catch(error)
-      {
+      } catch (error) {
         alert(data.msg);
       }
-      console.log("can be deleted")
-    }
-    else{
-      alert("Please select single row")
+      console.log("can be deleted");
+    } else {
+      alert("Please select single row");
     }
   }
-  async handleSort()
-  {
-    if(this.isSortValid)
-    {
-      console.log("can be sorted")
+  async handleSort() {
+    if (this.isSortValid) {
+      console.log("can be sorted");
       let top_cell = this.selectedCell[0];
       let column_name = this.data[1][top_cell.Y].text;
 
       this.sortInput = column_name;
-      console.log("sorting by "+ column_name)
+      console.log("sorting by " + column_name);
       this.reset();
       this.fetchCsv();
-
-    }
-    else{
-      alert("Please select single column")
+    } else {
+      alert("Please select single column");
     }
   }
   drawCsv(csvData) {
-    this.currentPage++;
-
     console.log("I am inside drawCsv " + this.dataMark, csvData.length);
     this.isFileUploaded = true;
-    
-    if(csvData.length != 0){
-    this.csvData = csvData;
-    let keys = Object.keys(csvData[0]);
-   
 
-    //adding column name 
-    for(let j=1;j<=keys.length;j++)
-    {
-      let text = keys[j-1];
-      this.data[this.dataMark + 1][j].text = text;
-    }
-    this.dataMark ++;
-    for (let i = 1; i <= csvData.length; i++) {
-      let text = "";
+    if (csvData.length != 0) {
+      this.csvData = csvData;
+      let keys = Object.keys(csvData[0]);
 
-      for (let j = 1; j <= keys.length; j++) {
-       
-          text = csvData[i - 1][keys[j - 1]];
-        
-        if (i + this.dataMark >= this.data.length) {
-          console.log(i, this.data.length);
-          this.appendRows();
-          this.draw();
+      //adding column name
+      if (this.currentPage == 1) {
+        for (let j = 1; j <= keys.length; j++) {
+          let text = keys[j - 1];
+          this.data[this.dataMark + 1][j].text = text;
         }
-        this.data[i + this.dataMark][j].text = text;
+        this.dataMark++;
       }
+      for (let i = 1; i <= csvData.length; i++) {
+        let text = "";
+
+        for (let j = 1; j <= keys.length; j++) {
+          text = csvData[i - 1][keys[j - 1]];
+
+          if (i + this.dataMark >= this.data.length) {
+            console.log(i, this.data.length);
+            this.appendRows();
+            this.draw();
+          }
+          this.data[i + this.dataMark][j].text = text;
+        }
+      }
+    } else {
+      this.isDataThere = false;
     }
-  }
-  else{
-    this.isDataThere = false;
-  }
+    this.currentPage++;
     this.dataMark += csvData.length;
     this.draw();
   }
@@ -232,26 +221,61 @@ class Table {
     return Infinity;
   }
   drawHeaders() {
-    let column_counter = "A";
-    for (let i = 1; i < this.columns; i++) {
-      this.data[0][i].text = column_counter;
+    for (let i = this.currentColumn +1; i < this.columns; i++) {
+      if(this.headersCode[i] == undefined)
+      {
+        this.calculateHeadersCode(i);
+      }
+      let text = this.headersCode[i];
+      this.data[0][i].text = text;
       this.data[0][i].topX = this.verticalLines[i].x1;
       this.data[0][i].topY = this.horizontalLines[0].y1;
       this.data[0][i].X = 0;
       this.data[0][i].Y = i;
-      column_counter = String.fromCharCode(column_counter.charCodeAt() + 1);
       this.data[0][i].draw();
     }
   }
+  calculateHeadersCode(columnNumber)
+  {
+    let columnName = [];
+    let temp = columnNumber;
+    while (columnNumber > 0) {
+        // Find remainder
+        let rem = columnNumber % 26;
+
+        // If remainder is 0, then a
+        // 'Z' must be there in output
+        if (rem == 0) {
+            columnName.push("Z");
+            columnNumber = Math.floor(columnNumber / 26) - 1;
+        }
+        else // If remainder is non-zero
+        {
+            columnName.push(String.fromCharCode((rem - 1) + 'A'.charCodeAt(0)));
+            columnNumber = Math.floor(columnNumber / 26);
+        }
+    }
+
+    // Reverse the string and print result
+    this.headersCode[temp] = columnName.reverse().join("");
+    console.log(this.headersCode[temp]);
+    
+  }
   drawIndex() {
-    for (let i = this.currentRow; i < this.rows; i++) {
+    const endRow = Math.min(this.getVisibleHeight(), this.rows);
+    for (let i = this.currentRow + 1; i < endRow; i++) {
       this.data[i][0].text = i;
+      this.data[i][0].topX = this.verticalLines[0].x1;
+      this.data[i][0].topY = this.horizontalLines[i].y1;
+      this.data[i][0].X = i;
+      this.data[i][0].Y = 0;
+      this.data[i][0].draw();
     }
   }
   drawCells() {
     const endRow = Math.min(this.getVisibleHeight(), this.rows);
     for (let i = this.currentRow + 1; i < endRow; i++) {
-      for (let j = 0; j < this.columns; j++) {
+      for (let j = this.currentColumn + 1; j < this.columns; j++) {
         this.data[i][j].topX = this.verticalLines[j].x1;
         this.data[i][j].topY = this.horizontalLines[i].y1;
         this.data[i][j].X = i;
@@ -285,6 +309,41 @@ class Table {
       rows_to_add--;
     }
   }
+  appendColumns()
+  {
+    let columns_to_add = 50;
+    this.columns += columns_to_add;
+  
+    for(let i =0;i<this.rows;i++)
+    {
+      columns_to_add = 50;
+      while(columns_to_add > 0)
+      {
+        this.data[i].push(
+          new Cell(
+            this.context,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            this.columns_width,
+            this.rows_width
+          )
+      
+        );
+        columns_to_add--;
+        if(i == 0)
+        {
+          this.columns_width.push(130);
+      this.verticalLines.push(30);
+        }
+        
+      }
+    }
+    console.log(this.data)
+  }
   drawHorizontalLines() {
     let temp = 0;
     let l;
@@ -300,7 +359,7 @@ class Table {
 
   drawVerticalLines() {
     let temp = 0;
-    for (let i = 0; i < this.columns; i++) {
+    for (let i = this.currentColumn; i < this.columns_width.length; i++) {
       let l = new Line(
         this.context,
         this.canvas,
@@ -428,7 +487,7 @@ class Table {
               formObject[this.data[1][i].text] = this.data[cell.X][i].text;
             }
           }
-        UpdateEmail(formObject);
+          UpdateEmail(formObject);
         } else {
           for (let i = 2; i < csv_columns; i++) {
             console.log("hello world ");
@@ -526,6 +585,9 @@ class Table {
     if (keyUp == "Control") {
       this.ctrlPressed = false;
     }
+    if (keyUp == "Shift") {
+      this.isShftPressed = false;
+    }
   }
   handleResize(event) {
     const rect = document.getElementById("navbar").getBoundingClientRect();
@@ -535,30 +597,56 @@ class Table {
   }
   handleScroll(event) {
     const deltaY = event.deltaY;
-    this.scrollY += deltaY;
-    this.scrollY = Math.max(0, this.scrollY);
-    let temp = 0;
-    for (let i = 0; i < this.rows_width.length; i++) {
-      temp += this.rows_width[i];
-      if (this.scrollY < temp) {
-        console.log(this.data.length, this.dataMark);
-        if (this.isFileUploaded && this.isDataThere && this.dataMark - this.currentRow <= 100) {
-          console.log(
-            "dataLength is " +
-              this.data.length +
-              " dataMark is " +
-              this.dataMark
-          );
-          this.fetchCsv();
-        } else if (this.data.length - this.currentRow <= 30) {
-          console.log("append rows");
-          this.appendRows();
+    if (!this.isShftPressed) {
+      this.scrollY += deltaY;
+      this.scrollY = Math.max(0, this.scrollY);
+      let temp = 0;
+      for (let i = 0; i < this.rows_width.length; i++) {
+        temp += this.rows_width[i];
+        if (this.scrollY < temp) {
+          console.log(this.data.length, this.dataMark);
+          if (
+            this.isFileUploaded &&
+            this.isDataThere &&
+            this.dataMark - this.currentRow <= 100
+          ) {
+            console.log(
+              "dataLength is " +
+                this.data.length +
+                " dataMark is " +
+                this.dataMark
+            );
+            this.fetchCsv();
+          } else if (this.data.length - this.currentRow <= 30) {
+            console.log("append rows");
+            this.appendRows();
+          }
+
+          this.currentRow = i;
+          this.draw();
+
+          break;
         }
+      }
+    } else {
+      console.log("horizontally scrolling ");
+      this.scrollX += deltaY;
+      this.scrollX = Math.max(0, this.scrollX);
+      let temp = 0;
+      for (let i = 0; i < this.columns_width.length; i++) {
+        temp += this.columns_width[i];
+        if (this.scrollX < temp) {
+          if (this.data[0].length - this.currentColumn <= 10) {
+            console.log("append columns");
+            this.appendColumns();
+          }
 
-        this.currentRow = i;
-        this.draw();
+          this.currentColumn = i;
+          console.log("currentcolumn is " + this.currentColumn)
+          this.draw();
 
-        break;
+          break;
+        }
       }
     }
   }
@@ -566,6 +654,9 @@ class Table {
     const keyPressed = event.key;
     if (keyPressed == "Control") {
       this.ctrlPressed = true;
+    }
+    if (keyPressed == "Shift") {
+      this.isShftPressed = true;
     }
     if (this.isSelecting == false && this.selectedCell.length <= 3) {
       let current_cell = this.selectedCell[0];
@@ -713,15 +804,12 @@ class Table {
   }
 
   updateColumnSelect(column) {
-    if(this.selectedCell.length == 0)
-      {
-        this.isSortValid = true;
-      }
-      else{
-        this.isSortValid = false;
-      }
+    if (this.selectedCell.length == 0) {
+      this.isSortValid = true;
+    } else {
+      this.isSortValid = false;
+    }
     for (let i = 1; i < this.rows; i++) {
-
       this.data[i][column].select();
       this.updateMetaData(this.data[i][column]);
       this.addMetaDataToFrontend();
@@ -729,19 +817,17 @@ class Table {
     }
   }
   updateRowSelect(rowIndex) {
-    console.log(this.selectedCell.length +" is")
-    if(this.selectedCell.length == 0)
-    {
+    console.log(this.selectedCell.length + " is");
+    if (this.selectedCell.length == 0) {
       this.isDeleteValid = true;
-    }
-    else{
+    } else {
       this.isDeleteValid = false;
     }
     for (let i = 0; i < this.columns; i++) {
       this.data[rowIndex][i].select();
-      if(i!= 0){
-      this.updateMetaData(this.data[rowIndex][i]);
-      this.addMetaDataToFrontend();
+      if (i != 0) {
+        this.updateMetaData(this.data[rowIndex][i]);
+        this.addMetaDataToFrontend();
       }
       this.selectedCell.push(this.data[rowIndex][i]);
     }
@@ -804,7 +890,7 @@ class Table {
 
     return { rowIndex, colIndex };
   }
- 
+
   getData() {
     return this.data;
   }

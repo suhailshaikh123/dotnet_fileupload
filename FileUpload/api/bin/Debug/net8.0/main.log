@@ -23020,3 +23020,1120 @@ POSITION: 32
 2024-08-01 17:15:07,480 [22] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
 2024-08-01 17:15:07,481 [22] INFO api.Controllers.UserController.MoveNext[0] - True
 2024-08-01 17:15:07,483 [22] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 100 limit 100
+2024-08-01 17:18:30,132 [29] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" WHERE "Email" = 'wow@gmail.com';
+2024-08-01 17:18:39,574 [17] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=45119221
+2024-08-01 17:18:39,586 [31] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 17:18:45,990 [31] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" WHERE "Email" = 'wow@gmail.com';
+2024-08-01 17:23:58,672 [31] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileuploaddata1.csv
+2024-08-01 17:23:58,681 [31] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66ab77561642c80118194992",
+  "FileId": "958ce9b5-3550-4317-b287-56ebdb2237a5",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 17:24:08,978 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:24:08,982 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:24:09,033 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:24:09,034 [15] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:24:09,035 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 17:24:15,970 [29] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:24:15,971 [29] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:24:15,972 [29] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:24:15,974 [29] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:24:15,976 [29] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 0 limit 100
+2024-08-01 17:24:25,888 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:24:25,888 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:24:25,889 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:24:25,890 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:24:25,894 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 0 limit 100
+2024-08-01 17:24:28,695 [13] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:24:28,696 [13] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:24:28,696 [13] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:24:28,697 [13] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:24:28,698 [13] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:25:33,769 [4] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37328363
+2024-08-01 17:25:33,783 [15] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 17:25:35,622 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:25:35,622 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:25:35,690 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:25:35,690 [4] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:25:35,692 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:25:39,462 [13] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:25:39,463 [13] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:25:39,471 [13] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:25:39,472 [13] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:25:39,473 [13] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 100 limit 100
+2024-08-01 17:25:59,745 [14] INFO api.Controllers.UserController.MoveNext[0] -  Search: alert(data.msg);
+2024-08-01 17:25:59,748 [14] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:25:59,751 [14] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:25:59,752 [14] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:25:59,753 [14] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:25:59,754 [14] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'alert(data.msg);%' ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:26:03,782 [14] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:26:03,783 [14] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:26:03,784 [14] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:26:03,784 [14] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:26:03,785 [14] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:26:27,286 [32] INFO api.Controllers.UserController.MoveNext[0] -  Search: todd73@example.net
+2024-08-01 17:26:27,286 [32] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:26:27,287 [32] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:26:27,287 [32] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:26:27,288 [32] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:26:27,289 [32] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'todd73@example.net%' ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:27:03,835 [34] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileuploaddata1.csv
+2024-08-01 17:27:03,841 [34] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66ab780f1642c80118194993",
+  "FileId": "0fb86eee-dc54-4d21-95e5-e09abb78d35a",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 17:27:12,153 [7] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:27:12,153 [7] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:27:12,158 [7] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:27:12,160 [7] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:27:12,164 [7] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 17:27:25,380 [32] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37708480
+2024-08-01 17:27:25,386 [34] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 17:27:46,919 [34] INFO api.Controllers.UserController.MoveNext[0] -  Search: todd73@example.net
+2024-08-01 17:27:46,920 [34] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:27:47,101 [34] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:27:47,101 [34] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:27:47,102 [34] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:27:47,102 [34] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'todd73@example.net%' ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:27:48,676 [7] INFO api.Controllers.UserController.MoveNext[0] -  Search: todd73@example.net
+2024-08-01 17:27:48,676 [7] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:27:48,677 [7] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:27:48,678 [7] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:27:48,678 [7] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:27:48,679 [7] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'todd73@example.net%' ORDER BY "Name"offset 100 limit 100
+2024-08-01 17:27:52,561 [34] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:27:52,561 [34] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:27:52,562 [34] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:27:52,563 [34] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:27:52,563 [34] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:28:16,721 [32] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at api.Controllers.UserController.GetById(Int32 id)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-01 17:28:24,500 [30] ERROR Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.?[?] - An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')
+   at System.Collections.Generic.List`1.get_Item(Int32 index)
+   at api.Controllers.UserController.GetById(Int32 id)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-08-01 17:28:52,344 [32] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37660002
+2024-08-01 17:28:52,351 [32] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 17:28:57,750 [30] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:28:57,751 [30] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:28:57,814 [30] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:28:57,815 [30] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:28:57,816 [30] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:29:11,227 [31] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37719274
+2024-08-01 17:29:11,235 [31] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 17:29:12,278 [22] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:29:12,279 [22] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:29:12,352 [22] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:29:12,352 [22] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:29:12,353 [22] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:29:23,292 [22] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37464449
+2024-08-01 17:29:23,298 [31] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 17:29:24,420 [31] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:29:24,420 [31] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:29:24,593 [31] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:29:24,594 [31] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:29:24,594 [31] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:29:33,970 [16] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37333793
+2024-08-01 17:29:33,979 [16] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 17:29:34,956 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:29:34,956 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:29:35,032 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:29:35,033 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:29:35,033 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:29:38,588 [33] INFO api.Controllers.UserController.MoveNext[0] -  Search: twood
+2024-08-01 17:29:38,588 [33] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:29:38,589 [33] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:29:38,589 [33] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:29:38,590 [33] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:29:38,591 [33] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'twood%' ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:29:42,916 [31] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:29:42,919 [31] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:29:42,919 [31] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:29:42,920 [31] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:29:42,920 [31] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:31:08,692 [3] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37317882
+2024-08-01 17:31:08,699 [3] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 17:31:09,572 [13] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:31:09,573 [13] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:31:09,746 [13] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:31:09,746 [13] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:31:09,747 [13] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 17:31:11,517 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:31:11,518 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 17:31:11,521 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:31:11,522 [4] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:31:11,526 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 100 limit 100
+2024-08-01 17:31:24,040 [15] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-08-01 17:31:24,042 [15] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66ab79141642c80118194994",
+  "FileId": "b7590b03-c2d1-450b-97bc-b5983b96bee5",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 17:31:30,301 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:31:30,302 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:31:30,304 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:31:30,305 [3] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:31:30,306 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 17:31:35,492 [13] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:31:35,493 [13] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:35,493 [13] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:31:35,494 [13] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:31:35,495 [13] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 0 limit 100
+2024-08-01 17:31:41,243 [4] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37739652
+2024-08-01 17:31:41,250 [13] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 17:31:42,452 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:31:42,453 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:42,513 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:31:42,514 [4] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:31:42,514 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 0 limit 100
+2024-08-01 17:31:43,562 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:31:43,563 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:43,565 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:31:43,566 [3] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:31:43,568 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:31:43,730 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:31:43,730 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:43,731 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:31:43,732 [4] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:31:43,733 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:31:43,856 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:31:43,857 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:43,857 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:31:43,858 [4] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:31:43,859 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:31:43,990 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:31:43,991 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:43,991 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:31:43,992 [3] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:31:43,993 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:31:48,652 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: suhail
+2024-08-01 17:31:48,652 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:48,653 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:31:48,653 [4] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:31:48,654 [4] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:31:48,654 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suhail%' ORDER BY "Country"offset 0 limit 100
+2024-08-01 17:31:51,227 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: suhail
+2024-08-01 17:31:51,228 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:51,230 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:31:51,231 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:31:51,233 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:31:51,234 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suhail%' ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:31:51,362 [23] INFO api.Controllers.UserController.MoveNext[0] -  Search: suhail
+2024-08-01 17:31:51,362 [23] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:51,363 [23] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:31:51,363 [23] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:31:51,364 [23] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:31:51,364 [23] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suhail%' ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:31:51,454 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: suhail
+2024-08-01 17:31:51,454 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:51,455 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:31:51,455 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:31:51,456 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:31:51,457 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suhail%' ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:31:51,540 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: suhail
+2024-08-01 17:31:51,540 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:51,542 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:31:51,543 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:31:51,544 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:31:51,545 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suhail%' ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:31:51,634 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: suhail
+2024-08-01 17:31:51,634 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:51,634 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:31:51,635 [4] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:31:51,636 [4] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:31:51,636 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suhail%' ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:31:51,717 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: suhail
+2024-08-01 17:31:51,718 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:31:51,719 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:31:51,720 [4] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:31:51,721 [4] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:31:51,721 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suhail%' ORDER BY "Country"offset 100 limit 100
+2024-08-01 17:34:35,666 [6] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-08-01 17:34:35,668 [6] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66ab79d31642c80118194995",
+  "FileId": "a5b58937-d763-48fb-9c61-02e651e18b88",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 17:34:41,900 [29] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:34:41,901 [29] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:34:41,960 [29] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:34:41,960 [29] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:34:41,961 [29] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 17:34:47,662 [34] INFO api.Controllers.UserController.MoveNext[0] -  Search: suhail
+2024-08-01 17:34:47,663 [34] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:34:47,664 [34] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:34:47,664 [34] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:34:47,665 [34] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:34:47,665 [34] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suhail%' offset 0 limit 100
+2024-08-01 17:34:52,827 [23] INFO api.Controllers.UserController.MoveNext[0] -  Search: suhail
+2024-08-01 17:34:52,827 [23] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:34:52,828 [23] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:34:52,828 [23] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 17:34:52,829 [23] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 17:34:52,829 [23] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suhail%' offset 0 limit 100
+2024-08-01 17:34:59,059 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:34:59,060 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:34:59,060 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:34:59,061 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:34:59,061 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 17:35:00,647 [34] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:35:00,648 [34] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:35:00,649 [34] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:35:00,650 [34] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:35:00,651 [34] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 17:35:00,702 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:35:00,703 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:35:00,704 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:35:00,706 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:35:00,707 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 17:35:00,721 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:35:00,722 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:35:00,722 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:35:00,723 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:35:00,723 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 17:35:04,561 [34] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37708479
+2024-08-01 17:35:04,567 [34] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 17:35:06,020 [33] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:35:06,020 [33] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 17:35:06,079 [33] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:35:06,079 [33] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:35:06,080 [33] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 17:35:10,395 [9] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:35:10,396 [9] INFO api.Controllers.UserController.MoveNext[0] - sORT: country
+2024-08-01 17:35:10,396 [9] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:35:10,397 [9] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:35:10,397 [9] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Country"offset 0 limit 100
+2024-08-01 17:35:14,876 [34] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:35:14,876 [34] INFO api.Controllers.UserController.MoveNext[0] - sORT: city
+2024-08-01 17:35:14,877 [34] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:35:14,877 [34] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:35:14,878 [34] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "City"offset 0 limit 100
+2024-08-01 17:35:35,945 [9] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:35:35,946 [9] INFO api.Controllers.UserController.MoveNext[0] - sORT: city
+2024-08-01 17:35:35,948 [9] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:35:35,949 [9] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:35:35,951 [9] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "City"offset 100 limit 100
+2024-08-01 17:35:36,100 [33] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:35:36,100 [33] INFO api.Controllers.UserController.MoveNext[0] - sORT: city
+2024-08-01 17:35:36,101 [33] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:35:36,101 [33] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:35:36,102 [33] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "City"offset 100 limit 100
+2024-08-01 17:37:17,099 [12] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:37:17,100 [12] INFO api.Controllers.UserController.MoveNext[0] - sORT: telephone
+2024-08-01 17:37:17,101 [12] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 17:37:17,102 [12] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:37:17,102 [12] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Telephone"offset 0 limit 100
+2024-08-01 17:37:17,867 [22] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 17:37:17,867 [22] INFO api.Controllers.UserController.MoveNext[0] - sORT: telephone
+2024-08-01 17:37:17,868 [22] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 17:37:17,869 [22] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 17:37:17,870 [22] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Telephone"offset 100 limit 100
+2024-08-01 18:11:35,296 [31] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileuploaddata1.csv
+2024-08-01 18:11:35,348 [31] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66ab827f1642c80118194996",
+  "FileId": "5f583274-ab48-4c62-97be-a26e1b748184",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 18:11:41,608 [31] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:11:41,617 [31] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 18:11:41,694 [31] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:11:41,694 [31] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:11:41,695 [31] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 18:11:50,288 [12] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:11:50,289 [12] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 18:11:50,289 [12] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:11:50,290 [12] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:11:50,291 [12] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Name"offset 0 limit 100
+2024-08-01 18:11:55,486 [22] INFO api.Controllers.UserController.MoveNext[0] -  Search: suh
+2024-08-01 18:11:55,487 [22] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 18:11:55,487 [22] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:11:55,487 [22] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:11:55,488 [22] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:11:55,488 [22] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suh%' ORDER BY "Name"offset 0 limit 100
+2024-08-01 18:12:06,063 [22] INFO api.Controllers.UserController.MoveNext[0] -  Search: suh
+2024-08-01 18:12:06,064 [22] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:12:06,065 [22] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:12:06,065 [22] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:12:06,065 [22] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:12:06,066 [22] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suh%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:12:09,374 [12] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:12:09,374 [12] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:12:09,375 [12] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:12:09,376 [12] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:12:09,376 [12] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:12:12,127 [12] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37285369
+2024-08-01 18:12:12,143 [12] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 18:12:13,343 [12] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:12:13,344 [12] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:12:13,400 [12] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:12:13,400 [12] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:12:13,401 [12] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:18:15,850 [6] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37439307
+2024-08-01 18:18:15,855 [6] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 18:18:17,209 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:18:17,210 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:18:17,265 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:18:17,265 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:18:17,266 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:18:19,381 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: aadams@example.org
+2024-08-01 18:18:19,382 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:18:19,383 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:18:19,383 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:18:19,384 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:18:19,384 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aadams@example.org%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:18:25,887 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:18:25,887 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:18:25,888 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:18:25,889 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:18:25,890 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:35:11,218 [13] INFO api.Controllers.UploadCsvController.MoveNext[0] - Received file: fileUploadData.csv
+2024-08-01 18:35:11,230 [13] INFO api.Controllers.UploadCsvController.MoveNext[0] - {
+  "Id": "66ab88071642c80118194997",
+  "FileId": "1144e00c-3949-4180-aa54-2fc89265895c",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-01 18:35:21,456 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:35:21,458 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 18:35:21,514 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:35:21,514 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:35:21,515 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-01 18:51:08,170 [16] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:51:08,173 [16] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 18:51:08,257 [16] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:51:08,257 [16] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:51:08,258 [16] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 18:51:08,288 [14] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:51:08,289 [14] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 18:51:08,289 [14] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:51:08,290 [14] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:51:08,290 [14] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 18:51:08,301 [22] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:51:08,301 [22] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 18:51:08,302 [22] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:51:08,303 [22] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:51:08,303 [22] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 18:51:08,316 [14] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:51:08,316 [14] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 18:51:08,317 [14] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:51:08,321 [14] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:51:08,322 [14] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 18:51:08,334 [22] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:51:08,335 [22] INFO api.Controllers.UserController.MoveNext[0] - sORT: none
+2024-08-01 18:51:08,336 [22] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:51:08,336 [22] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:51:08,337 [22] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-01 18:51:20,927 [12] INFO api.Controllers.UserController.MoveNext[0] - 90908.89
+2024-08-01 18:51:20,928 [12] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-01 18:51:20,949 [12] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 18:51:21,779 [12] INFO api.Controllers.UserController.MoveNext[0] - 38303.01
+2024-08-01 18:51:21,779 [12] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-01 18:51:21,792 [12] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 18:51:22,713 [14] INFO api.Controllers.UserController.MoveNext[0] - 52182.81
+2024-08-01 18:51:22,714 [14] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-01 18:51:22,721 [14] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 18:51:23,451 [16] INFO api.Controllers.UserController.MoveNext[0] - 57247.97
+2024-08-01 18:51:23,452 [16] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-01 18:51:23,461 [16] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 18:51:24,865 [14] INFO api.Controllers.UserController.MoveNext[0] - 23778.68
+2024-08-01 18:51:24,866 [14] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-01 18:51:24,873 [14] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 18:51:55,983 [14] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:51:55,983 [14] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 18:51:56,031 [14] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:51:56,031 [14] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:51:56,032 [14] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "State"offset 0 limit 100
+2024-08-01 18:52:04,423 [24] INFO api.Controllers.UserController.MoveNext[0] -  Search: judy91@example.net
+2024-08-01 18:52:04,423 [24] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 18:52:04,424 [24] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:52:04,424 [24] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:52:04,424 [24] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:52:04,425 [24] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'judy91@example.net%' ORDER BY "State"offset 0 limit 100
+2024-08-01 18:52:14,559 [24] INFO api.Controllers.UserController.MoveNext[0] -  Search: judy91@
+2024-08-01 18:52:14,560 [24] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 18:52:14,560 [24] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:52:14,560 [24] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:52:14,561 [24] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:52:14,561 [24] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'judy91@%' ORDER BY "State"offset 0 limit 100
+2024-08-01 18:52:15,343 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: judy91@
+2024-08-01 18:52:15,343 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 18:52:15,344 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:52:15,344 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:52:15,345 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:52:15,345 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'judy91@%' ORDER BY "State"offset 0 limit 100
+2024-08-01 18:52:16,103 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: judy91@
+2024-08-01 18:52:16,104 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 18:52:16,104 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:52:16,104 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:52:16,105 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:52:16,105 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'judy91@%' ORDER BY "State"offset 0 limit 100
+2024-08-01 18:52:17,574 [24] INFO api.Controllers.UserController.MoveNext[0] -  Search: jud
+2024-08-01 18:52:17,575 [24] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 18:52:17,576 [24] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:52:17,576 [24] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:52:17,577 [24] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:52:17,577 [24] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'jud%' ORDER BY "State"offset 0 limit 100
+2024-08-01 18:52:18,917 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: jud
+2024-08-01 18:52:18,919 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 18:52:18,921 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:52:18,923 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:52:18,925 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:52:18,927 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'jud%' ORDER BY "State"offset 100 limit 100
+2024-08-01 18:52:23,038 [12] INFO api.Controllers.UserController.MoveNext[0] -  Search: jud
+2024-08-01 18:52:23,038 [12] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:52:23,039 [12] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:52:23,039 [12] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:52:23,039 [12] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:52:23,040 [12] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'jud%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:52:25,240 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: jud
+2024-08-01 18:52:25,241 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:52:25,242 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:52:25,243 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:52:25,244 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:52:25,245 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'jud%' ORDER BY "Email"offset 100 limit 100
+2024-08-01 18:52:44,737 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: jud
+2024-08-01 18:52:44,738 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:52:44,739 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 200currentPage: 3
+2024-08-01 18:52:44,740 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:52:44,741 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:52:44,743 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'jud%' ORDER BY "Email"offset 200 limit 100
+2024-08-01 18:52:52,406 [9] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=37344364
+2024-08-01 18:52:52,412 [9] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 18:52:53,294 [9] INFO api.Controllers.UserController.MoveNext[0] -  Search: jud
+2024-08-01 18:52:53,295 [9] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:52:53,350 [9] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:52:53,351 [9] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:52:53,352 [9] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:52:53,353 [9] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'jud%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:52:56,070 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: judith12@example.org
+2024-08-01 18:52:56,071 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:52:56,071 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:52:56,072 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:52:56,072 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:52:56,073 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'judith12@example.org%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:53:04,423 [12] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:53:04,423 [12] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:53:04,424 [12] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:53:04,424 [12] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:53:04,425 [12] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:53:14,303 [24] INFO api.Controllers.UserController.MoveNext[0] -  Search: 132
+2024-08-01 18:53:14,303 [24] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:53:14,303 [24] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:53:14,304 [24] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:53:14,304 [24] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:53:14,305 [24] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like '132%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:53:17,453 [15] INFO api.Controllers.UserController.MoveNext[0] - Delete from "Users" where "UserID"=43519196
+2024-08-01 18:53:17,460 [24] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 18:53:18,511 [9] INFO api.Controllers.UserController.MoveNext[0] -  Search: 132
+2024-08-01 18:53:18,511 [9] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:53:18,569 [9] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:53:18,570 [9] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:53:18,570 [9] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:53:18,572 [9] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like '132%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:53:21,927 [24] INFO api.Controllers.UserController.MoveNext[0] -  Search: 132
+2024-08-01 18:53:21,927 [24] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:53:21,927 [24] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:53:21,928 [24] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:53:21,928 [24] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:53:21,929 [24] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like '132%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:53:24,486 [24] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:53:24,487 [24] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:53:24,487 [24] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:53:24,488 [24] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:53:24,488 [24] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:53:26,114 [24] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:53:26,114 [24] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:53:26,116 [24] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:53:26,117 [24] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:53:26,118 [24] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 100 limit 100
+2024-08-01 18:53:26,157 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:53:26,158 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:53:26,159 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:53:26,159 [3] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:53:26,161 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "Email"offset 100 limit 100
+2024-08-01 18:54:27,502 [23] INFO api.Controllers.UserController.MoveNext[0] -  Search: aabbott@example.
+2024-08-01 18:54:27,503 [23] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:54:27,503 [23] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:54:27,504 [23] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:54:27,504 [23] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:54:27,505 [23] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aabbott@example.%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:54:30,463 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: aabbott@example
+2024-08-01 18:54:30,463 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:54:30,463 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:54:30,464 [3] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:54:30,465 [3] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:54:30,466 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aabbott@example%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:55:41,425 [24] INFO api.Controllers.UserController.MoveNext[0] -  Search: aabbott
+2024-08-01 18:55:41,425 [24] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:55:41,473 [24] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:55:41,474 [24] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:55:41,474 [24] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:55:41,475 [24] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aabbott%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:55:43,328 [7] INFO api.Controllers.UserController.MoveNext[0] -  Search: aabbott
+2024-08-01 18:55:43,329 [7] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:55:43,329 [7] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:55:43,332 [7] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:55:43,333 [7] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:55:43,334 [7] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aabbott%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:55:44,042 [23] INFO api.Controllers.UserController.MoveNext[0] -  Search: aabbott
+2024-08-01 18:55:44,043 [23] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:55:44,046 [23] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:55:44,049 [23] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:55:44,052 [23] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:55:44,055 [23] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aabbott%' ORDER BY "Email"offset 100 limit 100
+2024-08-01 18:55:44,184 [7] INFO api.Controllers.UserController.MoveNext[0] -  Search: aabbott
+2024-08-01 18:55:44,184 [7] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:55:44,187 [7] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:55:44,188 [7] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:55:44,189 [7] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:55:44,189 [7] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aabbott%' ORDER BY "Email"offset 100 limit 100
+2024-08-01 18:55:44,291 [7] INFO api.Controllers.UserController.MoveNext[0] -  Search: aabbott
+2024-08-01 18:55:44,292 [7] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:55:44,293 [7] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:55:44,295 [7] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:55:44,295 [7] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:55:44,296 [7] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aabbott%' ORDER BY "Email"offset 100 limit 100
+2024-08-01 18:55:47,334 [13] INFO api.Controllers.UserController.MoveNext[0] -  Search: aabbo
+2024-08-01 18:55:47,335 [13] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:55:47,336 [13] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:55:47,337 [13] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:55:47,337 [13] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:55:47,337 [13] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aabbo%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:55:48,600 [13] INFO api.Controllers.UserController.MoveNext[0] -  Search: aab
+2024-08-01 18:55:48,600 [13] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:55:48,602 [13] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:55:48,603 [13] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:55:48,604 [13] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:55:48,604 [13] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aab%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:55:49,558 [7] INFO api.Controllers.UserController.MoveNext[0] -  Search: aa
+2024-08-01 18:55:49,558 [7] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:55:49,559 [7] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:55:49,560 [7] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:55:49,560 [7] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:55:49,560 [7] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aa%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:55:50,846 [13] INFO api.Controllers.UserController.MoveNext[0] -  Search: aa
+2024-08-01 18:55:50,847 [13] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:55:50,848 [13] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:55:50,849 [13] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:55:50,850 [13] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:55:50,851 [13] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aa%' ORDER BY "Email"offset 100 limit 100
+2024-08-01 18:55:50,970 [13] INFO api.Controllers.UserController.MoveNext[0] -  Search: aa
+2024-08-01 18:55:50,970 [13] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:55:50,971 [13] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:55:50,972 [13] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:55:50,972 [13] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:55:50,973 [13] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aa%' ORDER BY "Email"offset 100 limit 100
+2024-08-01 18:56:10,806 [3] INFO api.Controllers.UserController.MoveNext[0] -  Search: aaguirre@example.net
+2024-08-01 18:56:10,807 [3] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:56:10,807 [3] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:56:10,807 [3] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:56:10,808 [3] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:56:10,808 [3] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aaguirre@example.net%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:56:44,460 [9] INFO api.Controllers.UserController.MoveNext[0] -  Search: aaguirre@example.net
+2024-08-01 18:56:44,461 [9] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:56:44,464 [9] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:56:44,467 [9] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:56:44,471 [9] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:56:44,473 [9] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aaguirre@example.net%' ORDER BY "Email"offset 100 limit 100
+2024-08-01 18:56:44,593 [13] INFO api.Controllers.UserController.MoveNext[0] -  Search: aaguirre@example.net
+2024-08-01 18:56:44,593 [13] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:56:44,594 [13] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:56:44,594 [13] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:56:44,595 [13] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:56:44,595 [13] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aaguirre@example.net%' ORDER BY "Email"offset 100 limit 100
+2024-08-01 18:57:01,518 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: aaguirre@example.net
+2024-08-01 18:57:01,518 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: state
+2024-08-01 18:57:01,519 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:57:01,519 [4] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:57:01,520 [4] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:57:01,520 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aaguirre@example.net%' ORDER BY "State"offset 0 limit 100
+2024-08-01 18:57:03,677 [4] INFO api.Controllers.UserController.MoveNext[0] -  Search: aaguirre@example.net
+2024-08-01 18:57:03,678 [4] INFO api.Controllers.UserController.MoveNext[0] - sORT: city
+2024-08-01 18:57:03,678 [4] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:57:03,678 [4] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:57:03,679 [4] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:57:03,679 [4] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aaguirre@example.net%' ORDER BY "City"offset 0 limit 100
+2024-08-01 18:57:10,393 [9] INFO api.Controllers.UserController.MoveNext[0] -  Search: aaguirre@example.net
+2024-08-01 18:57:10,394 [9] INFO api.Controllers.UserController.MoveNext[0] - sORT: city
+2024-08-01 18:57:10,396 [9] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:57:10,399 [9] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:57:10,402 [9] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:57:10,404 [9] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aaguirre@example.net%' ORDER BY "City"offset 100 limit 100
+2024-08-01 18:57:10,520 [9] INFO api.Controllers.UserController.MoveNext[0] -  Search: aaguirre@example.net
+2024-08-01 18:57:10,520 [9] INFO api.Controllers.UserController.MoveNext[0] - sORT: city
+2024-08-01 18:57:10,520 [9] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:57:10,521 [9] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:57:10,521 [9] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:57:10,522 [9] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'aaguirre@example.net%' ORDER BY "City"offset 100 limit 100
+2024-08-01 18:57:14,278 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: suh
+2024-08-01 18:57:14,278 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: city
+2024-08-01 18:57:14,279 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:57:14,279 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:57:14,280 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:57:14,280 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suh%' ORDER BY "City"offset 0 limit 100
+2024-08-01 18:57:18,365 [15] INFO api.Controllers.UserController.MoveNext[0] -  Search: suh
+2024-08-01 18:57:18,366 [15] INFO api.Controllers.UserController.MoveNext[0] - sORT: email
+2024-08-01 18:57:18,366 [15] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:57:18,366 [15] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:57:18,367 [15] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:57:18,367 [15] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suh%' ORDER BY "Email"offset 0 limit 100
+2024-08-01 18:57:29,669 [4] INFO api.Controllers.UserController.MoveNext[0] - 41867.91
+2024-08-01 18:57:29,671 [4] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-01 18:57:29,689 [4] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 18:57:36,686 [9] INFO api.Controllers.UserController.MoveNext[0] - 79308
+2024-08-01 18:57:36,687 [9] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-01 18:57:36,697 [9] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-01 18:57:45,589 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: suh
+2024-08-01 18:57:45,590 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: name
+2024-08-01 18:57:45,775 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:57:45,775 [6] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:57:45,776 [6] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:57:45,777 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suh%' ORDER BY "Name"offset 0 limit 100
+2024-08-01 18:58:02,502 [9] INFO api.Controllers.UserController.MoveNext[0] -  Search: suh
+2024-08-01 18:58:02,503 [9] INFO api.Controllers.UserController.MoveNext[0] - sORT: userID
+2024-08-01 18:58:02,503 [9] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:58:02,503 [9] INFO api.Controllers.UserController.MoveNext[0] - hello world!
+2024-08-01 18:58:02,504 [9] INFO api.Controllers.UserController.MoveNext[0] - False
+2024-08-01 18:58:02,504 [9] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" Where "Email" like 'suh%' ORDER BY "UserID"offset 0 limit 100
+2024-08-01 18:58:09,342 [9] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:58:09,342 [9] INFO api.Controllers.UserController.MoveNext[0] - sORT: userID
+2024-08-01 18:58:09,342 [9] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:58:09,343 [9] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:58:09,343 [9] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "UserID"offset 0 limit 100
+2024-08-01 18:58:11,933 [29] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:58:11,934 [29] INFO api.Controllers.UserController.MoveNext[0] - sORT: userID
+2024-08-01 18:58:11,935 [29] INFO api.Controllers.UserController.MoveNext[0] - offset: 0currentPage: 1
+2024-08-01 18:58:11,935 [29] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:58:11,936 [29] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "UserID"offset 0 limit 100
+2024-08-01 18:58:15,062 [9] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:58:15,062 [9] INFO api.Controllers.UserController.MoveNext[0] - sORT: userID
+2024-08-01 18:58:15,063 [9] INFO api.Controllers.UserController.MoveNext[0] - offset: 100currentPage: 2
+2024-08-01 18:58:15,064 [9] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:58:15,065 [9] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "UserID"offset 100 limit 100
+2024-08-01 18:58:50,456 [6] INFO api.Controllers.UserController.MoveNext[0] -  Search: none
+2024-08-01 18:58:50,458 [6] INFO api.Controllers.UserController.MoveNext[0] - sORT: userID
+2024-08-01 18:58:50,458 [6] INFO api.Controllers.UserController.MoveNext[0] - offset: 200currentPage: 3
+2024-08-01 18:58:50,459 [6] INFO api.Controllers.UserController.MoveNext[0] - True
+2024-08-01 18:58:50,460 [6] INFO api.Controllers.UserController.MoveNext[0] - SELECT * FROM "Users" ORDER BY "UserID"offset 200 limit 100
+2024-08-01 18:58:57,247 [32] INFO api.Controllers.UserController.MoveNext[0] - 40170
+2024-08-01 18:58:57,248 [32] INFO api.Controllers.UserController.MoveNext[0] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-01 18:58:57,256 [32] INFO api.Controllers.UserController.MoveNext[0] - Rows Affected: 1
+2024-08-02 10:58:25,511 [1] INFO Microsoft.Hosting.Lifetime.?[?] - Now listening on: http://localhost:5139
+2024-08-02 10:58:25,603 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Application started. Press Ctrl+C to shut down.
+2024-08-02 10:58:25,604 [1] INFO Microsoft.Hosting.Lifetime.OnApplicationStarted[0] - Hosting environment: Development
+2024-08-02 10:58:25,604 [1] INFO Microsoft.Hosting.Lifetime.Invoke[0] - Content root path: D:\All MY Task\ASP.NET practice\dotnet_fileupload\FileUpload\api
+2024-08-02 10:58:42,076 [7] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-08-02 10:58:43,756 [9] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ac6e8a902812607003b1b2",
+  "FileId": "8c35cd29-8f9e-4cfc-bf69-d8e2596bfbf3",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-02 11:00:13,540 [27] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-08-02 11:00:13,545 [27] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ac6ee5902812607003b1b3",
+  "FileId": "32e12682-6aa6-40c2-a9f6-ca109520eaec",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-02 11:00:29,999 [28] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:00:30,004 [28] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:00:30,469 [28] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:00:30,470 [28] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:00:30,473 [28] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-02 11:00:45,358 [29] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-08-02 11:00:45,361 [29] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ac6f05902812607003b1b4",
+  "FileId": "b2835994-a905-45a1-9c34-b3f9029e0b92",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-02 11:00:53,693 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:00:53,696 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:00:53,698 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:00:53,698 [13] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:00:53,699 [13] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-02 11:00:58,481 [9] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:00:58,482 [9] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:00:58,483 [9] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:00:58,545 [9] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:00:58,546 [9] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-02 11:00:58,592 [27] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:00:58,592 [27] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:00:58,595 [27] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:00:58,600 [27] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:00:58,601 [27] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-02 11:00:58,620 [9] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:00:58,620 [9] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:00:58,623 [9] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:00:58,625 [9] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:00:58,628 [9] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-02 11:01:09,130 [26] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:01:09,131 [26] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:01:09,132 [26] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:01:09,133 [26] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:01:09,134 [26] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-02 11:01:17,476 [27] INFO api.Controllers.UserController.MoveNext[178] - 21114.79
+2024-08-02 11:01:17,479 [27] INFO api.Controllers.UserController.MoveNext[182] - UPDATE "Users" SET "Email" = @Email WHERE "UserID" = @UserID
+2024-08-02 11:01:17,511 [27] INFO api.Controllers.UserController.MoveNext[183] - Rows Affected: 1
+2024-08-02 11:01:31,686 [26] INFO api.Controllers.UserController.MoveNext[178] - 63067
+2024-08-02 11:01:31,687 [26] INFO api.Controllers.UserController.MoveNext[182] - UPDATE "Users" SET "Email" = @Email WHERE "UserID" = @UserID
+2024-08-02 11:01:31,705 [26] INFO api.Controllers.UserController.MoveNext[183] - Rows Affected: 1
+2024-08-02 11:01:32,816 [27] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:01:32,816 [27] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:01:32,886 [27] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:01:32,887 [27] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:01:32,888 [27] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 100 limit 100
+2024-08-02 11:01:32,923 [26] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:01:32,924 [26] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:01:32,925 [26] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:01:32,926 [26] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:01:32,927 [26] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 100 limit 100
+2024-08-02 11:01:42,572 [29] INFO api.Controllers.UserController.MoveNext[40] -  Search: suhail
+2024-08-02 11:01:42,573 [29] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:01:42,575 [29] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:01:42,576 [29] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:01:42,579 [29] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:01:42,579 [29] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'suhail%' ORDER BY "Email"offset 0 limit 100
+2024-08-02 11:01:48,217 [29] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:01:48,218 [29] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:01:48,221 [29] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:01:48,221 [29] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:01:48,222 [29] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-02 11:01:54,344 [27] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:01:54,345 [27] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:01:54,346 [27] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:01:54,347 [27] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:01:54,348 [27] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-02 11:02:14,463 [13] INFO api.Controllers.UserController.MoveNext[178] - 39722
+2024-08-02 11:02:14,464 [13] INFO api.Controllers.UserController.MoveNext[182] - UPDATE "Users" SET "Email" = @Email WHERE "UserID" = @UserID
+2024-08-02 11:02:14,475 [13] INFO api.Controllers.UserController.MoveNext[183] - Rows Affected: 1
+2024-08-02 11:02:17,856 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:02:17,856 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:02:17,924 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:02:17,924 [4] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:02:17,925 [4] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-02 11:02:22,105 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: dot
+2024-08-02 11:02:22,105 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:02:22,107 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:02:22,108 [4] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:02:22,108 [4] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:02:22,110 [4] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'dot%' ORDER BY "Email"offset 0 limit 100
+2024-08-02 11:02:31,803 [13] INFO api.Controllers.UserController.MoveNext[216] - Delete from "Users" where "UserID"=37330584
+2024-08-02 11:02:31,809 [4] INFO api.Controllers.UserController.MoveNext[219] - Rows Affected: 1
+2024-08-02 11:02:33,824 [20] INFO api.Controllers.UserController.MoveNext[40] -  Search: dot
+2024-08-02 11:02:33,825 [20] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:02:33,900 [20] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:02:33,901 [20] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:02:33,902 [20] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:02:33,903 [20] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'dot%' ORDER BY "Email"offset 0 limit 100
+2024-08-02 11:02:37,440 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:02:37,441 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:02:37,442 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:02:37,443 [13] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:02:37,445 [13] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 0 limit 100
+2024-08-02 11:02:38,535 [20] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:02:38,535 [20] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:02:38,536 [20] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:02:38,538 [20] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:02:38,539 [20] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 100 limit 100
+2024-08-02 11:02:38,581 [26] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:02:38,581 [26] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:02:38,583 [26] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:02:38,584 [26] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:02:38,585 [26] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 100 limit 100
+2024-08-02 11:04:42,448 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:04:42,452 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:04:42,456 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 300currentPage: 4
+2024-08-02 11:04:42,457 [13] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:04:42,460 [13] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 300 limit 100
+2024-08-02 11:04:50,647 [31] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:04:50,647 [31] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:04:50,648 [31] INFO api.Controllers.UserController.MoveNext[46] - offset: 400currentPage: 5
+2024-08-02 11:04:50,649 [31] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:04:50,650 [31] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 400 limit 100
+2024-08-02 11:04:50,685 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:04:50,685 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:04:50,687 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 400currentPage: 5
+2024-08-02 11:04:50,688 [13] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:04:50,690 [13] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 400 limit 100
+2024-08-02 11:04:50,709 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:04:50,710 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:04:50,710 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 400currentPage: 5
+2024-08-02 11:04:50,712 [13] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:04:50,713 [13] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 400 limit 100
+2024-08-02 11:04:56,826 [3] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:04:56,827 [3] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:04:56,830 [3] INFO api.Controllers.UserController.MoveNext[46] - offset: 700currentPage: 8
+2024-08-02 11:04:56,831 [3] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:04:56,833 [3] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 700 limit 100
+2024-08-02 11:04:56,884 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:04:56,885 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:04:56,886 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 700currentPage: 8
+2024-08-02 11:04:56,886 [13] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:04:56,887 [13] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 700 limit 100
+2024-08-02 11:04:56,902 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:04:56,903 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:04:56,904 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 700currentPage: 8
+2024-08-02 11:04:56,907 [13] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:04:56,908 [13] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 700 limit 100
+2024-08-02 11:04:56,924 [20] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:04:56,925 [20] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:04:56,926 [20] INFO api.Controllers.UserController.MoveNext[46] - offset: 700currentPage: 8
+2024-08-02 11:04:56,927 [20] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:04:56,928 [20] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Email"offset 700 limit 100
+2024-08-02 11:05:54,373 [20] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-08-02 11:05:54,376 [20] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ac703a902812607003b1b5",
+  "FileId": "8e98c742-0c7e-46b5-bf5c-066e45ee3a73",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-02 11:06:02,701 [18] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:06:02,702 [18] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:06:02,919 [18] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:06:02,920 [18] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:06:02,921 [18] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-02 11:06:03,903 [30] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:06:03,903 [30] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:06:03,904 [30] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:06:03,905 [30] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:06:03,906 [30] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-02 11:07:50,799 [20] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-08-02 11:07:50,801 [20] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ac70ae902812607003b1b6",
+  "FileId": "a4749a58-6879-4627-9e3d-8138b96b607f",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-02 11:07:57,095 [3] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:07:57,096 [3] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:07:57,176 [3] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:07:57,176 [3] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:07:57,176 [3] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-02 11:08:00,880 [12] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:08:00,880 [12] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:08:00,881 [12] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:08:00,882 [12] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:08:00,882 [12] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-02 11:08:04,242 [20] INFO api.Controllers.UserController.MoveNext[127] - 96378
+2024-08-02 11:08:04,243 [20] INFO api.Controllers.UserController.MoveNext[143] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-02 11:08:04,261 [3] INFO api.Controllers.UserController.MoveNext[144] - Rows Affected: 1
+2024-08-02 11:08:11,823 [12] INFO api.Controllers.UserController.MoveNext[127] - 96378
+2024-08-02 11:08:11,824 [12] INFO api.Controllers.UserController.MoveNext[143] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-02 11:08:11,834 [12] INFO api.Controllers.UserController.MoveNext[144] - Rows Affected: 1
+2024-08-02 11:08:25,312 [12] INFO api.Controllers.UserController.MoveNext[40] -  Search: xmurray@example.org
+2024-08-02 11:08:25,313 [12] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:08:25,499 [12] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:08:25,499 [12] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:08:25,500 [12] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:08:25,501 [12] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'xmurray@example.org%' offset 0 limit 100
+2024-08-02 11:08:34,001 [3] INFO api.Controllers.UserController.MoveNext[127] - 96378
+2024-08-02 11:08:34,003 [3] INFO api.Controllers.UserController.MoveNext[143] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-02 11:08:34,013 [3] INFO api.Controllers.UserController.MoveNext[144] - Rows Affected: 1
+2024-08-02 11:08:44,709 [20] INFO api.Controllers.UserController.MoveNext[127] - 96378
+2024-08-02 11:08:44,709 [20] INFO api.Controllers.UserController.MoveNext[143] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-02 11:08:44,723 [20] INFO api.Controllers.UserController.MoveNext[144] - Rows Affected: 1
+2024-08-02 11:08:48,903 [12] INFO api.Controllers.UserController.MoveNext[127] - 96378
+2024-08-02 11:08:48,904 [12] INFO api.Controllers.UserController.MoveNext[143] - INSERT INTO "Users" ("Email", "Name", "Country", "State", "City", "Telephone", "AddressLine1", "AddressLine2", "DateOfBirth", "SalaryFY2019", "SalaryFY2020", "SalaryFY2021", "SalaryFY2022", "SalaryFY2023") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT ("Email") DO UPDATE SET "Email"="excluded"."Email", "Name"="excluded"."Name", "Country"="excluded"."Country", "State"="excluded"."State", "City"="excluded"."City", "Telephone"="excluded"."Telephone", "AddressLine1"="excluded"."AddressLine1", "AddressLine2"="excluded"."AddressLine2", "DateOfBirth"="excluded"."DateOfBirth", "SalaryFY2019"="excluded"."SalaryFY2019", "SalaryFY2020"="excluded"."SalaryFY2020", "SalaryFY2021"="excluded"."SalaryFY2021", "SalaryFY2022"="excluded"."SalaryFY2022", "SalaryFY2023"="excluded"."SalaryFY2023";
+2024-08-02 11:08:48,914 [12] INFO api.Controllers.UserController.MoveNext[144] - Rows Affected: 1
+2024-08-02 11:09:09,654 [3] INFO api.Controllers.UserController.MoveNext[178] - 96378
+2024-08-02 11:09:09,655 [3] INFO api.Controllers.UserController.MoveNext[182] - UPDATE "Users" SET "Email" = @Email WHERE "UserID" = @UserID
+2024-08-02 11:09:09,662 [3] INFO api.Controllers.UserController.MoveNext[183] - Rows Affected: 1
+2024-08-02 11:09:13,075 [12] INFO api.Controllers.UserController.MoveNext[40] -  Search: xmurray@example.org
+2024-08-02 11:09:13,075 [12] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:09:13,124 [12] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:09:13,124 [12] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:09:13,125 [12] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:09:13,125 [12] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'xmurray@example.org%' offset 0 limit 100
+2024-08-02 11:09:22,857 [7] INFO api.Controllers.UserController.MoveNext[40] -  Search: suhailshaikh17095@gmail.com
+2024-08-02 11:09:22,858 [7] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:09:22,859 [7] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:09:22,859 [7] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:09:22,860 [7] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:09:22,861 [7] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'suhailshaikh17095@gmail.com%' offset 0 limit 100
+2024-08-02 11:09:24,680 [7] INFO api.Controllers.UserController.MoveNext[40] -  Search: suhailshaikh17095@gmail.com
+2024-08-02 11:09:24,682 [7] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:09:24,684 [7] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:09:24,685 [7] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:09:24,685 [7] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:09:24,686 [7] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'suhailshaikh17095@gmail.com%' offset 100 limit 100
+2024-08-02 11:09:24,793 [12] INFO api.Controllers.UserController.MoveNext[40] -  Search: suhailshaikh17095@gmail.com
+2024-08-02 11:09:24,793 [12] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:09:24,795 [12] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:09:24,796 [12] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:09:24,798 [12] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:09:24,799 [12] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'suhailshaikh17095@gmail.com%' offset 100 limit 100
+2024-08-02 11:09:34,662 [12] INFO api.Controllers.UserController.MoveNext[40] -  Search: suhail
+2024-08-02 11:09:34,662 [12] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:09:34,662 [12] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:09:34,663 [12] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:09:34,663 [12] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:09:34,664 [12] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'suhail%' offset 0 limit 100
+2024-08-02 11:09:41,727 [12] INFO api.Controllers.UserController.MoveNext[40] -  Search: suhail
+2024-08-02 11:09:41,728 [12] INFO api.Controllers.UserController.MoveNext[41] - sORT: email
+2024-08-02 11:09:41,728 [12] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:09:41,729 [12] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:09:41,732 [12] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:09:41,732 [12] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'suhail%' ORDER BY "Email"offset 0 limit 100
+2024-08-02 11:09:45,463 [12] INFO api.Controllers.UserController.MoveNext[40] -  Search: suhail
+2024-08-02 11:09:45,463 [12] INFO api.Controllers.UserController.MoveNext[41] - sORT: name
+2024-08-02 11:09:45,464 [12] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:09:45,465 [12] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:09:45,466 [12] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:09:45,467 [12] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'suhail%' ORDER BY "Name"offset 0 limit 100
+2024-08-02 11:09:49,005 [3] INFO api.Controllers.UserController.MoveNext[40] -  Search: suhail
+2024-08-02 11:09:49,005 [3] INFO api.Controllers.UserController.MoveNext[41] - sORT: country
+2024-08-02 11:09:49,006 [3] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:09:49,007 [3] INFO api.Controllers.UserController.MoveNext[51] - hello world!
+2024-08-02 11:09:49,008 [3] INFO api.Controllers.UserController.MoveNext[60] - False
+2024-08-02 11:09:49,009 [3] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" Where "Email" like 'suhail%' ORDER BY "Country"offset 0 limit 100
+2024-08-02 11:10:00,133 [26] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:10:00,133 [26] INFO api.Controllers.UserController.MoveNext[41] - sORT: country
+2024-08-02 11:10:00,134 [26] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:10:00,135 [26] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:10:00,136 [26] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Country"offset 0 limit 100
+2024-08-02 11:10:01,616 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:10:01,617 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: country
+2024-08-02 11:10:01,618 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:10:01,619 [13] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:10:01,620 [13] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" ORDER BY "Country"offset 100 limit 100
+2024-08-02 11:22:56,122 [13] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileUploadData.csv
+2024-08-02 11:22:56,144 [4] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ac7438902812607003b1b7",
+  "FileId": "3334d8ff-1271-43dc-ae97-76ac598ea91a",
+  "FileName": "fileUploadData.csv",
+  "FileSize": 17790088.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-02 11:23:02,440 [26] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:23:02,441 [26] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:23:02,530 [26] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:23:02,530 [26] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:23:02,531 [26] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 0 limit 100
+2024-08-02 11:23:04,881 [3] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:23:04,882 [3] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:23:04,883 [3] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:23:04,884 [3] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:23:04,885 [3] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-02 11:23:04,939 [3] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:23:04,940 [3] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:23:04,941 [3] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:23:04,941 [3] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:23:04,943 [3] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-02 11:23:04,961 [4] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:23:04,961 [4] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:23:04,962 [4] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:23:04,962 [4] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:23:04,963 [4] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-02 11:23:04,977 [20] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:23:04,978 [20] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:23:04,979 [20] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:23:04,980 [20] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:23:04,981 [20] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-02 11:23:04,995 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:23:04,996 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:23:04,998 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 100currentPage: 2
+2024-08-02 11:23:04,998 [13] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:23:05,002 [13] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 100 limit 100
+2024-08-02 11:48:07,890 [20] INFO api.Controllers.UploadCsvController.MoveNext[44] - Received file: fileuploaddata1.csv
+2024-08-02 11:48:07,905 [20] INFO api.Controllers.UploadCsvController.MoveNext[65] - {
+  "Id": "66ac7a1f902812607003b1b8",
+  "FileId": "f9c149e8-af8a-4cca-acef-995f0fea6c51",
+  "FileName": "fileuploaddata1.csv",
+  "FileSize": 16332413.0,
+  "TotalBatches": 0,
+  "FileStatus": "Pending",
+  "FileError": "",
+  "Batches": []
+}
+2024-08-02 11:48:14,175 [13] INFO api.Controllers.UserController.MoveNext[40] -  Search: none
+2024-08-02 11:48:14,180 [13] INFO api.Controllers.UserController.MoveNext[41] - sORT: none
+2024-08-02 11:48:14,342 [13] INFO api.Controllers.UserController.MoveNext[46] - offset: 0currentPage: 1
+2024-08-02 11:48:14,342 [13] INFO api.Controllers.UserController.MoveNext[60] - True
+2024-08-02 11:48:14,342 [13] INFO api.Controllers.UserController.MoveNext[62] - SELECT * FROM "Users" offset 0 limit 100

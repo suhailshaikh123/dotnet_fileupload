@@ -1,5 +1,5 @@
-*{
-  
+body{
+  overflow: hidden;
 }
 nav{
   background-color: #FFDBDC;
@@ -33,11 +33,6 @@ div button{
 .delete:hover{
   color: red;
 } 
-
-
-
-
-
 
 
 .footer {

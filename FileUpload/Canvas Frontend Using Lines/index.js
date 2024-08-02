@@ -2,6 +2,7 @@ import { canvas, ctx as context } from "./Components/GetCanvasContext.js";
 import Table from "./Components/Table.js";
 
 const rect = document.getElementById("navbar").getBoundingClientRect();
+
 canvas.width = window.innerWidth - 20;
 canvas.height = window.innerHeight - rect.height - 20;
 

@@ -1,54 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Excel</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/c256e500f7.js" defer crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://kit.fontawesome.com/c256e500f7.js"
+      defer
+      crossorigin="anonymous"
+    ></script>
     <script type="module" src="index.js" defer></script>
-    
-
-
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-    <nav id="navbar">
+      <nav id="navbar">
         <form id="uploadForm" action="" enctype="multipart/form-data">
-            <div class="form">
-            <input type="file" aria-label="file-upload" id="file">
+          <div class="form">
+            <input type="file" aria-label="file-upload" id="file" />
             <button type="submit">submit</button>
-        </div>
-        <!-- <div class="search-bar">
-            <input type="text" aria-label="search here by email" placeholder="Search By Email" class="input-email">
-            <button type="button">search</button>
-
-        </div> -->
-        <!-- <div class="delete">
-            <i class="fa-solid fa-trash"></i>
-            <p>Delete</p>
-            
-        </div> -->
-        <!-- <div class="sort">
-            <i class="fa-solid fa-arrow-down-1-9"></i>
-            <p>Sort</p>
-        </div> -->
+          </div>
         </form>
-        
-    </nav>
-    <div id="myProgress">
+      </nav>
+
+      <div id="myProgress">
         <div id="myBar"></div>
       </div>
 
-    <footer class="footer">
-        <select name="" id="list">
-       
+      <div id="canvasContainer">
+        <canvas id="myCanvas"></canvas>
 
-          </select>
-    </footer>
-</div>
-</body>
-<div id="canvasContainer">
-    <canvas id="myCanvas"></canvas>
-</div>
+      </div>
+      
+      <footer class="footer">
+        <select name="" id="list"></select>
+      </footer>
+    </div>
+   
+  </body>
 </html>
