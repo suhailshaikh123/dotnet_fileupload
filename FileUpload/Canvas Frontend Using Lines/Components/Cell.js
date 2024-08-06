@@ -27,9 +27,8 @@ class Cell {
 
   draw() {
     if (this.selected) {
-      
-      this.context.fillStyle = "rgba(0, 120, 215, 0.3)"; // Light blue highlight
-     
+      // this.context.fillStyle = "rgba(0, 120, 215, 0.3)"; // Light blue highlight
+      this.context.fillStyle = "rgba(19,126,67,0.2)";
       this.context.fillRect(
         this.topX,
         this.topY,
@@ -59,6 +58,12 @@ class Cell {
       this.topY + 20
     );
   }
+  /**
+   *
+   * @param {string} text
+   * @param {Int16Array} width
+   * @returns
+   */
   getWrapedText(text, width) {
     let fontSize = 12;
     let textWidth = text.length * fontSize;
@@ -77,12 +82,20 @@ class Cell {
       this.topY + 20
     );
   }
-
+  /**
+   *
+   * @param {Int16Array} x
+   * @param {Int16Array} y
+   * @returns
+   */
   isPointNearBorder(x, y) {
     const margin = 2;
     return Math.abs(x - (this.topX + this.width)) < margin;
   }
-
+  /**
+   *
+   * @param {Int16Array} newWidth
+   */
   resize(newWidth) {
     this.width = newWidth;
   }

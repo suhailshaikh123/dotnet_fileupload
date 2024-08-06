@@ -20,6 +20,12 @@ class Line {
     // this.context.strokeFill("red");
     this.context.stroke();
   }
+  /**
+   *
+   * @param {Int16Array} x
+   * @param {Int16Array} y
+   * @returns
+   */
   isNearBorder(x, y) {
     let margin = 3;
 
