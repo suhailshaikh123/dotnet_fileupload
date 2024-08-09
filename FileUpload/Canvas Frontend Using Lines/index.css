@@ -33,6 +33,9 @@ div button{
 .delete:hover{
   color: red;
 } 
+.save:hover{
+  color: blue;
+}
 
 
 .footer {

@@ -42,7 +42,7 @@ namespace api.Controllers
             conn.Open();
             var cmd = new NpgsqlCommand();
             cmd.Connection = conn;
-            int offset = (currentPage - 1)*100;
+            int offset = (currentPage - 1) * 100;
             log.Info("offset: " + offset + "currentPage: " + currentPage);
             string query = "SELECT * FROM \"Users\" ";
             // string query="SELECT * FROM \"getAllData\"();";
@@ -51,11 +51,11 @@ namespace api.Controllers
                 log.Info("hello world!");
                 query = query + "Where \"Email\" like '" + search + "%' ";
             }
-            if(!String.Equals(sort,"none"))
+            if (!String.Equals(sort, "none"))
             {
                 string temp = string.Concat(sort[0].ToString().ToUpper(), sort.AsSpan(1));
-                Console.WriteLine("sorted value is "+temp);
-                query = query +"ORDER BY \""+temp + "\"";
+                Console.WriteLine("sorted value is " + temp);
+                query = query + "ORDER BY \"" + temp + "\"";
             }
             log.Info(String.Equals(search, "none"));
             query = query + "offset " + offset + " limit 100";
@@ -106,7 +106,7 @@ namespace api.Controllers
         }
 
 
-       
+
         [HttpPost("Create")]
         public async Task<IActionResult> Create(CreateUserDto user)
         {
@@ -115,12 +115,16 @@ namespace api.Controllers
             NpgsqlCommand cmd = new NpgsqlCommand();
             conn.Open();
             cmd.Connection = conn;
-
-            var userModel = user.ToUserFromUserDto();
-            if (ValidateCSV.Validate(userModel))
+        
+            try
             {
-                try
-                {
+            var userModel = user.ToUserFromUserDto();
+                // Console.WriteLine("Inside try");
+                // Console.WriteLine(ValidateCSV.Validate(userModel));
+                if (ValidateCSV.Validate(userModel))
+                {   
+                    Console.WriteLine("Inside  If");
+
                     StringBuilder insertQuery = new StringBuilder($"INSERT INTO \"Users\" (\"Email\", \"Name\", \"Country\", \"State\", \"City\", \"Telephone\", \"AddressLine1\", \"AddressLine2\", \"DateOfBirth\", \"SalaryFY2019\", \"SalaryFY2020\", \"SalaryFY2021\", \"SalaryFY2022\", \"SalaryFY2023\") VALUES (@Email, @Name, @Country, @State, @City, @Telephone, @AddressLine1, @AddressLine2, @DateOfBirth, @SalaryFY2019, @SalaryFY2020, @SalaryFY2021, @SalaryFY2022, @SalaryFY2023) ON CONFLICT (\"Email\") DO UPDATE SET \"Email\"=\"excluded\".\"Email\", \"Name\"=\"excluded\".\"Name\", \"Country\"=\"excluded\".\"Country\", \"State\"=\"excluded\".\"State\", \"City\"=\"excluded\".\"City\", \"Telephone\"=\"excluded\".\"Telephone\", \"AddressLine1\"=\"excluded\".\"AddressLine1\", \"AddressLine2\"=\"excluded\".\"AddressLine2\", \"DateOfBirth\"=\"excluded\".\"DateOfBirth\", \"SalaryFY2019\"=\"excluded\".\"SalaryFY2019\", \"SalaryFY2020\"=\"excluded\".\"SalaryFY2020\", \"SalaryFY2021\"=\"excluded\".\"SalaryFY2021\", \"SalaryFY2022\"=\"excluded\".\"SalaryFY2022\", \"SalaryFY2023\"=\"excluded\".\"SalaryFY2023\";");
                     cmd.CommandText = insertQuery.ToString();
 
@@ -143,18 +147,21 @@ namespace api.Controllers
                     log.Info(cmd.CommandText);
                     log.Info("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
                     // return CreatedAtAction(nameof(GetById), new { id = userModel.UserID }, userModel.ToUserDto());
-                    return Ok(new {msg = "Data inserted successfully"});
+                    return Ok(new { msg = "Data inserted successfully" });
                 }
-                catch
+
+
+                else
                 {
-                    log.Error(user.SalaryFY2019);
-                    return BadRequest(new {msg = "Failed to insert data"});
+                    Console.WriteLine("Inside  else");
+                    return BadRequest(new { msg = "Data is invalid" });
                 }
             }
-            else
+            catch(Exception e)
             {
-                return BadRequest(new {msg = "Data is invalid"});
+                return BadRequest(new { msg = "Failed to insert data" });
             }
+
         }
 
         [HttpPost("UpdateEmail")]
@@ -166,7 +173,7 @@ namespace api.Controllers
             conn.Open();
             cmd.Connection = conn;
 
-            
+
             if (ValidateCSV.Validate(user))
             {
                 try
@@ -182,26 +189,26 @@ namespace api.Controllers
                     log.Info(cmd.CommandText);
                     log.Info("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
                     // return CreatedAtAction(nameof(GetById), new { id = userModel.UserID }, userModel.ToUserDto());
-                    return Ok(new {msg = "Data Updated successfully"});
+                    return Ok(new { msg = "Data Updated successfully" });
                 }
-                catch(PostgresException ex)
+                catch (PostgresException ex)
                 {
-                    Console.WriteLine("I am printing sql state"+ex.SqlState);
-                    if(ex.SqlState == "23505")
+                    Console.WriteLine("I am printing sql state" + ex.SqlState);
+                    if (ex.SqlState == "23505")
                     {
-                        return BadRequest(new {msg = "User with same Email already exists."});
+                        return BadRequest(new { msg = "User with same Email already exists." });
                     }
-                    return BadRequest(new {msg = "Sql Exception Occured"});
+                    return BadRequest(new { msg = "Sql Exception Occured" });
                 }
-                catch(Exception e)
+                catch (Exception e)
                 {
                     log.Error(e);
-                    return BadRequest(new {msg = "Failed to Update data"});
+                    return BadRequest(new { msg = "Failed to Update data" });
                 }
             }
             else
             {
-                return BadRequest(new {msg = "Data is invalid"});
+                return BadRequest(new { msg = "Data is invalid" });
             }
         }
 
@@ -215,13 +222,15 @@ namespace api.Controllers
             string query = $"Delete from \"Users\" where \"UserID\"={id}";
             log.Info(query);
             cmd.CommandText = query;
-            try{
-            log.Info("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
+            try
+            {
+                log.Info("Rows Affected: " + await cmd.ExecuteNonQueryAsync());
             }
-            catch{
-                return BadRequest(new {msg = "Deletion Failed"});
+            catch
+            {
+                return BadRequest(new { msg = "Deletion Failed" });
             }
-            return Ok(new {msg = "Deleted Successfully"});
+            return Ok(new { msg = "Deleted Successfully" });
         }
 
         [HttpGet("DeleteByMail/{Email}")]

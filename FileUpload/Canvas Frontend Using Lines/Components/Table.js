@@ -83,14 +83,11 @@ class Table {
     this.isSortValid = false;
     this.headersCode = {};
     (this.minX = 0), (this.maxX = 0), (this.minY = 0), (this.maxY = 0);
-
+    this.antOffset = 0;
+    this.isCut = false;
     this.addEventListener();
-
-
-  
   }
-  addEventListener()
-  { 
+  addEventListener() {
     this.canvas.addEventListener("mousedown", (event) =>
       this.handleMouseDown(event)
     );
@@ -105,8 +102,13 @@ class Table {
     window.addEventListener("keyup", (event) => this.handleKeyUp(event));
     this.canvas.addEventListener("wheel", (event) => this.handleScroll(event));
     window.addEventListener("resize", (event) => this.handleResize(event));
-    document.getElementById("uploadForm").addEventListener("submit", (event) => this.uploadCsv(event));
+    document
+      .getElementById("uploadForm")
+      .addEventListener("submit", (event) => this.uploadCsv(event));
     this.uploadCsv = this.uploadCsv.bind(this);
+    document
+      .getElementsByClassName("save")[0]
+      .addEventListener("click", () => this.handleSave());
   }
   async fetchStatus(fileId) {
     let totalBatches = null;
@@ -114,19 +116,19 @@ class Table {
     let progressBar = document.getElementById("myBar");
     progressBar.style.display = "block";
     let myInterval = setInterval(async () => {
-      let url = "http://localhost:5139/FileController/GetProgresss?id=" + fileId;
+      let url =
+        "http://localhost:5139/FileController/GetProgresss?id=" + fileId;
       try {
         const response = await fetch(url, {
           method: "GET",
         });
         const data = await response.json();
-        
+
         totalBatches = data.totalBatches;
         successfullyUploadedBatches = data.successfullyUploadedBatches;
         let percentage = (successfullyUploadedBatches / totalBatches) * 100;
         progressBar.style.width = percentage + "%";
         if (totalBatches && successfullyUploadedBatches) {
-          
           if (totalBatches == successfullyUploadedBatches) {
             clearInterval(myInterval);
             progressBar.style.display = "none";
@@ -139,7 +141,7 @@ class Table {
       }
     }, 2000);
   }
-  
+
   async fetchData() {
     let url = "http://localhost:5139/api/User/GetAll/1/none/none";
     try {
@@ -147,7 +149,7 @@ class Table {
         method: "GET",
       });
       const data = await response.json();
-      
+
       this.drawCsv(data);
     } catch (error) {
       console.log(error);
@@ -156,18 +158,18 @@ class Table {
   }
   async uploadCsv(event) {
     event.preventDefault();
-  
+
     let fileInput = document.getElementById("file");
     let file = fileInput.files[0];
     if (!file) {
       alert("Please select a file");
-      
+
       return;
     }
-  
+
     const formData = new FormData();
     formData.append("file", file);
-  
+
     try {
       const response = await fetch(
         "http://localhost:5139/UploadCsv/fasterupload",
@@ -182,6 +184,42 @@ class Table {
       console.error("Error:", error);
       alert(data);
     }
+  }
+  handleSave(){
+    const self = this;
+    let csvData = "";
+    function csvMaker()
+    {
+      const headers = Object.keys(self.data[0]);
+   
+      for (let i = 1; i < self.rows; i++) {
+  
+        for(let j =1;j<self.columns;j++)
+        {
+          if(j!=self.columns -1)
+          csvData += self.data[i][j].text + ",";
+        }
+        csvData += "\n";
+      
+      }
+      
+    }
+    
+     function download()
+      {
+        let data = csvData;
+        const blob = new Blob([data], { type: "text/csv" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "download.csv";
+        a.click();
+      }
+ 
+      csvMaker();
+      download();
+    
+
   }
   appendElements() {
     const form = document.getElementById("uploadForm");
@@ -250,7 +288,7 @@ class Table {
     appendDelete();
     appendSort();
   }
- 
+
   reset() {
     for (let i = 0; i < this.columns; i++) this.columns_width.push(130);
 
@@ -277,10 +315,8 @@ class Table {
     this.drawIndex();
     this.drawHeaders();
     this.drawCells();
-  
   }
   async fetchCsv() {
-    
     let url =
       "http://localhost:5139/api/User/GetAll/" +
       this.currentPage +
@@ -301,7 +337,6 @@ class Table {
     }
   }
   async handleSearching() {
-   
     const input = document.getElementsByClassName("input-email")[0];
     if (input.value == "") {
       this.searchInput = "none";
@@ -322,26 +357,24 @@ class Table {
           method: "GET",
         });
         const data = await response.json();
-        
+
         alert(data.msg);
         this.reset();
         this.fetchCsv();
       } catch (error) {
         alert(data.msg);
       }
-    
     } else {
       alert("Please select single row");
     }
   }
   async handleSort() {
     if (this.isSortValid) {
-      
       let top_cell = this.selectedCell[0];
       let column_name = this.data[1][top_cell.Y].text;
 
       this.sortInput = column_name;
-     
+
       this.reset();
       this.fetchCsv();
     } else {
@@ -349,44 +382,16 @@ class Table {
     }
   }
 
-  copyCells()
-  {
-    if(this.selectedCell.length!=0)
-    {
-      let text = "";
-      for(let i = this.minX;i<=this.maxX;i++)
-      {
-        for(let j = this.minY;j<=this.maxY;j++)
-        {
-          text = this.data[i][j].text;
-          text = text + "/t"
-        }
-        text = text +"/n"
-      }
-    }
-
-  }
-
-  pasteCells()
-  {
-    if(this.selectedCell.length!=0)
-    {
-      let current_cell = this.selectedCell[0];
-      
-    }
-  }
   /**
    *
    * @param {object} csvData
    */
   drawCsv(csvData) {
-
     this.isFileUploaded = true;
 
     if (csvData.length != 0) {
       this.csvData = csvData;
       let keys = Object.keys(csvData[0]);
-
 
       if (this.currentPage == 1) {
         for (let j = 1; j <= keys.length; j++) {
@@ -402,7 +407,6 @@ class Table {
           text = csvData[i - 1][keys[j - 1]];
 
           if (i + this.dataMark >= this.data.length) {
-            
             this.appendRows();
             this.draw();
           }
@@ -478,7 +482,6 @@ class Table {
 
     // Reverse the string and print result
     this.headersCode[temp] = columnName.reverse().join("");
-    
   }
   drawIndex() {
     const endRow = Math.min(this.getVisibleHeight(), this.rows);
@@ -556,7 +559,6 @@ class Table {
         }
       }
     }
-   
   }
   drawHorizontalLines() {
     let temp = 0;
@@ -629,7 +631,7 @@ class Table {
       this.startX = x;
       this.startY = y;
       let { rowIndex, colIndex } = this.searchCell(this.startX, this.startY);
-      
+
       this.startCell = this.data[rowIndex][colIndex];
       this.endX = x;
       this.endY = y;
@@ -647,7 +649,6 @@ class Table {
 
     if (this.isResizing) {
       if (this.resizeColumnIndex != -1) {
-        console.log(this.resizeColumnIndex)
         const newWidth = this.initialWidth + (x - this.startX);
         if (newWidth > 30) {
           this.columns_width[this.resizeColumnIndex - 1] = newWidth;
@@ -662,47 +663,67 @@ class Table {
         }
       }
     } else if (this.isSelecting) {
-      const endRow = this.getVisibleHeight();
-      const endCol = this.getVisibleWidth();
       this.clearMetaData();
 
       this.endX = x;
       this.endY = y;
       let { rowIndex, colIndex } = this.searchCell(x, y);
       let cell = this.data[rowIndex][colIndex];
-    
-      if (
-        this.isFileUploaded &&
-        this.isDataThere &&
-        this.dataMark - this.currentRow <= 100
-      ) {
-     
-        this.fetchCsv();
-      } else if (this.data.length - this.currentRow <= 30) {
-        
-        this.appendRows();
-      }
-
-
-      if (cell.X >= endRow - 2) {
-       
-        this.scrollY += this.rows_width[this.currentRow];
-        this.currentRow++;
-      }
-      console.log(this.data[0].length , this.currentColumn)
-      if (this.data[0].length - this.currentColumn <= 15) {
-            
-        this.appendColumns();
-      }
-      if(cell.Y >= endCol - 1)
-      {
-        
-        this.scrollX+=this.columns_width[this.currentColumn];
-        this.currentColumn++;
-      }
+      this.moveDown(cell);
+      this.moveRight(cell);
+      this.moveLeft(cell);
+      this.moveUp(cell);
       this.clearSelect();
 
       this.updateSelect();
+    }
+  }
+
+  moveLeft(cell) {
+    if (cell.Y != 0 && cell.Y - this.currentColumn <= 1) {
+      this.scrollX -= this.columns_width[this.currentColumn];
+      this.currentColumn--;
+
+      this.scrollX = Math.max(0, this.scrollX);
+      this.currentColumn = Math.max(0, this.currentColumn);
+    }
+  }
+  moveDown(cell) {
+    const endRow = this.getVisibleHeight();
+
+    if (
+      this.isFileUploaded &&
+      this.isDataThere &&
+      this.dataMark - this.currentRow <= 100
+    ) {
+      this.fetchCsv();
+    } else if (this.data.length - this.currentRow <= 30) {
+      this.appendRows();
+    }
+
+    if (cell.X >= endRow - 2) {
+      this.scrollY += this.rows_width[this.currentRow];
+      this.currentRow++;
+    }
+  }
+
+  moveRight(cell) {
+    const endCol = this.getVisibleWidth();
+    if (this.data[0].length - this.currentColumn <= 15) {
+      this.appendColumns();
+    }
+    if (cell.Y >= endCol - 1) {
+      this.scrollX += this.columns_width[this.currentColumn];
+      this.currentColumn++;
+    }
+  }
+
+  moveUp(cell) {
+    if (cell.X != 0 && cell.X - this.currentRow <= 1) {
+      this.scrollY -= this.columns_width[this.currentColumn];
+      this.scrollY = Math.max(0, this.scrollY);
+      this.currentRow--;
+      this.currentRow = Math.max(this.currentRow, 0);
     }
   }
   /**
@@ -736,18 +757,17 @@ class Table {
     input.style.height = `${this.rows_width[cell.X] - 2}px`;
     input.style.fontSize = "12px";
     input.style.border = "1px solid #rgb(221,221,221)";
-
+    input.classList.add("my-input");
     input.style.boxSizing = "border-box";
 
     input.addEventListener("blur", () => {
       const formObject = {};
       const self = this; // Store reference to 'this'
 
-      if (this.isFileUploaded) {
+      if (this.isFileUploaded && cell.X <= this.dataMark) {
         let text = input.value;
         let csv_columns = Object.keys(this.csvData[0]).length;
-        if(cell.X == 1)
-        {
+        if (cell.X == 1) {
           alert("Can't Change Properties of Column");
           document.body.removeChild(input);
           cell.deselect();
@@ -765,13 +785,10 @@ class Table {
           UpdateEmail(formObject);
         } else {
           for (let i = 2; i < csv_columns; i++) {
-           
             if (cell.Y == i) {
               formObject[this.data[1][i].text] = text;
-              
             } else {
               formObject[this.data[1][i].text] = this.data[cell.X][i].text;
-              
             }
           }
 
@@ -798,11 +815,15 @@ class Table {
             }
           );
           const data = await response.json();
-          
+
           if (response.status === 200) {
             cell.text = input.value;
           } else {
-            alert(data.msg);
+            if (data.errors) {
+              alert(data.title);
+            } else {
+              alert(data.msg);
+            }
           }
           document.body.removeChild(input);
           cell.deselect();
@@ -826,7 +847,6 @@ class Table {
             }
           );
           const data = await response.json();
-         
 
           if (response.status === 200) {
             cell.text = input.value;
@@ -852,8 +872,6 @@ class Table {
     this.resizeRowIndex = -1;
     this.startX = 0;
     this.isSelecting = false;
-
-   
   }
   /**
    *
@@ -862,24 +880,59 @@ class Table {
    * @param {Int16Array} maxX
    * @param {Int16Array} maxY
    */
-  drawRect(minX, minY, maxX, maxY) {
+  drawRect() {
     let rect_width = 0;
     let rect_height = 0;
 
-    for (let i = minY; i <= maxY; i++) {
+    let topLeftCell = this.data[this.minX][this.minY];
+    let bottomRightCell = this.data[this.maxX][this.maxY];
+
+    if (topLeftCell.X < this.currentRow && bottomRightCell.X < this.currentRow)
+      return;
+    if (topLeftCell.X < this.currentRow) {
+      topLeftCell = this.data[this.currentRow][this.minY];
+    }
+
+    for (let i = this.minY; i <= this.maxY; i++) {
       rect_width += this.columns_width[i];
     }
-    for (let i = minX; i <= maxX; i++) {
+    for (let i = this.minX; i <= this.maxX; i++) {
       rect_height += this.rows_width[i];
     }
-  
-    this.context.strokeStyle = "rgb(19,126,67)";
-    this.context.strokeRect(
-      this.data[minX][minY].topX,
-      this.data[minX][minY].topY,
-      rect_width,
-      rect_height
+    this.context.strokeStyle = "Red";
+    this.context.beginPath();
+    this.context.moveTo(topLeftCell.topX, topLeftCell.topY);
+    this.context.lineTo(topLeftCell.topX + rect_width, topLeftCell.topY);
+    this.context.stroke();
+
+    this.context.beginPath();
+    this.context.moveTo(topLeftCell.topX + rect_width, topLeftCell.topY);
+    this.context.lineTo(
+      topLeftCell.topX + rect_width,
+      topLeftCell.topY + rect_height
     );
+    this.context.stroke();
+
+    this.context.beginPath();
+    this.context.moveTo(
+      topLeftCell.topX + rect_width,
+      topLeftCell.topY + rect_height
+    );
+    this.context.lineTo(topLeftCell.topX, topLeftCell.topY + rect_height);
+    this.context.stroke();
+
+    this.context.beginPath();
+    this.context.moveTo(topLeftCell.topX, topLeftCell.topY + rect_height);
+    this.context.lineTo(topLeftCell.topX, topLeftCell.topY);
+    this.context.stroke();
+
+    // this.context.strokeStyle = "rgb(19,126,67)";
+    // this.context.strokeRect(
+    //   this.data[this.minX][this.minY].topX,
+    //   this.data[this.minX][this.minY].topY,
+    //   rect_width,
+    //   rect_height
+    // );
   }
   /**
    *
@@ -917,28 +970,24 @@ class Table {
       for (let i = 0; i < this.rows_width.length; i++) {
         temp += this.rows_width[i];
         if (this.scrollY < temp) {
-          
           if (
             this.isFileUploaded &&
             this.isDataThere &&
             this.dataMark - this.currentRow <= 100
           ) {
-         
             this.fetchCsv();
           } else if (this.data.length - this.currentRow <= 30) {
-            
             this.appendRows();
           }
 
           this.currentRow = i;
-          
+
           this.draw();
 
           break;
         }
       }
     } else {
-      
       this.scrollX += deltaY;
       this.scrollX = Math.max(0, this.scrollX);
       let temp = 0;
@@ -946,12 +995,11 @@ class Table {
         temp += this.columns_width[i];
         if (this.scrollX < temp) {
           if (this.data[0].length - this.currentColumn <= 10) {
-            
             this.appendColumns();
           }
 
-          this.currentColumn = i ;
-          
+          this.currentColumn = i;
+
           this.draw();
 
           break;
@@ -959,10 +1007,108 @@ class Table {
       }
     }
   }
+  isInputFocused() {
+    const input = document.getElementsByClassName("my-input");
+    if (input[0]) return true;
+    return false;
+  }
   /**
    *
    * @param {Event} event
    */
+  copyText() {
+    let startX = this.minX,
+      startY = this.minY,
+      endX = this.maxX,
+      endY = this.maxY;
+    if (startX < 0 || startY < 0 || endX < 0 || endY < 0) return;
+    let text = "";
+    for (var i = startX; i <= endX; i++) {
+      for (var j = startY; j <= endY; j++) {
+        let cell = this.data[i][j].text + "";
+        text += cell + "\t";
+      }
+      text += "\n";
+    }
+    navigator.clipboard.writeText(text);
+    console.log(text);
+  }
+
+  delete() {
+    for (let i = this.minX; i <= this.maxX; i++) {
+      for (let j = this.minY; j <= this.maxY; j++) {
+        let cell = this.data[i][j];
+        cell.text = "";
+      }
+    }
+    this.draw();
+  }
+  async pasteText(cell) {
+    if (this.isCut) {
+      this.isCut = false;
+      for (let i = this.minX; i <= this.maxX; i++) {
+        for (let j = this.minY; j <= this.maxY; j++) {
+          let cell = this.data[i][j];
+          cell.text = "";
+        }
+      }
+    }
+    let i = cell.X,
+      j = cell.Y;
+    let text = await navigator.clipboard.readText().then((txt) => txt + "");
+    text = text.split("\n").slice(0, -1);
+    let temp = j;
+    for (let line of text) {
+      line = line.split("\t").slice(0, -1);
+      for (let t of line) {
+        this.data[i][temp++].text = t;
+      }
+      temp = j;
+      i++;
+    }
+    this.draw();
+  }
+  march() {
+    this.antOffset++;
+    if (this.antOffset > 16) {
+      this.antOffset = 0;
+    }
+
+    this.context.setLineDash([4, 2]);
+    this.context.lineDashOffset = -this.antOffset;
+    let rows_height = 0,
+      columns_width = 0;
+    for (let i = this.minX; i <= this.maxX; i++) {
+      rows_height += this.rows_width[i];
+    }
+    for (let i = this.minY; i <= this.maxY; i++) {
+      columns_width += this.columns_width[i];
+    }
+    this.context.strokeRect(
+      this.data[this.minX][this.minY].topX,
+      this.data[this.minX][this.minY].topY,
+      columns_width,
+      rows_height
+    );
+  }
+  cutText() {
+    this.isCut = true;
+    let startX = this.minX,
+      startY = this.minY,
+      endX = this.maxX,
+      endY = this.maxY;
+    if (startX < 0 || startY < 0 || endX < 0 || endY < 0) return;
+    let text = "";
+    for (var i = startX; i <= endX; i++) {
+      for (var j = startY; j <= endY; j++) {
+        let cell = this.data[i][j].text + "";
+        text += cell + "\t";
+      }
+      text += "\n";
+    }
+    navigator.clipboard.writeText(text);
+  }
+
   async handleKeyPress(event) {
     const keyPressed = event.key;
     if (keyPressed == "Control") {
@@ -971,23 +1117,37 @@ class Table {
     if (keyPressed == "Shift") {
       this.isShftPressed = true;
     }
+    if (keyPressed == "Enter") {
+      const input = document.getElementsByClassName("my-input");
+      if (this.isInputFocused()) {
+        input[0].blur();
+      }
+    }
+    if (keyPressed == "Delete" && this.selectedCell.length > 0) {
+      this.delete();
+    }
+    if (this.isSelecting == false && this.selectedCell.length > 0) {
+      let cell = this.selectedCell[0];
+      if (this.ctrlPressed) {
+        if (keyPressed == "c") {
+          this.copyText();
+        } else if (keyPressed == "v") {
+          this.pasteText(cell);
+        } else if (keyPressed == "x") {
+          console.log("Yet to Implement ");
+          this.cutText();
+        }
+        return;
+      }
+    }
     if (this.isSelecting == false && this.selectedCell.length <= 3) {
       let current_cell = this.selectedCell[0];
       let next_cell = null;
       let row_cell;
       let col_cell;
-      if (this.ctrlPressed) {
-        if (keyPressed == "c") {
-          navigator.clipboard.writeText(current_cell.text);
-        } else if (keyPressed == "v") {
-          const pastedValue = await navigator.clipboard.readText();
-          current_cell.text = pastedValue;
-          this.draw();
-        }
-        return;
-      }
-      if (keyPressed == "ArrowRight") {
-        
+
+      if (keyPressed == "ArrowRight" || keyPressed == "Tab") {
+        this.moveRight(current_cell);
         if (current_cell.Y + 1 < this.columns) {
           console.log("ArrowRight");
           next_cell = this.data[current_cell.X][current_cell.Y + 1];
@@ -996,6 +1156,7 @@ class Table {
         }
       }
       if (keyPressed == "ArrowLeft") {
+        this.moveLeft(current_cell);
         if (current_cell.Y - 1 >= 0) {
           next_cell = this.data[current_cell.X][current_cell.Y - 1];
           row_cell = this.data[current_cell.X][0];
@@ -1003,6 +1164,7 @@ class Table {
         }
       }
       if (keyPressed == "ArrowUp") {
+        this.moveUp(current_cell);
         if (current_cell.X - 1 >= 0) {
           next_cell = this.data[current_cell.X - 1][current_cell.Y];
           row_cell = this.data[current_cell.X - 1][0];
@@ -1010,6 +1172,7 @@ class Table {
         }
       }
       if (keyPressed == "ArrowDown") {
+        this.moveDown(current_cell);
         if (current_cell.X + 1 <= this.rows) {
           next_cell = this.data[current_cell.X + 1][current_cell.Y];
           row_cell = this.data[current_cell.X + 1][0];
@@ -1064,7 +1227,6 @@ class Table {
 
     let startCell = this.startCell;
     let endCell = this.data[a.rowIndex][a.colIndex];
-    
 
     this.minX = Math.min(startCell.X, endCell.X);
     this.maxX = Math.max(startCell.X, endCell.X);
@@ -1139,7 +1301,6 @@ class Table {
    * @param {Int16Array} rowIndex
    */
   updateRowSelect(rowIndex) {
-    
     if (this.selectedCell.length == 0) {
       this.isDeleteValid = true;
     } else {
@@ -1165,7 +1326,7 @@ class Table {
     this.clearMetaData();
     let { rowIndex, colIndex } = this.searchCell(x, y);
     if (rowIndex == 0 && colIndex == 0) return;
-    
+
     if (rowIndex == 0) {
       this.updateColumnSelect(colIndex);
     } else if (colIndex == 0) {
@@ -1202,9 +1363,9 @@ class Table {
   searchCell(x, y) {
     let colIndex = 0;
     let rowIndex = 0;
-    
+
     // Find the column index based on x coordinate
-    for (let j = this.currentColumn +1; j < this.columns; j++) {
+    for (let j = this.currentColumn + 1; j < this.columns; j++) {
       let colStartX = this.data[0][j].topX;
       let colEndX = colStartX + this.columns_width[j];
       if (x >= colStartX && x < colEndX) {

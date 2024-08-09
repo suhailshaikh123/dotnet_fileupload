@@ -33,6 +33,7 @@ namespace api.Mappers
      
         public static User ToUserFromUserDto(this CreateUserDto user)
         {
+            try{
             return new User{
 
                 Email=user.Email,
@@ -50,6 +51,12 @@ namespace api.Mappers
                 SalaryFY2022=user.SalaryFY2022,
                 SalaryFY2023=user.SalaryFY2023
             };
+            }
+            catch(Exception e )
+            {
+                Console.WriteLine($"Error in mapping UserDto to User: {e.Message}");
+                return null;
+            }
         }
     }
 

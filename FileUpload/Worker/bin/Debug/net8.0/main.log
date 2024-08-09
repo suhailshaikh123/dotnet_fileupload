@@ -1160,3 +1160,122 @@
 2024-08-06 15:28:17,941 [25] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
 2024-08-06 15:28:17,995 [28] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
 2024-08-06 15:28:17,995 [28] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 8c2c2aed-41ab-43c2-9f16-cf91fa1bac13
+2024-08-06 16:02:44,882 [27] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-06 16:02:45,091 [8] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-06 16:02:45,114 [8] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 0759c467-1698-4920-99d0-b93138d9838d
+2024-08-06 16:06:40,465 [28] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-06 16:06:40,513 [25] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-06 16:06:40,513 [25] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 0ef939ad-84d5-43a3-8dec-b27d6645d4b9
+2024-08-06 16:55:42,624 [26] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-06 16:55:42,740 [31] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-06 16:55:42,740 [31] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 69abea7b-5a49-44a5-8973-0a9146c45060
+2024-08-06 18:00:22,964 [38] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-06 18:00:23,045 [18] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-06 18:00:23,046 [18] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 6b3db76a-256a-4277-8215-79d6eb3a4a8e
+2024-08-06 18:03:14,536 [32] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-06 18:03:14,602 [20] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-06 18:03:14,603 [20] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 5fc86242-852c-48fc-bafc-b50a5ae4d7ca
+2024-08-06 18:34:54,818 [1] INFO Worker.Consumer.Processing.Start[47] -  [*] Waiting for file to Come
+2024-08-06 18:34:54,985 [1] INFO Worker.Consumer.Processing.Start[86] -  Press [enter] to exit.
+2024-08-06 18:45:15,890 [19] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-06 18:45:16,250 [3] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-06 18:45:16,252 [3] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file e7d65d04-60d4-43e0-9b45-88632b3db879
+2024-08-06 18:45:29,665 [5] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-06 18:45:29,797 [5] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-06 18:45:29,840 [5] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file c72f49e5-04f7-43b0-94fc-a2a60bf32a04
+2024-08-06 18:45:46,538 [5] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-06 18:45:46,579 [5] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-06 18:45:46,582 [5] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file cdda6b50-5670-473a-b740-a44d0b78e8c4
+2024-08-06 18:48:44,022 [15] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-06 18:48:44,072 [15] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-06 18:48:44,076 [15] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 2d9cc50c-aa72-4fe3-8012-f7fb8492f3ae
+2024-08-06 18:56:39,829 [23] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-06 18:56:39,872 [23] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-06 18:56:39,875 [23] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file e4c34df6-ba96-41ce-9485-c21a7945f703
+2024-08-06 18:56:55,529 [21] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-06 18:56:55,586 [21] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-06 18:56:55,589 [21] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 0878036e-45a2-4d5b-9dac-023348d06af7
+2024-08-07 10:48:58,328 [1] INFO Worker.Consumer.Processing.Start[47] -  [*] Waiting for file to Come
+2024-08-07 10:48:58,777 [1] INFO Worker.Consumer.Processing.Start[86] -  Press [enter] to exit.
+2024-08-07 10:49:34,588 [16] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-07 10:49:35,183 [16] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-07 10:49:35,185 [16] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 9e45e610-3cdd-4171-af42-073632870a17
+2024-08-07 10:50:23,990 [16] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-07 10:50:24,058 [16] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-07 10:50:24,066 [16] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file ca68393e-3dfa-4dfc-9e31-2e80d6cd9ea6
+2024-08-07 10:50:47,960 [16] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-07 10:50:48,025 [16] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-07 10:50:48,029 [16] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file c6b2494c-7361-4bcb-94c7-e44a3f535038
+2024-08-07 10:56:39,970 [8] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-07 10:56:40,022 [8] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-07 10:56:40,024 [8] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 27965b9d-ab6d-409c-b65f-15d8079ad012
+2024-08-07 10:57:49,147 [18] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-07 10:57:49,202 [18] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-07 10:57:49,203 [18] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 7b87ba9d-d9f0-4225-a0e8-6ce485b343f8
+2024-08-07 10:59:34,232 [25] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-07 10:59:34,291 [15] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-07 10:59:34,292 [15] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file d9e6d0c3-2a52-40b5-82b1-ee474b10c0ff
+2024-08-07 11:01:09,736 [22] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-07 11:01:09,795 [16] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-07 11:01:09,797 [16] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 73f951b7-4ae8-49b3-a903-5d36adc7a598
+2024-08-07 16:54:05,050 [18] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-07 16:54:05,491 [18] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-07 16:54:05,496 [18] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file ba326da0-0c9b-4ba2-ac8c-83d7cdf2b760
+2024-08-07 16:54:27,024 [18] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-07 16:54:27,064 [18] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-07 16:54:27,065 [18] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 15e1732c-a233-432c-9280-5ecae82d7329
+2024-08-07 17:11:15,082 [22] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-07 17:11:15,165 [16] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-07 17:11:15,168 [16] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file cb840b63-64d5-4995-9d62-00f640c1dfd9
+2024-08-08 10:57:54,369 [1] INFO Worker.Consumer.Processing.Start[47] -  [*] Waiting for file to Come
+2024-08-08 10:57:54,439 [1] INFO Worker.Consumer.Processing.Start[86] -  Press [enter] to exit.
+2024-08-08 11:31:24,220 [3] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-08 11:31:24,711 [3] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-08 11:31:24,714 [3] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 0f258e58-683c-4a80-bb21-35a6307c8226
+2024-08-08 11:32:09,555 [23] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-08 11:32:09,616 [23] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-08 11:32:09,618 [23] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file bf9f38e9-ac19-4d9d-9ce0-5ebb1e7ed070
+2024-08-08 11:32:37,521 [6] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-08 11:32:37,595 [6] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-08 11:32:37,597 [6] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 02f8ad71-f579-4a81-8dbd-0da9732517be
+2024-08-09 10:41:29,042 [1] INFO Worker.Consumer.Processing.Start[47] -  [*] Waiting for file to Come
+2024-08-09 10:41:29,186 [1] INFO Worker.Consumer.Processing.Start[86] -  Press [enter] to exit.
+2024-08-09 10:42:23,389 [8] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 10:42:23,781 [5] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 10:42:23,784 [5] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 2272de56-5e2f-4016-b5b4-c259811299cf
+2024-08-09 10:43:25,415 [18] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 10:43:25,493 [18] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 10:43:25,498 [18] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 9581f425-9227-4138-9293-7f159f7c2ac8
+2024-08-09 10:43:55,958 [23] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 10:43:56,015 [26] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 10:43:56,017 [26] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 636bff3c-c5c5-4384-8534-16762f1cddff
+2024-08-09 10:52:21,239 [21] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 10:52:21,560 [8] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 10:52:21,572 [8] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 96dc6693-9c81-4c45-8078-3c84ed779714
+2024-08-09 11:40:09,285 [5] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 11:40:11,250 [19] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 11:40:11,276 [19] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file f6be79f2-d798-4cd1-86f6-675d5ba8fa97
+2024-08-09 11:40:29,602 [5] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 11:40:29,678 [5] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 11:40:29,681 [5] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 953a4900-6532-4c61-aaa3-59d243cc1469
+2024-08-09 12:11:24,300 [35] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 12:11:24,366 [35] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 12:11:24,369 [35] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file a3fb4502-70d6-4c76-9eda-264583c7ccd8
+2024-08-09 13:00:00,604 [22] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 13:00:00,989 [9] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 13:00:01,015 [9] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 543be88c-7c6f-4092-aa39-cd2cb42cba3f
+2024-08-09 13:01:35,906 [16] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 13:01:35,981 [16] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 13:01:35,982 [16] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file f5d081ee-410a-4e66-a4fc-9a03fdd83072
+2024-08-09 13:09:55,474 [23] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 13:09:55,545 [19] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 13:09:55,548 [19] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file b3eb1cb7-7b21-4597-941a-1077b3b7e14b
+2024-08-09 13:39:29,529 [24] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 13:39:29,582 [24] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 13:39:29,587 [24] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file fb8742eb-841c-466a-9a1f-ec45ca026c2c
+2024-08-09 13:40:03,673 [21] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 13:40:03,922 [21] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 13:40:03,924 [21] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 741ec0fa-dbe6-47fd-891b-461612de1289
+2024-08-09 13:40:38,566 [28] INFO Worker.Consumer.Processing.MoveNext[53] - File Processing
+2024-08-09 13:40:38,620 [28] INFO Worker.Consumer.Processing.MoveNext[67] - Result from File State: Worker.Models.File
+2024-08-09 13:40:38,622 [28] INFO Worker.Consumer.Processing.MoveNext[76] - Processing file 09ac2f86-7b2a-406f-9810-b547ce666372

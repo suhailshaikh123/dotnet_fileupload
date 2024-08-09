@@ -13,8 +13,7 @@ namespace api.UploadCsv
 
 
 
-            try
-            {
+            
                 string? Email = user.Email;
                 string? Name = user.Name;
                 string? Country = user.Country;
@@ -23,33 +22,35 @@ namespace api.UploadCsv
                 string? Telephone = user.Telephone;
                 string? AddressLine1 = user.AddressLine1;
                 string? AddressLine2 = user.AddressLine2;
-
-                decimal SalaryFY2019 = Convert.ToDecimal(user.SalaryFY2019);
-                decimal SalaryFY2020 = Convert.ToDecimal(user.SalaryFY2020);
-                decimal SalaryFY2021 = Convert.ToDecimal(user.SalaryFY2021);
-                decimal SalaryFY2022 = Convert.ToDecimal(user.SalaryFY2022);
-                decimal SalaryFY2023 = Convert.ToDecimal(user.SalaryFY2023);
-                if (IsStringValid(Email, "Email") && IsStringValid(Name, "Name") && IsStringValid(Country, "Country") && IsStringValid(City, "City")
-                 && IsStringValid(Telephone, "Telephone") && IsStringValid(AddressLine1, "AddressLine1") &&
-                 IsStringValid(AddressLine2, "Address Line 2") && IsSalaryValid(SalaryFY2019, "SalaryFY2019") && IsSalaryValid(SalaryFY2020, "SalaryFy21020") && IsSalaryValid(SalaryFY2021, "SalaryFy21021") && IsSalaryValid(SalaryFY2022, "SalaryFy21022")
-                && IsSalaryValid(SalaryFY2023, "SalaryFy21023")
-                )
-                {
-                    return true;
+                try{
+                    decimal SalaryFY2019 = Convert.ToDecimal(user.SalaryFY2019);
+                    decimal SalaryFY2020 = Convert.ToDecimal(user.SalaryFY2020);
+                    decimal SalaryFY2021 = Convert.ToDecimal(user.SalaryFY2021);
+                    decimal SalaryFY2022 = Convert.ToDecimal(user.SalaryFY2022);
+                    decimal SalaryFY2023 = Convert.ToDecimal(user.SalaryFY2023);
+                    if (IsStringValid(Email, "Email") && IsStringValid(Name, "Name") && IsStringValid(Country, "Country") && IsStringValid(City, "City")
+                    && IsStringValid(Telephone, "Telephone") && IsStringValid(AddressLine1, "AddressLine1") &&
+                    IsStringValid(AddressLine2, "Address Line 2") && IsSalaryValid(SalaryFY2019, "SalaryFY2019") && IsSalaryValid(SalaryFY2020, "SalaryFy21020") && IsSalaryValid(SalaryFY2021, "SalaryFy21021") && IsSalaryValid(SalaryFY2022, "SalaryFy21022")
+                    && IsSalaryValid(SalaryFY2023, "SalaryFy21023")
+                    )
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
+                }catch(Exception e){
+                    Console.WriteLine("dfsoidfwef: ",e.Message);
                 }
-                else
-                {
-                    return false;
-                }
+                return false;
+                
 
 
-            }
-            catch
-            {
-                Console.WriteLine("Error Occured While validating data;");
-
-            }
-            return true;
+            
+         
+        
+            
         }
 
 
